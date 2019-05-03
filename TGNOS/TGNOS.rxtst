@@ -131,6 +131,7 @@ rxversion="9.0">
 			name="teardown">
 			</teardown>
 			<testcase
+			datasource="IndividuCSVConnector"
 			id="94e7db56-b3c3-41a8-9870-50194f9b2a31"
 			name="Individu">
 				<parameters>
@@ -144,7 +145,7 @@ rxversion="9.0">
 					</param>
 					<param
 					name="To"
-					value="Applicationteam@agilitasgroup.be">
+					value="Application@agilitasgroup.be">
 					</param>
 					<param
 					name="From"
@@ -201,6 +202,38 @@ rxversion="9.0">
 			name="Recording1"
 			ref="20151dfa-72bd-43af-8998-57b78ec525b5"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="varFirstName"
+					datasourceid="fb778891-7e1f-4517-843c-f03075419c98"
+					variableid="c380a480-a251-488e-8243-6f2ceabefb26"
+					variablename="varFirstName">
+					</var>
+					<var
+					dataname="varLastName"
+					datasourceid="fb778891-7e1f-4517-843c-f03075419c98"
+					variableid="b4dab720-7653-4a21-bea3-dc84e9e4c8a9"
+					variablename="varLastName">
+					</var>
+					<var
+					dataname="varBirthCity"
+					datasourceid="fb778891-7e1f-4517-843c-f03075419c98"
+					variableid="6c3f1182-5ecd-4899-baf9-74d1ead010a0"
+					variablename="varBirthCity">
+					</var>
+					<var
+					dataname="varRRNr"
+					datasourceid="fb778891-7e1f-4517-843c-f03075419c98"
+					variableid="ecf1a2cd-223a-4f21-bc0f-ce56ee9e4cb1"
+					variablename="varRRNr">
+					</var>
+					<var
+					dataname="varGender"
+					datasourceid="fb778891-7e1f-4517-843c-f03075419c98"
+					variableid="259157c9-fdcf-4a5e-bf2e-1115cb3e3b27"
+					variablename="varGender">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="ef2a24b6-25d3-4769-a9f0-fd6320d258ef"
@@ -249,6 +282,36 @@ rxversion="9.0">
 		</childhierarchy>
 	</testsuiteentryhierarchy>
 	<datasources>
+		<DataSource
+		id="fb778891-7e1f-4517-843c-f03075419c98"
+		includefile="Checked"
+		lastknownrowcount="1"
+		name="IndividuCSVConnector"
+		type="Ranorex.Core.Data.CsvDataConnector"
+		withheaders="True">
+			<lastknowncolumns>
+				<column>
+					varFirstName
+				</column>
+				<column>
+					varLastName
+				</column>
+				<column>
+					varBirthCity
+				</column>
+				<column>
+					varRRNr
+				</column>
+				<column>
+					varGender
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+			<file>
+				individu.csv
+			</file>
+		</DataSource>
 	</datasources>
 	<testconfigurations
 	default="TestRun">

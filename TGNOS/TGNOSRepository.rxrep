@@ -1308,11 +1308,10 @@ DAPIxVgFicf/GQCdrAkiuOdOjQAAAABJRU5ErkJggg==
 			addcaps="listitem,nativeitem,checkable"
 			capname="listitem"
 			id="3cf71d30-280d-47fb-96bd-6bd4738f60b3"
-			name="ListItemMan"
+			name="ListGender"
 			refimgid="8ff339eb-952c-429d-80fb-326d0e1a1055"
-			refpath="/list[@controlid='1000']/listitem[@text='Man']"
 			searchtimeout="30000ms">
-				/list[@controlid='1000']/listitem[@text='Man']
+				/list[@controlid='1000']/listitem[@text=$varGender]
 			</item>
 			<item
 			addcaps="listitem,nativeitem,checkable"
@@ -1486,5 +1485,10 @@ OsYqSDz+zwAAaK/nDj2T/r4AAAAASUVORK5CYII=
 		</basepath>
 	</rootfolder>
 	<variables>
+		<var
+		id="259157c9-fdcf-4a5e-bf2e-1115cb3e3b27"
+		name="varGender">
+			Man
+		</var>
 	</variables>
 </repository>

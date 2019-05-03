@@ -27,8 +27,37 @@ rxversion="9.0">
 	namespace="TGNOS">
 	</codegen>
 	<variables>
+		<var
+		id="c380a480-a251-488e-8243-6f2ceabefb26"
+		name="varFirstName">
+			ranorex
+		</var>
+		<var
+		id="b4dab720-7653-4a21-bea3-dc84e9e4c8a9"
+		name="varLastName">
+			test
+		</var>
+		<var
+		id="6c3f1182-5ecd-4899-baf9-74d1ead010a0"
+		name="varBirthCity">
+			mEchelen
+		</var>
+		<var
+		id="ecf1a2cd-223a-4f21-bc0f-ce56ee9e4cb1"
+		name="varRRNr">
+			55010116297
+		</var>
 	</variables>
 	<recorditems>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Start Individu wissen
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -4123,6 +4152,15 @@ gBaKKKAP/9k=
 			<bindings>
 			</bindings>
 		</separatoritem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Start Nieuw Individu
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -6068,6 +6106,10 @@ UUAFFFFAH//Z
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="varLastName">
+				</binding>
 			</bindings>
 			<info
 			id="b6024529-85b5-4da3-8ed5-3d42f3bdbc31"
@@ -6454,6 +6496,10 @@ QB//2Q==
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="varFirstName">
+				</binding>
 			</bindings>
 			<info
 			id="2b92b925-9449-457d-b02e-3fe7e2f93f78"
@@ -6744,7 +6790,7 @@ Cn0xNt7hRRRQIKKKKACiiigD/9k=
 			</helperscreenshot>
 		</mouseitem>
 		<keysequenceitem
-		KeySequence="5501011"
+		KeySequence="55010116297"
 		duration="100ms"
 		enabled="True"
 		optional="False"
@@ -6753,6 +6799,10 @@ Cn0xNt7hRRRQIKKKKACiiigD/9k=
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="varRRNr">
+				</binding>
 			</bindings>
 			<info
 			id="a65bf1f8-da28-4fed-b993-62f28985bd7a"
@@ -6840,106 +6890,6 @@ FHJHsF2G6H1T8xRuh9U/MUUUckewXYbofVPzFG6H1T8xRRRyR7Bdhuh9U/MUbofVPzFFFHJHsF2G
 6H1T8xRuh9U/MUUUckewXYbofVPzFG6H1T8xRRRyR7Bdhuh9U/MUbofVPzFFFHJHsF2G6H1T8xRu
 h9U/MUUUckewXYbofVPzFG6H1T8xRRRyR7Bdjl2HlNv1FOpkXV/97+gp9NJLYQUUUUwCiiigAooo
 oA//2Q==
-			</helperscreenshot>
-		</keysequenceitem>
-		<keysequenceitem
-		KeySequence="6297"
-		duration="100ms"
-		enabled="True"
-		optional="False"
-		presstime="0ms"
-		searchpropertyid="372d03e9-85ea-418c-a4e5-eb9a057e76f9">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="a65bf1f8-da28-4fed-b993-62f28985bd7a"
-			sourcename="Recorder">
-				<element
-				capabilities="accessible"
-				dontcache="False"
-				enabled="True"
-				flavor="msaa"
-				hasfocus="False"
-				index="0"
-				prefcap="text"
-				rect="176,387,236,14"
-				role="text"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="text"
-					type="System.String">
-					</attribute>
-					<attribute
-					name="accessiblename"
-					type="System.String">
-						INSZ-nummer
-					</attribute>
-					<attribute
-					name="accessiblerole"
-					type="System.Windows.Forms.AccessibleRole, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Text
-					</attribute>
-					<attribute
-					name="accessiblestate"
-					type="System.Windows.Forms.AccessibleStates, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-						Focusable
-					</attribute>
-					<attribute
-					name="accessiblevalue"
-					type="System.String">
-					</attribute>
-				</element>
-				<path>
-					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgBasisInformatie']//container[@controlname='UctxtRijksregisterNr']/?/?/text[@accessiblename='INSZ-nummer']
-				</path>
-			</info>
-			<helperscreenshot
-			guid="35a20cdf-621a-4fcf-ab48-cd1fd95966e1">
-				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
-5X2JKKj86P8AvfpR50f979KPa0/5l94cr7ElFR+dH/e/Sjzo/wC9+lHtaf8AMvvDlfYkoqPzo/73
-6UedH/e/Sj2tP+ZfeHK+xJRUfnR/3v0o86P+9+lHtaf8y+8OV9iSio/Oj/vfpR50f979KPa0/wCZ
-feHK+xJRUfnR/wB79KPOj/vfpR7Wn/MvvDlfYZ/y8t9KfUYYNOxHIxUlTRd02u7HIKKKK2JCiiig
-AooooAKKKKACiiigAooooAYxjB+YqD70m6H1T8xSN/rT/uj+tLU8sew7sN0Pqn5ijdD6p+Yooo5I
-9guw3Q+qfmKN0Pqn5iiijkj2C7DdD6p+Yo3Q+qfmKKKOSPYLsN0Pqn5ijdD6p+Yooo5I9guw3Q+q
-fmKN0Pqn5iiijkj2C7DdD6p+Yo3Q+qfmKKKOSPYLsN0Pqn5ijdD6p+Yooo5I9guw3Q+qfmKN0Pqn
-5iiijkj2C7DdD6p+Yo3Q+qfmKKKOSPYLsN0Pqn5ijdD6p+Yooo5I9guw3Q+qfmKN0Pqn5iiijkj2
-C7DdD6p+Yo3Q+qfmKKKOSPYLsN0Pqn5ijdD6p+Yooo5I9guw3Q+qfmKN0Pqn5iiijkj2C7HLsPKb
-fqKdTIur/wC9/QU+mklsIKKKKYBRRRQAUUUUAf/Z
 			</helperscreenshot>
 		</keysequenceitem>
 		<mouseitem
@@ -7145,6 +7095,10 @@ igCP7LB/zwj/AO+BR9lg/wCeEf8A3wKkooAj+ywf88I/++BR9lg/54R/98CpKKAI/ssH/PCP/vgU
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="KeySequence"
+				variable="varBirthCity">
+				</binding>
 			</bindings>
 			<info
 			id="12fa96c2-b7c9-4b60-adb6-4d7ebd821a8c"
@@ -19132,6 +19086,18 @@ UUyTJ1b/AI+V/wBwfzNS6R/y2/4D/WiikX0NGiiimQFc5RRSKiFFFFBZ/9k=
 				Het opslaan is voltooid.
 			</matchvalue>
 		</validationitem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message="Individu wissen completed!"
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="a8ba182d-d7b8-4a30-9dac-3c30d73a81a7">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
 		<separatoritem
 		enabled="True"
 		optional="False">

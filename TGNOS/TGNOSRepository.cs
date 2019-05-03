@@ -53,6 +53,18 @@ namespace TGNOS
 
 #region Variables
 
+        string _varGender = "Man";
+
+        /// <summary>
+        /// Gets or sets the value of variable varGender.
+        /// </summary>
+        [TestVariable("259157c9-fdcf-4a5e-bf2e-1115cb3e3b27")]
+        public string varGender
+        {
+            get { return _varGender; }
+            set { _varGender = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -3356,7 +3368,7 @@ namespace TGNOS
         public partial class List1000AppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _belgieInfo;
-            RepoItemInfo _listitemmanInfo;
+            RepoItemInfo _listgenderInfo;
             RepoItemInfo _belgischeInfo;
             RepoItemInfo _gehuwdInfo;
             RepoItemInfo _echtgenootmetberoepsinkomenInfo;
@@ -3376,7 +3388,7 @@ namespace TGNOS
                     base("List1000", "/list[@controlid='1000']", parentFolder, 30000, null, true, "c6abef22-83e0-490d-9cf4-1c309aea4112", "")
             {
                 _belgieInfo = new RepoItemInfo(this, "Belgie", "listitem[@text='België']", 30000, null, "e615f0b3-68e9-41e7-bf1f-a41ebee8af65");
-                _listitemmanInfo = new RepoItemInfo(this, "ListItemMan", "listitem[@text='Man']", 30000, null, "3cf71d30-280d-47fb-96bd-6bd4738f60b3");
+                _listgenderInfo = new RepoItemInfo(this, "ListGender", "listitem[@text=$varGender]", 30000, null, "3cf71d30-280d-47fb-96bd-6bd4738f60b3");
                 _belgischeInfo = new RepoItemInfo(this, "Belgische", "listitem[@text='Belgische']", 30000, null, "d799f05c-0283-4866-9d63-bf8258772ead");
                 _gehuwdInfo = new RepoItemInfo(this, "Gehuwd", "listitem[@text='Gehuwd']", 30000, null, "ca265de2-ac62-4501-a574-a76cc15c9418");
                 _echtgenootmetberoepsinkomenInfo = new RepoItemInfo(this, "EchtgenootMetBeroepsinkomen", "listitem[@text~'^Echtgenoot\\ met\\ beroepsink']", 30000, null, "7f64cda9-ab93-4233-a24e-ca1c306cca3e");
@@ -3439,26 +3451,26 @@ namespace TGNOS
             }
 
             /// <summary>
-            /// The ListItemMan item.
+            /// The ListGender item.
             /// </summary>
             [RepositoryItem("3cf71d30-280d-47fb-96bd-6bd4738f60b3")]
-            public virtual Ranorex.ListItem ListItemMan
+            public virtual Ranorex.ListItem ListGender
             {
                 get
                 {
-                    return _listitemmanInfo.CreateAdapter<Ranorex.ListItem>(true);
+                    return _listgenderInfo.CreateAdapter<Ranorex.ListItem>(true);
                 }
             }
 
             /// <summary>
-            /// The ListItemMan item info.
+            /// The ListGender item info.
             /// </summary>
             [RepositoryItemInfo("3cf71d30-280d-47fb-96bd-6bd4738f60b3")]
-            public virtual RepoItemInfo ListItemManInfo
+            public virtual RepoItemInfo ListGenderInfo
             {
                 get
                 {
-                    return _listitemmanInfo;
+                    return _listgenderInfo;
                 }
             }
 

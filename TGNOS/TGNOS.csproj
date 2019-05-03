@@ -178,6 +178,13 @@
       <id>0a27af6e-b37e-4c8d-93c0-7a7a4c1ca17f</id>
       <recordtableid>dded9e4d-551f-4786-8d11-7264f15ee14a</recordtableid>
     </None>
+    <Content Include="individu.csv">
+      <Link>individu.csv</Link>
+      <BoundTo>baa9d95c-9171-47cd-a0d0-b59e0928fb73</BoundTo>
+      <DependentUpon>TGNOS.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>e582c03d-3cc0-4a1d-a4c8-053e9c966118</id>
+    </Content>
     <None Include="Recording1.rxrec">
       <BoundTo>ae411d81-ff56-4001-9f90-8205bc6c1a18</BoundTo>
       <id>8886fe75-04f6-4688-8d1d-588a2ec564ea</id>
