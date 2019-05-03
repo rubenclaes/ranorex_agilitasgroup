@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="dded9e4d-551f-4786-8d11-7264f15ee14a"
+mode="Desktop"
+rxversion="9.0">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="TGNOS">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="0ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="dfe51e50-7b0c-4321-b87c-61ff4a217355">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="9c9002d3-c5e6-4618-903d-18db0dc91aa4"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']
+				</path>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="0315816f-3639-4e8f-b18c-b85b5413bc11"
+	name="TGNOSRepository"
+	relativepath="TGNOSRepository.rxrep"
+	rxversion="9.0">
+		<codegen
+		classname="TGNOSRepository"
+		namespace="TGNOS">
+		</codegen>
+		<rootfolder
+		id="8d58e2a6-f5fd-4703-8bb0-c528c01023a7"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

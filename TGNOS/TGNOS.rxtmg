@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc
+rxversion="9.0">
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="TGNOS"
+      id="1f1d9b38-55ee-46cb-9069-1b2eb67ebe3a"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="TGNOS"
+      id="1f1d9b38-55ee-46cb-9069-1b2eb67ebe3a"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>

@@ -1,0 +1,1490 @@
+﻿<repository
+id="0315816f-3639-4e8f-b18c-b85b5413bc11"
+name="TGNOSRepository"
+rxversion="9.0">
+	<codegen
+	classname="TGNOSRepository"
+	namespace="TGNOS">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="8d58e2a6-f5fd-4703-8bb0-c528c01023a7"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="9c9002d3-c5e6-4618-903d-18db0dc91aa4"
+		isrooted="True"
+		name="ApplicationUnderTest"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="7be7ff5e-9a32-4424-85a1-61cbc051fcbb"
+			name="Individu"
+			refimgid="d565d9b2-164a-416f-9548-f928db574d84"
+			refpath="/form[@controlname='MDITGnos']/menubar[@controlname='menuStrip']/menuitem[@accessiblename='Individu']"
+			searchtimeout="30000ms">
+				/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/menuitem[@accessiblename='Individu']
+			</item>
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="971e97d5-1cf8-45d0-9bf8-3a9204c12af3"
+			name="ButtonOK"
+			refimgid="aedeccae-ea9b-44c1-9215-282f30e1c252"
+			searchtimeout="30000ms">
+				/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/button[@controlname='ButtonOK']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="9992ac9e-6f6a-4520-a781-bd351c3f3280"
+			name="ButtonOK1"
+			refimgid="4e06845c-3748-4ea6-b4b2-8bbd48e892d2"
+			refpath="/form[@controlname='ExceptionForm']/button[@controlname='ButtonOK']"
+			searchtimeout="30000ms">
+				/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/button[@controlname='ButtonOK']
+			</item>
+			<folder
+			addcaps="form,control,nativewindow"
+			capname="form"
+			id="91ce71d8-0bf9-4fc5-90ae-741413484de2"
+			isrooted="True"
+			name="Individu1"
+			refpath="/form[@controlname='MDITGnos']/element[@controltypename='MdiClient']/form[@controlname='Individu']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,control,nativewindow"
+				capname="button"
+				id="ac035a4b-3e8e-4961-9bee-19c1c6c71658"
+				name="BtnOpslaan"
+				refimgid="372f44fe-b9a7-43f2-8fef-cac3e1093b6a"
+				refpath="/form[@controlname='MDITGnos']/element/form/container/button[@controlname='btnOpslaan']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/?/?/button[@controlname='btnOpslaan']
+				</item>
+				<item
+				addcaps="tabpage,accessible"
+				capname="tabpage"
+				id="7a6e1f99-b5e6-47a4-997b-19d9e5eba6b2"
+				name="Signalitiek"
+				refimgid="edb69101-0e2e-4205-805f-bee3c1f8bfd5"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@accessiblename='Signalitiek']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/?/?/tabpage[@accessiblename='Signalitiek']
+				</item>
+				<item
+				addcaps="combobox,control,nativewindow"
+				capname="combobox"
+				id="1ae3282c-3bd0-4a1e-857a-525fcea4ce1c"
+				name="CboComboBox"
+				refimgid="ca19946a-dae7-4d8f-8d18-ebd85d48134f"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgBasisInformatie']/container/container[@controlname='grpbxIndividu']/container[@controlname='cmbGeboorteland']/combobox[@controlname='cboComboBox']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgBasisInformatie']//container[@controlname='cmbGeboorteland']/combobox[@controlname='cboComboBox']
+				</item>
+				<item
+				addcaps="combobox,control,nativewindow"
+				capname="combobox"
+				id="19aebe80-99d4-426d-a64e-df74b492ba7d"
+				name="CboComboBox1"
+				refimgid="14c6308c-f903-4157-a8d9-6ecc05e81f53"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgBasisInformatie']/container/container[@controlname='grpbxIndividu']/container[@controlname='uccmbGeslacht']/combobox[@controlname='cboComboBox']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgBasisInformatie']//container[@controlname='uccmbGeslacht']/combobox[@controlname='cboComboBox']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="6601a132-72c4-4466-93a1-871e8f148c61"
+				name="Geldig"
+				refimgid="f4847e69-33cf-465d-a65d-f7fb7b527eaf"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgBasisInformatie']/container/container[@controlname='grpbxRollen']/table/row[@accessiblename='Individu']/cell[@accessiblename='Geldig']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgBasisInformatie']//table[@controlname='dtgrdIndividuRollen']/row[@accessiblename='Individu']/cell[@accessiblename='Geldig']
+				</item>
+				<item
+				addcaps="checkbox,control,nativewindow"
+				capname="checkbox"
+				id="2d39257d-ee1e-4555-9970-526532bbbec4"
+				name="CbxCheckBox"
+				refimgid="24ddf1ee-25f2-4a73-83ac-96b5c20a5d67"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgSignalitiek']/container/container[@controlname='grpbxSignalitiekAlgemeen']/container[@controlname='chkVisumKunstenaar_Signalitiek']/checkbox[@controlname='cbxCheckBox']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgSignalitiek']//container[@controlname='chkVisumKunstenaar_Signalitiek']/checkbox[@controlname='cbxCheckBox']
+				</item>
+				<item
+				addcaps="combobox,control,nativewindow"
+				capname="combobox"
+				id="debc57a2-055b-42d0-b056-447d8c89e571"
+				name="CboComboBox2"
+				refimgid="f3220af5-74ab-4632-8e06-8a3c7bba7754"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgSignalitiek']/container/container[@controlname='grpbxSignalitiekAlgemeen']/container[@controlname='uccmbNationaliteit_Signalitiek']/combobox[@controlname='cboComboBox']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgSignalitiek']//container[@controlname='uccmbNationaliteit_Signalitiek']/combobox[@controlname='cboComboBox']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="c6abc9c1-b201-4406-b349-e08e2ac8b149"
+				name="Text"
+				refimgid="24fe0cb4-e8e6-4408-8e46-85b059c68670"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgSignalitiek']/container/container[@controlname='grpbxSignalitiekAlgemeen']/text[@controlname='uctxtEmail_Signalitiek']/text[@accessiblerole='Text']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgSignalitiek']//text[@controlname='uctxtEmail_Signalitiek']/text[@accessiblerole='Text']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="69fef7f2-537f-4bad-98a5-2bebbf29ff4e"
+				name="HetOpslaanIsVoltooid"
+				refimgid="4b0807ca-8313-4b77-b989-fa033882173a"
+				refpath="/form[@controlname='MDITGnos']/element[@controltypename='MdiClient']/form[@controlname='Individu']/statusbar[@controlname='StatusBar']/text[@accessiblename='Het opslaan is voltooid.']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/?/?/text[@accessiblename='Het opslaan is voltooid.']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="c4694675-9a7c-4232-88e7-5b374afed039"
+				name="TextHetOpslaanIsVoltooid"
+				refimgid="44409435-9d15-4d04-926f-b79808e8c081"
+				refpath="/form[@controlname='MDITGnos']/element[@controltypename='MdiClient']/form[@controlname='Individu']/statusbar[@controlname='StatusBar']/text[@accessiblename='Het opslaan is voltooid.']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/?/?/text[@accessiblename~'^Het\ opslaan\ is\ voltooid']
+				</item>
+				<item
+				addcaps="tabpage,accessible"
+				capname="tabpage"
+				id="eaca2dc7-d909-4b9f-bee3-3e37ae89898a"
+				name="FiscaalVerloning"
+				refimgid="c48b9a93-4806-4218-b211-d72a2757e4ef"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@accessiblename='Fiscaal &amp; Verloning']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/?/?/tabpage[@accessiblename='Fiscaal &amp; Verloning']
+				</item>
+				<item
+				addcaps="combobox,control,nativewindow"
+				capname="combobox"
+				id="97aafc37-6283-4f41-94d4-35772fe32402"
+				name="CboComboBox3"
+				refimgid="44de4307-b0a4-41d5-873a-ea648a668779"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgFiscaleSituatie']/container/container[@controlname='grpfiskaal']/container[@controlname='cmbFiskaleSituatie_FiskaalVerloning']/combobox[@controlname='cboComboBox']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpfiskaal']/?/?/combobox[@controlname='cboComboBox']
+				</item>
+				<item
+				addcaps="list,accessible"
+				capname="list"
+				id="6c657a85-3d7a-4573-911e-693d8772b354"
+				name="List02052019"
+				refimgid="2925255c-46cc-4a70-9bff-708f1edafd5d"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgFiscaleSituatie']/container/container[@controlname='grpfiskaal']/container[@controlname='dtFiskaleSituatieDatum_FiskaalVerloning']/datetime/list[@accessiblename='02/05/2019']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpfiskaal']//list[@accessiblename='02/05/2019']
+				</item>
+				<item
+				addcaps="container,control,nativewindow"
+				capname="container"
+				id="041dbc61-18de-414a-982c-7343c7de68d0"
+				name="DtFiskaleSituatieDatumFiskaalVerloning"
+				refimgid="ee831829-1a63-4a52-8ad3-10554689f3dd"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgFiscaleSituatie']/container/container[@controlname='grpfiskaal']/container[@controlname='dtFiskaleSituatieDatum_FiskaalVerloning']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpfiskaal']/container[@controlname='dtFiskaleSituatieDatum_FiskaalVerloning']
+				</item>
+				<item
+				addcaps="container,control,nativewindow"
+				capname="container"
+				id="5902093e-1e65-4a8f-b30d-f23c67324469"
+				name="TbpgFiskaal1"
+				refimgid="d9f786d3-97c5-4955-9abd-b0f280f0acb1"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgFiscaleSituatie']/container[@controlname='TbpgFiskaal1']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgFiscaleSituatie']/container[@controlname='TbpgFiskaal1']
+				</item>
+				<item
+				addcaps="list,accessible"
+				capname="list"
+				id="df164dc4-0292-46c5-9f02-7703ceeae584"
+				name="List020520191"
+				refimgid="c20da623-c18a-4133-9a68-0223cb9c48c3"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgFiscaleSituatie']/container/container[@controlname='grpfiskaal']/container[@controlname='dtDatumHuwelijk_FiskaalVerloning']/datetime/list[@accessiblename='02/05/2019']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpfiskaal']/container[@controlname='dtDatumHuwelijk_FiskaalVerloning']/datetime[@controlname='dtpDateTimePicker']/list[@accessiblename='02/05/2019']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="8d8359d3-d2fe-4960-b865-c3f018c9a986"
+				name="NaamEchtgenoOTE"
+				refimgid="b07b07c5-ab77-4947-8a50-c49f71cd5b92"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgFiscaleSituatie']/container/container[@controlname='grpfiskaal']/container[@controlname='txtNaamEchtgenote_FiskaalVerloning']/text[@controlname='txtTextBox']/text[@accessiblename='Naam echtgeno(o)t(e)']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpfiskaal']//text[@accessiblename='Naam echtgeno(o)t(e)']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="c6e20579-672a-4848-bd55-6bb674c793b9"
+				name="VoornaamEchtgenoOTE"
+				refimgid="e6c517e0-4dca-4b69-961f-e8e02049d8be"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgFiscaleSituatie']/container/container[@controlname='grpfiskaal']/container[@controlname='txtVoornaamEchtgenote_FiskaalVerloning']/text[@controlname='txtTextBox']/text[@accessiblename='Voornaam echtgeno(o)t(e)']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpfiskaal']//text[@accessiblename='Voornaam echtgeno(o)t(e)']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="da21b313-d452-403a-86bc-23253daca793"
+				name="TextAsterisk"
+				refimgid="384915a0-750b-4dd4-88e4-aaa8d90d3bf9"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgFiscaleSituatie']/container/container[@controlname='grpfiskaal']/container[@controlname='dtGeboorteDatumEchtgenote_FiskaalVerloning']/text[@controlname='txtDatum']/text[@accessiblename='*']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpfiskaal']/container[@controlname='dtGeboorteDatumEchtgenote_FiskaalVerloning']/text[@controlname='txtDatum']/text[@accessiblename='*']
+				</item>
+				<item
+				addcaps="combobox,control,nativewindow"
+				capname="combobox"
+				id="1d99d52a-179f-4499-964d-26acd773ac60"
+				name="CboComboBox4"
+				refimgid="8f590538-10a4-4132-9e6b-94abe4c828ea"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgFiscaleSituatie']/container/container[@controlname='grpfiskaal']/container[@controlname='cmbEigenInkomenEchtgenote_FiskaalVerloning']/combobox[@controlname='cboComboBox']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpfiskaal']/container[@controlname='cmbEigenInkomenEchtgenote_FiskaalVerloning']/combobox[@controlname='cboComboBox']
+				</item>
+				<item
+				addcaps="combobox,control,nativewindow"
+				capname="combobox"
+				id="ed0b6d9d-bf67-477e-b74a-189517e6639d"
+				name="CboComboBox5"
+				refimgid="a66402b1-2062-4d19-b0f2-d232288494af"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgFiscaleSituatie']/container/container[@controlname='grpfiskaal']/container[@controlname='cmbBeroepEchtgenote_FiskaalVerloning']/combobox[@controlname='cboComboBox']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpfiskaal']/container[@controlname='cmbBeroepEchtgenote_FiskaalVerloning']/combobox[@controlname='cboComboBox']
+				</item>
+				<item
+				addcaps="combobox,control,nativewindow"
+				capname="combobox"
+				id="5f478ef4-8169-421b-9e8a-295fc8133ea3"
+				name="CboComboBox6"
+				refimgid="8211623a-396a-4dff-b687-031cc2f2775e"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgFiscaleSituatie']/container/container[@controlname='grpVerloning']/container[@controlname='cmbBetaalwijze_FiskaalVerloning']/combobox[@controlname='cboComboBox']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpVerloning']/?/?/combobox[@controlname='cboComboBox']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="a0a4b5fa-88d2-494c-9385-495323630363"
+				name="IBAN"
+				refimgid="93776d63-e08f-4290-9e08-68df17128a6b"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgFiscaleSituatie']/container/container[@controlname='grpVerloning']/container[@controlname='txtIBAN_FiskaalVerloning']/text[@controlname='txtTextBox']/text[@accessiblename='IBAN']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpVerloning']//text[@accessiblename='IBAN']
+				</item>
+				<item
+				addcaps="checkbox,control,nativewindow"
+				capname="checkbox"
+				id="6922edf9-2ae0-415e-a613-8b0f7a7b8309"
+				name="CbxCheckBox1"
+				refimgid="e5c16725-5ce0-44cd-bd6a-08d3ae303876"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgFiscaleSituatie']/container/container[@controlname='grpGezinssituatie']/container[@controlname='chkIndividuAndersValide_FiskaalVerloning']/checkbox[@controlname='cbxCheckBox']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpGezinssituatie']/?/?/checkbox[@controlname='cbxCheckBox']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="0b5829f2-b78f-4e6f-8f08-6e621de1fe22"
+				name="TextPercentInvaliditeitIndividu"
+				refimgid="91f605e6-e682-430b-90a1-109e0d7eacda"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgFiscaleSituatie']/container/container[@controlname='grpGezinssituatie']/container[@controlname='txtPercentageInvaliditeitIndividu_FiskaalVerloning']/text[@controlname='txtTextBox']/text[@accessiblename='% Invaliditeit individu']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpGezinssituatie']/container[@controlname='txtPercentageInvaliditeitIndividu_FiskaalVerloning']/?/?/text[@accessiblename='% Invaliditeit individu']
+				</item>
+				<item
+				addcaps="checkbox,control,nativewindow"
+				capname="checkbox"
+				id="89de18e9-c75b-43c3-b6fd-afe47a4c8dc5"
+				name="CbxCheckBox2"
+				refimgid="63a1326a-e1aa-4891-89fe-c2f8a3fb709d"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgFiscaleSituatie']/container/container[@controlname='grpGezinssituatie']/container[@controlname='chkEchgenoteAndersValide_FiskaalVerloning']/checkbox[@controlname='cbxCheckBox']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpGezinssituatie']/container[@controlname='chkEchgenoteAndersValide_FiskaalVerloning']/checkbox[@controlname='cbxCheckBox']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="b6cca9a9-4add-4469-b943-60e89ad026a6"
+				name="AantPersTenLasteValide"
+				refimgid="a638c46c-0e4d-469d-a6c2-1ee70157813c"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgFiscaleSituatie']/container/container[@controlname='grpGezinssituatie']/container[@controlname='txtAantalAnderePersonenTenLaste_Valide_FiskaalVerloning']/text[@controlname='txtTextBox']/text[@accessiblename~'^Aant\.\ pers\.\ ten\ laste\ val']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpGezinssituatie']/container[@controlname='txtAantalAnderePersonenTenLaste_Valide_FiskaalVerloning']/?/?/text[@accessiblename~'^Aant\.\ pers\.\ ten\ laste\ val']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="485c55f1-c841-40c6-a418-435d46017dad"
+				name="AantPersTenLasteAndersvalide"
+				refimgid="2f76b6c8-b6fb-4d95-833b-d01761ce502a"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgFiscaleSituatie']/container/container[@controlname='grpGezinssituatie']/container[@controlname='txtAantalAnderePersonenTenLaste_Andersvalide_FiskaalVerloning']/text[@controlname='txtTextBox']/text[@accessiblename~'^Aant\.\ pers\.\ ten\ laste\ and']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpGezinssituatie']/container[@controlname='txtAantalAnderePersonenTenLaste_Andersvalide_FiskaalVerloning']/?/?/text[@accessiblename~'^Aant\.\ pers\.\ ten\ laste\ and']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="355747ad-8146-4d70-be12-1795e5f7d240"
+				name="TxtTextBox"
+				refimgid="c9b390fd-2bd6-4e89-9356-70fba54c03e4"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpGezinssituatie']/container[@controlname='txtAantalAnderePersonenTenLaste_Andersvalide_FiskaalVerloning']/text[@controlname='txtTextBox']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="1553a1e6-ded6-4662-a51d-2c9d0b4aab94"
+				name="Aant65PlusPersTenLasteValide"
+				refimgid="7739cdde-a66e-40ff-87e2-6c580fcd9004"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgFiscaleSituatie']/container/container[@controlname='grpGezinssituatie']/container[@controlname='txtAantal65PlusPersonenTenlaste_Valide_FiskaalVerloning']/text[@controlname='txtTextBox']/text[@accessiblename~'^Aant\.\ 65\+\ pers\.\ ten\ laste']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpGezinssituatie']/container[@controlname='txtAantal65PlusPersonenTenlaste_Valide_FiskaalVerloning']/?/?/text[@accessiblename~'^Aant\.\ 65\+\ pers\.\ ten\ laste']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="433f3762-2f0c-42bd-bf2f-f49813a78c93"
+				name="Aant65PlusTenLasteAndersvalide"
+				refimgid="a6635b9b-b7d1-4306-ac2f-fe37830e1b3f"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgFiscaleSituatie']/container/container[@controlname='grpGezinssituatie']/container[@controlname='txtAantal65PlusPersonenTenLaste_Andersvalide_FiskaalVerloning']/text[@controlname='txtTextBox']/text[@accessiblename~'^Aant\.\ 65\+\ ten\ laste\ ander']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpGezinssituatie']/container[@controlname='txtAantal65PlusPersonenTenLaste_Andersvalide_FiskaalVerloning']/?/?/text[@accessiblename~'^Aant\.\ 65\+\ ten\ laste\ ander']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="24a738a4-b7e7-4d66-8625-33dfd6ef225d"
+				name="AantKindTenLasteValide"
+				refimgid="2b9d911c-6c98-4277-a2b1-ed8fde7e32a3"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgFiscaleSituatie']/container/container[@controlname='grpGezinssituatie']/container[@controlname='groupBoxKinderenTenLaste']/container[@controlname='txtAantalKinderenTenLaste_Valide_FiskaalVerloning']/text[@controlname='txtTextBox']/text[@accessiblename~'^Aant\.\ kind\.\ ten\ laste\ val']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpGezinssituatie']/container[@controlname='groupBoxKinderenTenLaste']//text[@accessiblename~'^Aant\.\ kind\.\ ten\ laste\ val']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="90425078-75a5-41ac-964e-8f322a788f7e"
+				name="AantKindTenLasteAndersvalide"
+				refimgid="7fe775af-4890-441b-b1c6-0e1d46f8706b"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgFiscaleSituatie']/container/container[@controlname='grpGezinssituatie']/container[@controlname='groupBoxKinderenTenLaste']/container[@controlname='txtAantalKinderenTenLaste_Andersvalide_FiskaalVerloning']/text[@controlname='txtTextBox']/text[@accessiblename~'^Aant\.\ kind\.\ ten\ laste\ and']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpGezinssituatie']/container[@controlname='groupBoxKinderenTenLaste']//text[@accessiblename~'^Aant\.\ kind\.\ ten\ laste\ and']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="e36a57f3-5246-4d63-bdba-4cc290f2ba06"
+				name="Open"
+				refimgid="97520b35-09f2-4b2d-addd-84af6e1f00ba"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgFiscaleSituatie']/container/container[@controlname='grpGezinssituatie']/container[@controlname='groupBoxKinderenTenLaste']/container[@controlname='cmbAttestKTL_FiskaalVerloning']/combobox/button[@accessiblename='Open']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgFiscaleSituatie']//container[@controlname='groupBoxKinderenTenLaste']/?/?/combobox[@controlname='cboComboBox']/button[@accessiblename='Open']
+				</item>
+				<item
+				addcaps="button,accessible"
+				capname="button"
+				id="f169b1c1-2087-42da-95e1-036540d66624"
+				name="Close"
+				refimgid="0cb10d4e-7e6a-4b2c-81b7-031d5b201401"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgFiscaleSituatie']/container/container[@controlname='grpGezinssituatie']/container[@controlname='groupBoxKinderenTenLaste']/container[@controlname='cmbAttestKTL_FiskaalVerloning']/combobox/button[@accessiblename='Close']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgFiscaleSituatie']//container[@controlname='groupBoxKinderenTenLaste']/?/?/combobox[@controlname='cboComboBox']/button[@accessiblename='Close']
+				</item>
+				<item
+				addcaps="container,control,nativewindow"
+				capname="container"
+				id="3f08e29c-1140-4829-9388-947585a59df1"
+				name="GroupBoxKinderenTenLaste"
+				refimgid="5a6be09a-e253-4eb8-aac7-8a23b59209d1"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgFiscaleSituatie']/container/container[@controlname='grpGezinssituatie']/container[@controlname='groupBoxKinderenTenLaste']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpGezinssituatie']/container[@controlname='groupBoxKinderenTenLaste']
+				</item>
+				<item
+				addcaps="container,control,nativewindow"
+				capname="container"
+				id="258f9f31-f77d-47d0-b2d2-09ec54b8f610"
+				name="GrpGezinssituatie"
+				refimgid="e26801fb-4b72-4c8c-b71a-cf9e1bf60ea8"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgFiscaleSituatie']/container/container[@controlname='grpGezinssituatie']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpGezinssituatie']
+				</item>
+				<item
+				addcaps="combobox,control,nativewindow"
+				capname="combobox"
+				id="74591bf1-00d3-49f4-89fa-68f04a58a62e"
+				name="CboComboBox7"
+				refimgid="9d7f8f3a-e7ee-449a-8f51-477a11c06274"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgFiscaleSituatie']/container/container[@controlname='grpOverige']/container/combobox[@controlname='cboComboBox']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpOverige']/?/?/combobox[@controlname='cboComboBox']
+				</item>
+				<item
+				addcaps="tabpage,accessible"
+				capname="tabpage"
+				id="17e2d88b-b450-4e71-a710-81e7e8d6bb0a"
+				name="Aspiraties"
+				refimgid="10b6f1db-e90e-4828-8a5d-59bf39b84521"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@accessiblename='Aspiraties']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/?/?/tabpage[@accessiblename='Aspiraties']
+				</item>
+				<item
+				addcaps="button,control,nativewindow"
+				capname="button"
+				id="0262afba-da3a-4e3a-8a19-b1981754f35a"
+				name="BtnNieuwBeroep"
+				refimgid="732483e3-7ef8-47b0-aec5-4bc1bf6558b9"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgAspiraties']/container/container/button[@controlname='btnNieuwBeroep']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgAspiraties']//button[@controlname='btnNieuwBeroep']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="4cbad03b-1755-4032-81d8-cbf44aa677a6"
+				name="MobiliteitStraalKm"
+				refimgid="6b00dd97-afd0-47b7-9f03-bc11ffd172c1"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgAspiraties']/container/container/container[@controlname='txtMobiliteitStraalKm_Aspiraties']/text[@controlname='txtTextBox']/text[@accessiblename='Mobiliteit straal km']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgAspiraties']//container[@controlname='txtMobiliteitStraalKm_Aspiraties']/?/?/text[@accessiblename='Mobiliteit straal km']
+				</item>
+				<item
+				addcaps="combobox,control,nativewindow"
+				capname="combobox"
+				id="7de0b98f-6c83-4110-bfc7-f12b8747207a"
+				name="CboComboBox8"
+				refimgid="c054a1ab-e309-47c1-a0b7-55f094798544"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgAspiraties']/container/container/container[@controlname='cmbVervoermiddel_Aspiraties']/combobox[@controlname='cboComboBox']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgAspiraties']//container[@controlname='cmbVervoermiddel_Aspiraties']/combobox[@controlname='cboComboBox']
+				</item>
+				<item
+				addcaps="checkbox,control,nativewindow"
+				capname="checkbox"
+				id="486897a5-e6a2-425e-b701-fcec63923ee7"
+				name="CbxCheckBox3"
+				refimgid="a76cdebe-c016-416f-93b0-797266ae3d2f"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgAspiraties']/container/container/container[@controlname='grpArbeidsregime']/container[@controlname='chkArbeidsRegime_Deeltijds']/checkbox[@controlname='cbxCheckBox']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgAspiraties']//container[@controlname='grpArbeidsregime']/?/?/checkbox[@controlname='cbxCheckBox']
+				</item>
+				<item
+				addcaps="checkbox,control,nativewindow"
+				capname="checkbox"
+				id="26d546c1-701a-4baa-855f-40b1e20bf534"
+				name="CbxCheckBox4"
+				refimgid="0a546f6d-1fd9-4706-b250-5905aeff9386"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgAspiraties']/container/container/container[@controlname='grpArbeidsregime']/container[@controlname='chkArbeidsRegimeVoltijds_Aspiraties']/checkbox[@controlname='cbxCheckBox']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgAspiraties']//container[@controlname='grpArbeidsregime']/container[@controlname='chkArbeidsRegimeVoltijds_Aspiraties']/checkbox[@controlname='cbxCheckBox']
+				</item>
+				<item
+				addcaps="container,control,nativewindow"
+				capname="container"
+				id="0edf91e2-f791-4111-8542-9e6592882d73"
+				name="GrpAspiraties"
+				refimgid="6d2d0365-0717-4c87-bb0a-3df1ccd8bb28"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgAspiraties']/container/container[@controlname='grpAspiraties']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgAspiraties']/?/?/container[@controlname='grpAspiraties']
+				</item>
+				<item
+				addcaps="container,control,nativewindow"
+				capname="container"
+				id="95f31d55-67a2-41c3-8b27-b931327860b8"
+				name="TxtGewensteUurloonBrutoAspiraties"
+				refimgid="06c77f32-438d-41e2-8639-1de8098c4f3b"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgAspiraties']/container/container/container[@controlname='txtGewensteUurloonBruto_Aspiraties']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgAspiraties']//container[@controlname='txtGewensteUurloonBruto_Aspiraties']
+				</item>
+				<item
+				addcaps="checkbox,control,nativewindow"
+				capname="checkbox"
+				id="40db89fd-8188-41c4-bd33-4f849d6945ba"
+				name="CbxCheckBox5"
+				refimgid="119d3f19-c830-4971-89fb-550c4c1f2555"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgAspiraties']/container/container/container[@controlname='GroupBox1']/container[@controlname='chkArbeidsRegime_Dag']/checkbox[@controlname='cbxCheckBox']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgAspiraties']//container[@controlname='GroupBox1']/container[@controlname='chkArbeidsRegime_Dag']/checkbox[@controlname='cbxCheckBox']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="2db61c62-7859-4a94-a251-f1a9fc5e0a4a"
+				name="TextEenOfMeerdereFoutenHebbenZich"
+				refimgid="1126d170-5272-43b8-9930-71da11d6d6b6"
+				refpath="/form[@controlname='MDITGnos']/element[@controltypename='MdiClient']/form[@controlname='Individu']/statusbar[@controlname='StatusBar']/text[@accessiblename='Eén of meerdere fouten hebben zich voorgedaan tijdens het opslaan van de gegevens.']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/?/?/text[@accessiblename~'^E&#233;n\ of\ meerdere\ fouten\ ']
+				</item>
+				<item
+				addcaps="tabpage,accessible"
+				capname="tabpage"
+				id="bd584d7f-0990-461d-9e81-f3da3871ccd4"
+				name="Dienstencheque"
+				refimgid="03d6af73-85a6-46e9-b58d-aa26f5f31d7c"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@accessiblename='Dienstencheque']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/?/?/tabpage[@accessiblename='Dienstencheque']
+				</item>
+				<item
+				addcaps="combobox,control,nativewindow"
+				capname="combobox"
+				id="832be9d3-0173-46d7-87c3-f3398e88aeae"
+				name="CboComboBox9"
+				refimgid="26b96b40-f10f-4b18-9f28-25f2a02706d9"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgDienstencheque']/container/container[@controlname='groupBox1']/container[@controlname='uccboCategorie']/combobox[@controlname='cboComboBox']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgDienstencheque']//container[@controlname='uccboCategorie']/combobox[@controlname='cboComboBox']
+				</item>
+				<item
+				addcaps="combobox,control,nativewindow"
+				capname="combobox"
+				id="7154d665-b45c-4c41-8015-3a4d1ae54860"
+				name="CboComboBox10"
+				refimgid="5cbe6e6b-9998-4855-a53f-167afcf4b079"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgDienstencheque']/container/container[@controlname='groupBox1']/container[@controlname='uccboHerkomst']/combobox[@controlname='cboComboBox']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgDienstencheque']//combobox[@controlname='cboComboBox']
+				</item>
+				<item
+				addcaps="combobox,control,nativewindow"
+				capname="combobox"
+				id="464c5582-f4d2-40d6-9846-2600a8244421"
+				name="CboComboBox11"
+				refimgid="f95d99f8-4678-4bd2-9d84-7e4e8d7f0412"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgDienstencheque']/container/container[@controlname='groupBox1']/container[@controlname='uccboWenstExtraUrenTePresteren']/combobox[@controlname='cboComboBox']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgDienstencheque']//container[@controlname='uccboWenstExtraUrenTePresteren']/combobox[@controlname='cboComboBox']
+				</item>
+				<item
+				addcaps="combobox,control,nativewindow"
+				capname="combobox"
+				id="217e1b4c-1f2b-4eb2-a55e-ef79f4bced25"
+				name="CboComboBox12"
+				refimgid="d905b87f-3537-4de7-98e0-5ff8da3ad621"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgDienstencheque']/container/container[@controlname='groupBox1']/container[@controlname='uccboVoorkeurAanwezigheidParticulier']/combobox[@controlname='cboComboBox']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgDienstencheque']//container[@controlname='uccboVoorkeurAanwezigheidParticulier']/combobox[@controlname='cboComboBox']
+				</item>
+				<item
+				addcaps="checkbox,accessible"
+				capname="checkbox"
+				id="d627b245-f59c-4375-ad72-3ee3f20ceee0"
+				name="PoetsenVanDeWoning"
+				refimgid="828cfe43-4d9a-424c-89d0-4eab57171cb7"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgDienstencheque']/container/container[@controlname='grpbxDiensten']/list/list/checkbox[@accessiblename='Poetsen van de woning']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgDienstencheque']/?/?/container[@controlname='grpbxDiensten']/list[@controlname='ucclbDiensten']/?/?/checkbox[@accessiblename='Poetsen van de woning']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="54183dae-c765-4e56-b2a5-40851f6fff9d"
+				name="UrenPerWeek"
+				refimgid="44f61ed2-f757-484a-8407-0333554221cb"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgDienstencheque']/container/container[@controlname='grpbxGewenstUurrooster']/container[@controlname='EvenWeekGroupBox']/container/container[@controlname='uctxtUrenPerWeek']/text[@controlname='txtTextBox']/text[@accessiblename='Uren per week:']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgDienstencheque']/?/?/container[@controlname='grpbxGewenstUurrooster']/container[@controlname='EvenWeekGroupBox']//text[@accessiblename='Uren per week:']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="98926a3f-17c8-4292-ae9a-b4690209e82c"
+				name="LblMaandagVmVoorkeur"
+				refimgid="e1897717-0a8b-42a3-a3ef-4f1d9156668d"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgDienstencheque']/container/container[@controlname='grpbxGewenstUurrooster']/container[@controlname='EvenWeekGroupBox']/container/container[@controlname='layoutPanel']/container[@controlname='pnlMaandagVmVoorkeur']/text[@controlname='lblMaandagVmVoorkeur']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgDienstencheque']/?/?/container[@controlname='grpbxGewenstUurrooster']//container[@controlname='pnlMaandagVmVoorkeur']/text[@controlname='lblMaandagVmVoorkeur']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="734712e8-9579-4ff6-ab90-7fe7fdf0b8e6"
+				name="LblMaandagNmVoorkeur"
+				refimgid="50b5aee0-395d-405b-a99d-2163e4b5bb5a"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgDienstencheque']/container/container[@controlname='grpbxGewenstUurrooster']/container[@controlname='EvenWeekGroupBox']/container/container[@controlname='layoutPanel']/container[@controlname='pnlMaandagNmVoorkeur']/text[@controlname='lblMaandagNmVoorkeur']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgDienstencheque']/?/?/container[@controlname='grpbxGewenstUurrooster']//container[@controlname='pnlMaandagNmVoorkeur']/text[@controlname='lblMaandagNmVoorkeur']
+				</item>
+				<item
+				addcaps="container,control,nativewindow"
+				capname="container"
+				id="0ab3d6c0-c318-4215-849d-5479d8d35981"
+				name="LayoutPanel"
+				refimgid="16c751aa-4cad-4998-81b9-13c177b7f9a7"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgDienstencheque']/container/container[@controlname='grpbxGewenstUurrooster']/container[@controlname='EvenWeekGroupBox']/container/container[@controlname='layoutPanel']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgDienstencheque']/?/?/container[@controlname='grpbxGewenstUurrooster']//container[@controlname='layoutPanel']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="62dbbddd-25e2-4c20-9f22-1c3a7c98080e"
+				name="LblDinsdagVmVoorkeur"
+				refimgid="e2d2b499-6353-404c-9541-88e8270d4f6d"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgDienstencheque']/container/container[@controlname='grpbxGewenstUurrooster']/container[@controlname='EvenWeekGroupBox']/container/container[@controlname='layoutPanel']/container[@controlname='pnlDinsdagVmVoorkeur']/text[@controlname='lblDinsdagVmVoorkeur']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgDienstencheque']/?/?/container[@controlname='grpbxGewenstUurrooster']//container[@controlname='pnlDinsdagVmVoorkeur']/text[@controlname='lblDinsdagVmVoorkeur']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="24a5dd6e-fda1-4d0a-9cf1-6acffd147217"
+				name="LblWoensdagVmVoorkeur"
+				refimgid="8fc17773-deb8-481c-ac1f-58f152d9f82a"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgDienstencheque']/container/container[@controlname='grpbxGewenstUurrooster']/container[@controlname='EvenWeekGroupBox']/container/container[@controlname='layoutPanel']/container[@controlname='pnlWoensdagVmVoorkeur']/text[@controlname='lblWoensdagVmVoorkeur']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgDienstencheque']/?/?/container[@controlname='grpbxGewenstUurrooster']//container[@controlname='pnlWoensdagVmVoorkeur']/text[@controlname='lblWoensdagVmVoorkeur']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="050d202b-9fa9-41ac-8700-57a957ab9301"
+				name="LblDinsdagNmVoorkeur"
+				refimgid="98b81caa-131b-4055-b33a-28eeeaca8c9d"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgDienstencheque']/container/container[@controlname='grpbxGewenstUurrooster']/container[@controlname='EvenWeekGroupBox']/container/container[@controlname='layoutPanel']/container[@controlname='pnlDinsdagNmVoorkeur']/text[@controlname='lblDinsdagNmVoorkeur']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgDienstencheque']/?/?/container[@controlname='grpbxGewenstUurrooster']//container[@controlname='pnlDinsdagNmVoorkeur']/text[@controlname='lblDinsdagNmVoorkeur']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="76c7faf9-ed62-420a-ba00-95ed49120b8c"
+				name="LblWoensdagNmVoorkeur"
+				refimgid="8cca793f-fb2a-498a-9f0a-0f480357a9f4"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgDienstencheque']/container/container[@controlname='grpbxGewenstUurrooster']/container[@controlname='EvenWeekGroupBox']/container/container[@controlname='layoutPanel']/container[@controlname='pnlWoensdagNmVoorkeur']/text[@controlname='lblWoensdagNmVoorkeur']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgDienstencheque']/?/?/container[@controlname='grpbxGewenstUurrooster']//container[@controlname='pnlWoensdagNmVoorkeur']/text[@controlname='lblWoensdagNmVoorkeur']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="6e444240-bae7-457c-a82e-1e9a985dac9c"
+				name="LblDonderdagVmVoorkeur"
+				refimgid="d2bdc60d-cc06-4c24-b0dd-8ab59ec5d352"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgDienstencheque']/container/container[@controlname='grpbxGewenstUurrooster']/container[@controlname='EvenWeekGroupBox']/container/container[@controlname='layoutPanel']/container[@controlname='pnlDonderdagVmVoorkeur']/text[@controlname='lblDonderdagVmVoorkeur']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgDienstencheque']/?/?/container[@controlname='grpbxGewenstUurrooster']//container[@controlname='pnlDonderdagVmVoorkeur']/text[@controlname='lblDonderdagVmVoorkeur']
+				</item>
+				<item
+				addcaps="container,control,nativewindow"
+				capname="container"
+				id="d70f5563-7f5b-49e4-92a9-ac021a9fb037"
+				name="GrpbxGewenstUurrooster"
+				refimgid="700444fc-3ca3-40dc-bf0c-546626113f67"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgDienstencheque']/container/container[@controlname='grpbxGewenstUurrooster']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgDienstencheque']/?/?/container[@controlname='grpbxGewenstUurrooster']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="e9f982af-909f-4909-8c7c-7d44f9a2b3d3"
+				name="LblDonderdagNmVoorkeur"
+				refimgid="3c88fb46-7e89-4268-a242-50d607d0fd24"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgDienstencheque']/container/container[@controlname='grpbxGewenstUurrooster']/container[@controlname='EvenWeekGroupBox']/container/container[@controlname='layoutPanel']/container[@controlname='pnlDonderdagNmVoorkeur']/text[@controlname='lblDonderdagNmVoorkeur']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgDienstencheque']/?/?/container[@controlname='grpbxGewenstUurrooster']//container[@controlname='pnlDonderdagNmVoorkeur']/text[@controlname='lblDonderdagNmVoorkeur']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="91df995b-f252-4e7d-8a5f-fc647f6a2deb"
+				name="LblVrijdagVmVoorkeur"
+				refimgid="ea252a07-e4b6-4a5a-8107-8d7c4844ff23"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgDienstencheque']/container/container[@controlname='grpbxGewenstUurrooster']/container[@controlname='EvenWeekGroupBox']/container/container[@controlname='layoutPanel']/container[@controlname='pnlVrijdagVmVoorkeur']/text[@controlname='lblVrijdagVmVoorkeur']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgDienstencheque']/?/?/container[@controlname='grpbxGewenstUurrooster']//container[@controlname='pnlVrijdagVmVoorkeur']/text[@controlname='lblVrijdagVmVoorkeur']
+				</item>
+				<item
+				addcaps="tabpage,accessible"
+				capname="tabpage"
+				id="2f919695-0a68-492e-ac9e-9467697b9ab4"
+				name="DocumentenFoto"
+				refimgid="b518fb67-ac3b-4bd7-a53c-f6aee2d43376"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@accessiblename='Documenten &amp; foto']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/?/?/tabpage[@accessiblename='Documenten &amp; foto']
+				</item>
+				<item
+				addcaps="button,control,nativewindow"
+				capname="button"
+				id="00b34979-a4ec-4ded-a9ab-2300e36292be"
+				name="ToevoegenButton"
+				refimgid="3de87d13-b2d3-420c-acea-d430f3abc50d"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgCV']/container/container[@controlname='documentenGroupBox']/button[@controlname='toevoegenButton']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgCV']/?/?/container[@controlname='documentenGroupBox']/button[@controlname='toevoegenButton']
+				</item>
+				<item
+				addcaps="tabpage,accessible"
+				capname="tabpage"
+				id="78795e67-3352-41f5-8f8e-b897ef61ac2a"
+				name="Opmerkingen"
+				refimgid="b920f9ed-db68-4feb-9fd8-6461c6277643"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@accessiblename='Opmerkingen']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/?/?/tabpage[@accessiblename='Opmerkingen']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="e7ad5606-f1d9-4166-83f6-ab2ebfe493ad"
+				name="OpmerkingenBijFunctioneleRelevantie"
+				refimgid="1f221e06-59e7-4aee-9d67-e938112a372a"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgOpmerkingen']/container/container[@controlname='grpRelevanteInfoConsulent']/text/text[@accessiblename~'^Opmerkingen\ bij\ functione']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgOpmerkingen']//text[@accessiblename~'^Opmerkingen\ bij\ functione']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="1b47f449-6bf6-43db-8d2d-06786ae0f87c"
+				name="TextAsterisk1"
+				refimgid="0ef13962-720a-4dc5-b8b5-7d366d6cd84c"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgFiscaleSituatie']/container/container[@controlname='grpfiskaal']/container[@controlname='dtFiskaleSituatieDatum_FiskaalVerloning']/text[@controlname='txtDatum']/text[@accessiblename='*']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpfiskaal']//text[@accessiblename='*']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="b4f7b676-c5d6-4f0f-bbf1-00860b682898"
+				name="TextAsterisk2"
+				refimgid="88a1b43d-6fb7-4882-9fa1-b74967aad3e9"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgFiscaleSituatie']/container/container[@controlname='grpfiskaal']/container[@controlname='dtDatumHuwelijk_FiskaalVerloning']/text[@controlname='txtDatum']/text[@accessiblename='*']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpfiskaal']/container[@controlname='dtDatumHuwelijk_FiskaalVerloning']/text[@controlname='txtDatum']/text[@accessiblename='*']
+				</item>
+				<basepath>
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']
+				</basepath>
+			</folder>
+			<folder
+			capname="tabpage"
+			id="e98b2534-64a9-4997-a6f3-9ade5ebc0c56"
+			isrooted="True"
+			name="TbpgBasisInformatie"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,control,nativewindow"
+				capname="button"
+				id="cdde1bea-a521-4215-81ad-78d090199878"
+				name="BtnIndividuWissen"
+				refimgid="43334f04-047a-45b1-8ce9-5230db44bca9"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgBasisInformatie']/container/container[@controlname='grpbxIndividu']/button[@controlname='btnIndividuWissen']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgBasisInformatie']//button[@controlname='btnIndividuWissen']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="b6024529-85b5-4da3-8ed5-3d42f3bdbc31"
+				name="Familienaam"
+				refimgid="40015cd4-9e9b-47f6-a995-27cec2bf7dd3"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgBasisInformatie']/container/container[@controlname='grpbxIndividu']/container[@controlname='UcSmplTxtFamilienaam']/text[@controlname='txtTextBox']/text[@accessiblename='Familienaam']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgBasisInformatie']//container[@controlname='UcSmplTxtFamilienaam']/?/?/text[@accessiblename='Familienaam']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="2b92b925-9449-457d-b02e-3fe7e2f93f78"
+				name="Voornaam1"
+				refimgid="0b8b786d-25cc-48ba-b8b9-cc5196581d4f"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgBasisInformatie']/container/container[@controlname='grpbxIndividu']/container[@controlname='UcSmplTxtVoornaam']/text[@controlname='txtTextBox']/text[@accessiblename='Voornaam']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgBasisInformatie']//container[@controlname='UcSmplTxtVoornaam']/?/?/text[@accessiblename='Voornaam']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="a65bf1f8-da28-4fed-b993-62f28985bd7a"
+				name="INSZNummer1"
+				refimgid="dde46aed-c919-4b7b-8de6-d8d99f653c8f"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgBasisInformatie']/container/container[@controlname='grpbxIndividu']/container[@controlname='UctxtRijksregisterNr']/text[@controlname='mtxtTextBox']/text[@accessiblename='INSZ-nummer']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgBasisInformatie']//container[@controlname='UctxtRijksregisterNr']/?/?/text[@accessiblename='INSZ-nummer']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="f24c69aa-ae17-445b-bd72-b6679974f92a"
+				name="TextAsterisk"
+				refimgid="f47105a1-46ea-4aee-b4d4-64ec4c21b536"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgBasisInformatie']/container/container[@controlname='grpbxIndividu']/container[@controlname='ucdtGeboortedatum']/text[@controlname='txtDatum']/text[@accessiblename='*']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgBasisInformatie']//container[@controlname='ucdtGeboortedatum']/?/?/text[@accessiblename='*']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="12fa96c2-b7c9-4b60-adb6-4d7ebd821a8c"
+				name="Geboorteplaats"
+				refimgid="b0441efa-74fc-42cd-8740-7eaf650cee79"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgBasisInformatie']/container/container[@controlname='grpbxIndividu']/container[@controlname='uctxtGeboorteplaats']/text[@controlname='txtTextBox']/text[@accessiblename='Geboorteplaats']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgBasisInformatie']//container[@controlname='uctxtGeboorteplaats']/?/?/text[@accessiblename='Geboorteplaats']
+				</item>
+				<item
+				addcaps="combobox,control,nativewindow"
+				capname="combobox"
+				id="31a3e3cb-1d84-45d7-9c2c-840b376935e9"
+				name="CboComboBox"
+				refimgid="ea090240-25e4-4910-a116-dfcf29fc1bf6"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgBasisInformatie']/container/container[@controlname='grpbxIndividu']/container[@controlname='UcSmplCmbInfoWijze']/combobox[@controlname='cboComboBox']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgBasisInformatie']//container[@controlname='UcSmplCmbInfoWijze']/combobox[@controlname='cboComboBox']
+				</item>
+				<item
+				addcaps="container,control,nativewindow"
+				capname="container"
+				id="466a2f93-c778-4ad1-a521-1e75e4accbef"
+				name="TbpgIndividu"
+				refimgid="14e67f26-c239-475e-9f01-b82d01464fce"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgBasisInformatie']/container[@controlname='TbpgIndividu']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgBasisInformatie']/container[@controlname='TbpgIndividu']
+				</item>
+				<basepath>
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgBasisInformatie']
+				</basepath>
+			</folder>
+			<folder
+			addcaps="tabpage,control,nativewindow"
+			capname="tabpage"
+			id="4b021534-f6aa-4d4a-b93f-5b4522024031"
+			isrooted="True"
+			name="TbpgSignalitiek"
+			refpath="/form[@controlname='MDITGnos']/element[@controltypename='MdiClient']/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgSignalitiek']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="button,control,nativewindow"
+				capname="button"
+				id="7070a188-6f6a-42a6-a29e-38f76dd99abf"
+				name="BtnDisclamer"
+				refimgid="6857e1cd-fb8a-4727-824f-e41b7d4c0e66"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgSignalitiek']/container/container[@controlname='grpbxSignalitiekAlgemeen']/button[@controlname='btnDisclamer']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgSignalitiek']//button[@controlname='btnDisclamer']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="a5d0d069-ee0e-4262-abd9-470b74eb9186"
+				name="TxtStraat1"
+				refimgid="b00c2076-a696-46ff-ab7e-4e8e5dcb0990"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgSignalitiek']//container[@controlname='grpWettelijkAdres']//text[@controlname='txtStraat1']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="82a18b7d-eeee-40ec-a7f9-f43f9a952369"
+				name="TextAsterisk1"
+				refimgid="7acdf3ab-ed54-406d-86d4-ba412b8e2bb6"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgSignalitiek']/container/container[@controlname='grpbxSignalitiekAlgemeen']/container[@controlname='ucdtVisumKunstenaarGeldigTot_Signalitiek']/text[@controlname='txtDatum']/text[@accessiblename='*']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgSignalitiek']//container[@controlname='ucdtVisumKunstenaarGeldigTot_Signalitiek']/?/?/text[@accessiblename='*']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="438796f2-4163-4b07-9ecd-ce3b06eb8925"
+				name="GsmNr"
+				refimgid="cee04433-e3ea-4c93-a8b9-e447f99194fe"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgSignalitiek']/container/container[@controlname='grpbxSignalitiekAlgemeen']/container[@controlname='uctxtGsmNr_Signalitiek']/text[@controlname='txtTextBox']/text[@accessiblename='Gsm-nr.']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgSignalitiek']//container[@controlname='uctxtGsmNr_Signalitiek']/?/?/text[@accessiblename='Gsm-nr.']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="29b191a3-a086-41af-8185-be2ec3ae86c7"
+				name="TelefoonnrThuis"
+				refimgid="0f5e394c-6c68-4a2f-82d1-ab3456b6d928"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgSignalitiek']/container/container[@controlname='grpbxSignalitiekAlgemeen']/container[@controlname='uctxtTelefoonNrThuis_Signalitiek']/text[@controlname='txtTextBox']/text[@accessiblename='Telefoonnr. thuis']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgSignalitiek']//container[@controlname='uctxtTelefoonNrThuis_Signalitiek']/?/?/text[@accessiblename='Telefoonnr. thuis']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="348b5723-15f7-41e1-8875-b7fbe5553a71"
+				name="Straat"
+				refimgid="2d044888-15b1-417c-aae3-8e6115b13a69"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgSignalitiek']/container/container[@controlname='grpbxSignalitiekAlgemeen']/container[@controlname='grpWettelijkAdres']/container/container/text[@controlname='txtHuisNummer']/text[@accessiblename='Straat:']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgSignalitiek']/?/?/container[@controlname='grpbxSignalitiekAlgemeen']/container[@controlname='grpWettelijkAdres']//text[@accessiblename='Straat:']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="19323db1-4726-4cd0-82a5-c1685da54f16"
+				name="Text2"
+				refimgid="0f5bfb04-11ae-4d52-abed-160103bbff58"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgSignalitiek']/container/container[@controlname='grpbxSignalitiekAlgemeen']/container[@controlname='grpWettelijkAdres']/container/container/text[@controlname='txtPostCode']/text[@accessiblerole='Text']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgSignalitiek']/?/?/container[@controlname='grpbxSignalitiekAlgemeen']/container[@controlname='grpWettelijkAdres']//text[@controlname='txtPostCode']/text[@accessiblerole='Text']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="ee9fdf22-4181-404a-bb4b-eaa56d93b20b"
+				name="Text1"
+				refimgid="485aad3b-68aa-427e-b8b7-1221a8a7ffd4"
+				refpath="/form[@controlname='MDITGnos']/element/form/tabpagelist/tabpage[@controlname='tbpgSignalitiek']/container/container[@controlname='grpbxSignalitiekAlgemeen']/container[@controlname='grpWettelijkAdres']/container/container/text[@controlname='txtStraat1']/text[@accessiblerole='Text']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgSignalitiek']/?/?/container[@controlname='grpbxSignalitiekAlgemeen']/container[@controlname='grpWettelijkAdres']//text[@controlname='txtStraat1']/text[@accessiblerole='Text']
+				</item>
+				<basepath>
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgSignalitiek']
+				</basepath>
+			</folder>
+			<folder
+			capname="form"
+			id="9238818d-5919-41e0-8b35-a53f2860e3f9"
+			isrooted="True"
+			name="OpzoekenIndividuStart"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="e57b9a67-2841-4993-bddd-23afec820746"
+				name="Voornaam"
+				refimgid="1a8d24e4-710f-4f15-ae75-3d14718dbc05"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='OpzoekenIndividuStart']/container[@controlname='grpbZoekResultaat']/?/?/row[@accessiblename='20641977']/cell[@accessiblename='Familienaam']
+				</item>
+				<item
+				addcaps="button,control,nativewindow"
+				capname="button"
+				id="5b93f0bc-7ae1-4746-a020-c6829a855d34"
+				name="BtnNieuw"
+				refimgid="aa24de5f-ee0f-49ee-a9d6-e2543f8b0375"
+				refpath="/form[@controlname='MDITGnos']/element/form/container[@controlname='grpbActies']/button[@controlname='btnNieuw']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='OpzoekenIndividuStart']/?/?/button[@controlname='btnNieuw']
+				</item>
+				<item
+				addcaps="button,control,nativewindow"
+				capname="button"
+				id="a0c9c141-f76c-40fd-b73b-8b583873abeb"
+				name="BtnOpzoeken"
+				refimgid="2198a915-deea-4c0b-9505-be00346990b7"
+				refpath="/form[@controlname='MDITGnos']/element/form/container[@controlname='grpbActies']/button[@controlname='btnOpzoeken']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='OpzoekenIndividuStart']/?/?/button[@controlname='btnOpzoeken']
+				</item>
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="5c950c80-06ab-40a7-82e2-1d30985dd472"
+				name="INSZNummer"
+				refimgid="c35ab34a-828e-4ae8-9917-6ce37d59e890"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='OpzoekenIndividuStart']/container[@controlname='grpbZoekcriteria']/?/?/text[@accessiblename='INSZ-nummer']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="0aff2d75-6f19-4b15-a3e5-b8f5a3be9890"
+				name="MtxtTextBox"
+				refimgid="6eefd569-d354-4ff3-a3cf-81b6f2304740"
+				refpath="/form[@controlname='MDITGnos']/element/form/container[@controlname='grpbZoekcriteria']/container[@controlname='UcSmplTxtRijksregisterNummer']/text[@controlname='mtxtTextBox']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='OpzoekenIndividuStart']/container[@controlname='grpbZoekcriteria']/?/?/text[@controlname='mtxtTextBox']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="47de86cd-a4d4-4970-b86b-bb645a8949a0"
+				name="Familienaam"
+				refimgid="c9f41ed0-ce25-40ac-86d5-5977b351dee1"
+				refpath="/form[@controlname='MDITGnos']/element/form/container[@controlname='grpbZoekResultaat']/table/row/cell[@accessiblename='Familienaam']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='OpzoekenIndividuStart']//row[@accessiblename='20641978']/cell[@accessiblename='Familienaam']
+				</item>
+				<item
+				addcaps="container,control,nativewindow"
+				capname="container"
+				id="a5c3b8a9-8cf5-494d-a9e7-fec8075e2e6f"
+				name="GrpbZoekResultaat"
+				refimgid="06ec2523-3669-4903-b85b-d280998406fc"
+				refpath="/form[@controlname='MDITGnos']/element/form/container[@controlname='grpbZoekResultaat']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='OpzoekenIndividuStart']/container[@controlname='grpbZoekResultaat']
+				</item>
+				<item
+				addcaps="cell,accessible"
+				capname="cell"
+				id="3525d7eb-1ece-42e5-a1ba-b3228a70c83b"
+				name="Familienaam1"
+				refimgid="ba29412b-c5e8-47c0-b486-19a9f0ff0c75"
+				refpath="/form[@controlname='MDITGnos']/element/form/container[@controlname='grpbZoekResultaat']/table/cell[@accessiblename='Familienaam' and @text='']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='OpzoekenIndividuStart']/?/?/table[@controlname='dtgrdZoekResultaat']/cell[@accessiblename='Familienaam' and @text='']
+				</item>
+				<item
+				addcaps="table,control,nativewindow"
+				capname="table"
+				id="649120b2-756e-49a8-9644-83f30a7a062d"
+				name="DtgrdZoekResultaat"
+				refimgid="bce7f997-a4d5-495e-8050-97fa44785558"
+				refpath="/form[@controlname='MDITGnos']/element/form/container[@controlname='grpbZoekResultaat']/table[@controlname='dtgrdZoekResultaat']"
+				searchtimeout="30000ms">
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='OpzoekenIndividuStart']/?/?/table[@controlname='dtgrdZoekResultaat']
+				</item>
+				<basepath>
+					/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/form[@controlname='OpzoekenIndividuStart']
+				</basepath>
+			</folder>
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="26d12955-0e69-426c-a225-eae5f183afdf"
+			name="Cancel"
+			refimgid="c6a2018e-f46e-44fd-816d-354e553d4e49"
+			refpath="/form[@title='Detail Individu']/button[@text='Cancel']"
+			searchtimeout="30000ms">
+				/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/button[@text='Cancel']
+			</item>
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="bee41b17-bcd3-41a7-92d0-7fe17a7ec9ef"
+			name="ButtonYes"
+			refimgid="b5984f9f-6e9b-4b49-9321-1723a455f90e"
+			refpath="/form[@title='Detail Individu']/button[@text='&amp;Yes']"
+			searchtimeout="30000ms">
+				/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/button[@text='&amp;Yes']
+			</item>
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="8f87a8d1-9bbe-4b3b-a3a9-d68204df5b93"
+			name="System"
+			refimgid="a5a01cbf-a4a8-4006-8e1f-17060d935079"
+			refpath="/form[@controlname='MDITGnos']/menubar[@accessiblename='System']/menuitem[@accessiblename='System']"
+			searchtimeout="30000ms">
+				/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/menuitem[@accessiblekeyboardshortcut='Space']
+			</item>
+			<item
+			addcaps="cell,accessible"
+			capname="cell"
+			id="8a54603b-4e60-48ea-8bf9-fc5f416ade25"
+			name="Cell29"
+			refimgid="2c8dcb9e-b18a-4818-9c9a-ed0274a2fd5a"
+			refpath="/form[@title='']/element/container/table/row[@accessiblerole='Row' and @accessibledescription='Week 1']/cell[@accessiblename='29']"
+			searchtimeout="30000ms">
+				/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/container[@accessiblename='donderdag 2 mei 2019']/table[@accessiblerole='Table']/?/?/cell[@accessiblename='29']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="fdef67eb-01ca-44dc-86be-2dbaa3ab0d51"
+			name="Text"
+			refimgid="b3273e87-6103-4f4b-9d1c-79e99c2f0dbe"
+			searchtimeout="30000ms">
+				/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/container[@controlname='UcTreeView1']/?/?/text[@accessiblerole='Text' and @text=null()]
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="3cb2ce49-c304-4209-964a-3e994ace59ae"
+			name="BtnOk"
+			refimgid="461fcead-7b6c-4a14-8892-196ac44f70de"
+			refpath="/form[@controlname='BeroepenBoom']/container[@controlname='grpbActies']/button[@controlname='btnOk']"
+			searchtimeout="30000ms">
+				/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/button[@controlname='btnOk']
+			</item>
+			<item
+			addcaps="button,control,nativewindow"
+			capname="button"
+			id="7ad761e5-19a0-4e41-9b55-5d7971c9f197"
+			name="BtnZoeken"
+			refimgid="76f4f873-c43f-4245-9580-5a8cc52c6c7e"
+			refpath="/form[@controlname='BeroepenBoom']/container[@controlname='UcTreeView1']/button[@controlname='btnZoeken']"
+			searchtimeout="30000ms">
+				/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/?/?/button[@controlname='btnZoeken']
+			</item>
+			<item
+			addcaps="treeitem,accessible,accessibletreeitem"
+			capname="treeitem"
+			id="316e10da-d418-4563-b17c-8ede30039e3f"
+			name="TreeItem93399HuishoudelijkeHulp"
+			refimgid="99d4a231-d16d-4b8b-bdd7-0a584771d52f"
+			refpath="/form[@controlname='BeroepenBoom']/container[@controlname='UcTreeView1']/tree/tree/treeitem/treeitem/treeitem/treeitem[@accessiblename~'^93399\ -\ Huishoudelijke\ hu']"
+			searchtimeout="30000ms">
+				/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/container[@controlname='UcTreeView1']/tree[@controlname='ucTreeView1']/?/?/treeitem[@accessiblename='Arbeider ']//treeitem[@accessiblename~'^93399\ -\ Huishoudelijke\ hu']
+			</item>
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="a41f323c-8cc0-4500-ab00-c4686d405145"
+			name="TgnosDetailIndividu"
+			refimgid="a95ae65a-989e-47b4-82bc-febfd817ccfa"
+			refpath="/form[@controlname='MDITGnos']/titlebar[@accessiblerole='TitleBar']"
+			searchtimeout="30000ms">
+				/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
+			addcaps="unknown,control,nativewindow"
+			capname="unknown"
+			id="0970dc66-9d44-4b3d-8ce4-093122a46d9d"
+			name="MdiClient"
+			refimgid="dd20676e-923f-4b5a-be31-527d55b75048"
+			refpath="/form[@controlname='MDITGnos']/element[@controltypename='MdiClient']"
+			searchtimeout="30000ms">
+				/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/element[@controltypename='MdiClient']
+			</item>
+			<item
+			addcaps="text,uiautomation,uiautomationvalue"
+			capname="text"
+			id="d99c2d4c-4378-4461-9e8d-2a3f4d3bc70b"
+			name="SystemItemNameDisplay"
+			refimgid="67b10a0f-c590-46ac-b60b-ecdb66ee126f"
+			refpath="/form[@title='Open']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/listitem[@automationid='4']/text[@automationid='System.ItemNameDisplay']"
+			searchtimeout="30000ms">
+				/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/element[@class='DUIViewWndClassName']//container[@caption='ShellView']/?/?/listitem[@automationid='4']/text[@automationid='System.ItemNameDisplay']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="cdd40712-1d89-404a-b93b-609325fe701e"
+			name="Text1"
+			refimgid="8618bf53-a4c2-44f5-9090-d5133dfa4ced"
+			refpath="/form[@controlname='BeroepenBoom']/container[@controlname='UcTreeView1']/text[@controlname='txtZoeken']/text[@accessiblerole='Text']"
+			searchtimeout="30000ms">
+				/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/container[@controlname='UcTreeView1']/?/?/text[@accessiblerole='Text']
+			</item>
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="6edda7db-0540-4f2a-b5e9-48109ccc41da"
+			name="ButtonOK2"
+			refimgid="9ff547a6-ba08-4f87-82b7-376b39a882f1"
+			refpath="/form[@title='Wissen']/button[@text='OK']"
+			searchtimeout="30000ms">
+				/form[@processname='tgnos.ClientComponents.Win.tgnosApp']/button[@text='OK']
+			</item>
+			<basepath>
+				/form[@processname='tgnos.ClientComponents.Win.tgnosApp']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAGVSURBVDhP3VM9SwQxEI3fohZaHdpYWPsLLKwE
+Qe8uCVxjoVaCcAr6AxQbCxELOdTezkoELeS45TCJzYFfB9ZWFnaioLfZxJls9NiTxd4HIey8N29n
+JgnRis2Hgj6HipfM7VS/taRNC7oMsUYk2RnxMIoXtWQvWvB1W1vq8mECBvwBVghGj0bQMWcg2Wqk
+uNWSXnoZ/qiOukixir2aGfJhQuxJocPWZvtsvdDtvlMMbDDZ6XSw+1AMRwQLvVgWJqcaII+6VgMo
+awMSPiHh1Ab5wTSDSNES6kJJ98zFdI8PAyHZFoqht3PsLdVA0iOMgcH+fzPQIr8IA6qA0bYNCgNp
+Blrl1rSiVRh6MXGRWpEwEKwcH+9mu6d/gFXgsfrPJhIGimkt+XuoGPO0w1uVDYeSfwD/5ENNoAHc
++wmYyS60tYPLqPy4p93Fg9Yq+APgDnz4bzhjyUehugCqMtDevbnOZjydhBvmDdxK2E05m4HBzUHC
+HSQ38EGFkh1/v51fcDNQbAXEUTwD2OPEV0g8NCI3gppYTcgXk3ywrmkmh8MAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="contextmenu,control,nativewindow"
+		capname="contextmenu"
+		id="19c70a0e-10ae-4574-9c7c-4dcd23b06a95"
+		isrooted="True"
+		name="TgnosClientComponentsWinTgnosApp"
+		refpath="/contextmenu[@processname='tgnos.ClientComponents.Win.tgnosApp']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="menuitem,accessible"
+			capname="menuitem"
+			id="c619c9ea-8466-4de8-84b0-b026a7355ce4"
+			name="Open"
+			refimgid="08d0b488-50dd-4ffc-b24d-c57a91db2a29"
+			refpath="/contextmenu[@processname='tgnos.ClientComponents.Win.tgnosApp']/menuitem[@accessiblename='Open']"
+			searchtimeout="30000ms">
+				/contextmenu[@processname='tgnos.ClientComponents.Win.tgnosApp']/menuitem[@accessiblename='Open']
+			</item>
+			<basepath>
+				/contextmenu[@processname='tgnos.ClientComponents.Win.tgnosApp']
+			</basepath>
+			<icon>
+				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
+			</icon>
+		</appfolder>
+		<appfolder
+		addcaps="list,nativewindow"
+		capname="list"
+		id="c6abef22-83e0-490d-9cf4-1c309aea4112"
+		isrooted="True"
+		name="List1000"
+		refpath="/list[@controlid='1000']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="listitem,nativeitem,checkable"
+			capname="listitem"
+			id="e615f0b3-68e9-41e7-bf1f-a41ebee8af65"
+			name="Belgie"
+			refimgid="50583bdb-e579-4535-919c-ca543cb58490"
+			refpath="/list[@controlid='1000']/listitem[@text='België']"
+			searchtimeout="30000ms">
+				/list[@controlid='1000']/listitem[@text='Belgi&#235;']
+			</item>
+			<item
+			addcaps="listitem,nativeitem,checkable"
+			capname="listitem"
+			id="3cf71d30-280d-47fb-96bd-6bd4738f60b3"
+			name="ListItemMan"
+			refimgid="8ff339eb-952c-429d-80fb-326d0e1a1055"
+			refpath="/list[@controlid='1000']/listitem[@text='Man']"
+			searchtimeout="30000ms">
+				/list[@controlid='1000']/listitem[@text='Man']
+			</item>
+			<item
+			addcaps="listitem,nativeitem,checkable"
+			capname="listitem"
+			id="d799f05c-0283-4866-9d63-bf8258772ead"
+			name="Belgische"
+			refimgid="7cd212c2-b947-495b-b746-0824dfd6410a"
+			refpath="/list[@controlid='1000']/listitem[@text='Belgische']"
+			searchtimeout="30000ms">
+				/list[@controlid='1000']/listitem[@text='Belgische']
+			</item>
+			<item
+			addcaps="listitem,nativeitem,checkable"
+			capname="listitem"
+			id="ca265de2-ac62-4501-a574-a76cc15c9418"
+			name="Gehuwd"
+			refimgid="f4d2c6c0-d868-47db-bc98-e8d0f05fc33a"
+			refpath="/list[@controlid='1000']/listitem[@text='Gehuwd']"
+			searchtimeout="30000ms">
+				/list[@controlid='1000']/listitem[@text='Gehuwd']
+			</item>
+			<item
+			addcaps="listitem,nativeitem,checkable"
+			capname="listitem"
+			id="7f64cda9-ab93-4233-a24e-ca1c306cca3e"
+			name="EchtgenootMetBeroepsinkomen"
+			refimgid="69082b48-36ed-45a7-8181-9913d7e91e7b"
+			refpath="/list[@controlid='1000']/listitem[@text~'^Echtgenoot\ met\ beroepsink']"
+			searchtimeout="30000ms">
+				/list[@controlid='1000']/listitem[@text~'^Echtgenoot\ met\ beroepsink']
+			</item>
+			<item
+			addcaps="listitem,nativeitem,checkable"
+			capname="listitem"
+			id="e0ff5bf4-ed03-4037-b1c6-3bb0a4bc26f6"
+			name="Arbeider"
+			refimgid="3750169a-cd5d-4b21-bf83-12af4077d6d4"
+			refpath="/list[@controlid='1000']/listitem[@text='Arbeider']"
+			searchtimeout="30000ms">
+				/list[@controlid='1000']/listitem[@text='Arbeider']
+			</item>
+			<item
+			addcaps="listitem,nativeitem,checkable"
+			capname="listitem"
+			id="29180c93-be92-46b1-bc4a-49bfc90e70c1"
+			name="Bankrekening"
+			refimgid="f2d7d953-3b01-4ded-a24e-c73dfa3827bc"
+			refpath="/list[@controlid='1000']/listitem[@text='Bankrekening']"
+			searchtimeout="30000ms">
+				/list[@controlid='1000']/listitem[@text='Bankrekening']
+			</item>
+			<item
+			addcaps="listitem,nativeitem,checkable"
+			capname="listitem"
+			id="405855ba-af3a-400e-ba62-f4b6106c8da0"
+			name="ListItem5deEn6deMiddelbaarASO"
+			refimgid="76fc8422-bf68-47b7-bb09-d616a46d074b"
+			refpath="/list[@controlid='1000']/listitem[@text='5de en 6de middelbaar ASO']"
+			searchtimeout="30000ms">
+				/list[@controlid='1000']/listitem[@text='5de en 6de middelbaar ASO']
+			</item>
+			<item
+			addcaps="listitem,nativeitem,checkable"
+			capname="listitem"
+			id="494539c7-d8ef-4a5e-b2f1-25662d1a6ce1"
+			name="Auto"
+			refimgid="e80677d5-d16a-4c4a-854e-eee821db39cb"
+			refpath="/list[@controlid='1000']/listitem[@text='Auto']"
+			searchtimeout="30000ms">
+				/list[@controlid='1000']/listitem[@text='Auto']
+			</item>
+			<item
+			addcaps="listitem,nativeitem,checkable"
+			capname="listitem"
+			id="ea3d781a-7960-430c-b56d-f27bd5c20444"
+			name="OntvangtGeenUitkering"
+			refimgid="4ee2efbc-e2fa-41e2-9201-dfdf1d96fdae"
+			refpath="/list[@controlid='1000']/listitem[@text='ontvangt geen uitkering']"
+			searchtimeout="30000ms">
+				/list[@controlid='1000']/listitem[@text='ontvangt geen uitkering']
+			</item>
+			<item
+			addcaps="listitem,nativeitem,checkable"
+			capname="listitem"
+			id="d537ab4e-c86b-4d41-ace6-6df2d97801fc"
+			name="GEENTewerkstellingBijEenAnderDCQBe"
+			refimgid="2e796b97-44ef-4636-8e9a-87b8c4c9de79"
+			refpath="/list[@controlid='1000']/listitem[@text~'^GEEN\ tewerkstelling\ bij\ e']"
+			searchtimeout="30000ms">
+				/list[@controlid='1000']/listitem[@text~'^GEEN\ tewerkstelling\ bij\ e']
+			</item>
+			<item
+			addcaps="listitem,nativeitem,checkable"
+			capname="listitem"
+			id="1b65dffb-05ff-4979-8d7d-805cf10195a0"
+			name="Structureel"
+			refimgid="135c359b-6b32-4db0-a49e-4f4a3a0bf41e"
+			refpath="/list[@controlid='1000']/listitem[@text='Structureel']"
+			searchtimeout="30000ms">
+				/list[@controlid='1000']/listitem[@text='Structureel']
+			</item>
+			<item
+			addcaps="listitem,nativeitem,checkable"
+			capname="listitem"
+			id="9cd5f57e-aa34-4e19-b840-4e1e06836488"
+			name="NietBelangrijk"
+			refimgid="1afba6ff-7aea-434e-99b6-1b1d9e28fa49"
+			refpath="/list[@controlid='1000']/listitem[@text='Niet belangrijk']"
+			searchtimeout="30000ms">
+				/list[@controlid='1000']/listitem[@text='Niet belangrijk']
+			</item>
+			<basepath>
+				/list[@controlid='1000']
+			</basepath>
+			<icon>
+				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
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>
