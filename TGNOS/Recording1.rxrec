@@ -3861,10 +3861,9 @@ Nq+lLRQBBdgC3bA9P51nVpXn/Hs34fzrNoAKKKKACiiigAooooAKKKKAP//Z
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="36;10"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="a4cbd572-39cb-4ee0-b16d-414d88bd1d6f"
 		sx="983"
@@ -4127,10 +4126,9 @@ gBaKKKAP/9k=
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="17;11"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="c66eeabd-4581-4245-8851-7d244bdcf16b"
 		sx="35"
@@ -4996,10 +4994,9 @@ AD7bJ/dT8jRRRQB//9k=
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="28;11"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="358e7389-1160-4b7b-8fb0-ae444c742dac"
 		sx="176"
@@ -5871,10 +5868,9 @@ AD7bJ/dT8jRRRQB//9k=
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="61;13"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="e0a7ebe6-b6cf-4e41-b56c-cd15a246d63e"
 		sx="237"
@@ -6065,10 +6061,9 @@ UUAFFFFAH//Z
 		</mouseitem>
 		<keysequenceitem
 		KeySequence="test"
-		duration="100ms"
 		enabled="True"
 		optional="False"
-		presstime="100ms"
+		presstime="0ms"
 		searchpropertyid="955e4662-52b9-4559-a1ad-d0d6d4e0786e">
 			<comment>
 			</comment>
@@ -6250,10 +6245,9 @@ ooooAKKKKACiiigAooooA//Z
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="55;6"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="6ef6dd1c-004b-4921-b9e1-dccd599e162f"
 		sx="231"
@@ -6453,10 +6447,9 @@ QB//2Q==
 		</mouseitem>
 		<keysequenceitem
 		KeySequence="ranorex"
-		duration="100ms"
 		enabled="True"
 		optional="False"
-		presstime="100ms"
+		presstime="0ms"
 		searchpropertyid="644c825c-72d5-4336-a504-a45e38e2f01a">
 			<comment>
 			</comment>
@@ -6645,10 +6638,9 @@ FFFABRRRQAUUUUAf/9k=
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="1;8"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="a34ec2b4-5051-423a-ad2f-fd9802e903e2"
 		sx="177"
@@ -6756,7 +6748,7 @@ Cn0xNt7hRRRQIKKKKACiiigD/9k=
 		duration="100ms"
 		enabled="True"
 		optional="False"
-		presstime="100ms"
+		presstime="0ms"
 		searchpropertyid="b1644fa3-5f7b-497b-9b01-9852dab050a8">
 			<comment>
 			</comment>
@@ -6855,7 +6847,7 @@ oA//2Q==
 		duration="100ms"
 		enabled="True"
 		optional="False"
-		presstime="100ms"
+		presstime="0ms"
 		searchpropertyid="372d03e9-85ea-418c-a4e5-eb9a057e76f9">
 			<comment>
 			</comment>
@@ -6953,10 +6945,9 @@ fqKdTIur/wC9/QU+mklsIKKKKYBRRRQAUUUUAf/Z
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="16;7"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="bf6f7119-031b-4673-a4e9-ca2b92dcf38f"
 		sx="651"
@@ -7147,10 +7138,9 @@ igCP7LB/zwj/AO+BR9lg/wCeEf8A3wKkooAj+ywf88I/++BR9lg/54R/98CpKKAI/ssH/PCP/vgU
 		</mouseitem>
 		<keysequenceitem
 		KeySequence="mEchelen"
-		duration="100ms"
 		enabled="True"
 		optional="False"
-		presstime="100ms"
+		presstime="0ms"
 		searchpropertyid="e4ed6d02-7ffc-43d4-9da6-61bb34a8a5dd">
 			<comment>
 			</comment>
@@ -7333,10 +7323,9 @@ f88I/wDvgVJRQBH9lg/54R/98Cngg9DntS1Xsf8Aj1X6t/6EaALFFFFAH//Z
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="31;6"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="f0525711-6304-40e8-a142-ccad6ab6973f"
 		sx="666"
@@ -7477,10 +7466,9 @@ iigCO4J+zS8/wN/KiiigD//Z
 		</mouseitem>
 		<keysequenceitem
 		KeySequence="01011955"
-		duration="100ms"
 		enabled="True"
 		optional="False"
-		presstime="100ms"
+		presstime="0ms"
 		searchpropertyid="92b6ce44-ee54-4822-9abb-242353cd866b">
 			<comment>
 			</comment>
@@ -7615,10 +7603,9 @@ RQBJk+tGT60UUAGT60ZPrRRQAZPrRk+tFFABk+tGT60UUAR3BP2aXn+Bv5UUUUAf/9k=
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="41;7"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="aa7d7d1a-b6ea-43bf-8852-d20e2bd31284"
 		sx="674"
@@ -8737,10 +8724,9 @@ j95/dT/vo/4U6igBv7z+6n/fR/wop1FAH//Z
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="28;5"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="2bd3670f-06f2-40cd-a506-3d992b9310e2"
 		sx="662"
@@ -9007,10 +8993,9 @@ fY5v+fiX/vs1eoo5mHKiibKVgQZ5CDwQXNWoIvKjC5zUlFDbYJJBRRRSGf/Z
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="64;14"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="48286f19-4591-40d5-8267-1ec3a925366a"
 		sx="697"
@@ -10139,10 +10124,9 @@ ZqKigCX7Zcf3IvzNFRUUAf/Z
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="57;6"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="77f64d9a-06af-4bff-aaf4-03b15e051eb2"
 		sx="691"
@@ -10392,10 +10376,9 @@ FgH+Z7UeZ7UyiiwD/M9qPM9qZRRYD//Z
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="91;6"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="759cd6d3-2897-4d52-b63a-7a2846b372c1"
 		sx="685"
@@ -10565,10 +10548,9 @@ UUAFFFFAH//Z
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="91;10"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="5373a257-9009-4877-9e32-3006784fe613"
 		sx="685"
@@ -10738,10 +10720,9 @@ iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="59;13"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="9899b289-0231-4780-9a78-487acc2f446b"
 		sx="77"
@@ -11591,7 +11572,6 @@ ABRRRQAUUUUAf//Z
 		</mouseitem>
 		<validationitem
 		action="AttributeEqual"
-		duration="100ms"
 		enabled="True"
 		optional="False"
 		searchpropertyid="5e82055c-912e-4cb6-aaf2-4efc5d7b2189">
@@ -11763,10 +11743,9 @@ UUUAFFFFABRRRQAUUUUAFFFFAH//2Q==
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="68;12"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="d066c208-20f4-496f-8794-821f49b5473b"
 		sx="176"
@@ -12026,10 +12005,9 @@ dPooAZtb2/Oja3t+dPooAZtb2/Oja3t+dPooA//Z
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="84;6"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="8e728ae1-69e1-4812-820d-047f4eb185cb"
 		sx="279"
@@ -13187,10 +13165,9 @@ UUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//2Q==
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="48;5"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="a4128ba6-d641-44d2-a136-f864d8e8cb8a"
 		sx="244"
@@ -13461,10 +13438,9 @@ fh/+/jVoUUczDlRn/Y7r/nu//fw0Cym8xWeQvt6bnJrQoouwshsa7Y1U9QAKKdRSGf/Z
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="40;13"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="8b9cdc45-d26d-44d1-89c9-892e432f158a"
 		sx="237"
@@ -13701,23 +13677,10 @@ FPuD1FFFAFpug/3h/OpqKKACiiigAooooAKKKKACiiigD//Z
 			</helperscreenshot>
 		</mouseitem>
 		<keysequenceitem
-		KeySequence="04"
-		duration="100ms"
+		KeySequence="0472611353"
 		enabled="True"
 		optional="False"
-		presstime="100ms"
-		searchpropertyid="ddc803cd-79e5-4e3c-a019-6d2fff6c62d7">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-		</keysequenceitem>
-		<keysequenceitem
-		KeySequence="72611353"
-		duration="100ms"
-		enabled="True"
-		optional="False"
-		presstime="100ms"
+		presstime="0ms"
 		searchpropertyid="c1d756a5-1ede-4e66-af9a-063a64a8961c">
 			<comment>
 			</comment>
@@ -14199,10 +14162,9 @@ FFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//9k=
 		</mouseitem>
 		<keysequenceitem
 		KeySequence="015800100"
-		duration="100ms"
 		enabled="True"
 		optional="False"
-		presstime="100ms"
+		presstime="0ms"
 		searchpropertyid="cf41fbef-b63e-4d11-8285-967fd21e36de">
 			<comment>
 			</comment>
@@ -14444,10 +14406,9 @@ FFABRRRQAUUUUAFFFFABRRRQB//Z
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="28;8"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="632da763-eaa5-4275-ab9f-3331d4e868b1"
 		sx="225"
@@ -14712,10 +14673,9 @@ UAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf/2Q==
 		</mouseitem>
 		<keysequenceitem
 		KeySequence="tgnos.test@agilitasgroup.be"
-		duration="100ms"
 		enabled="True"
 		optional="False"
-		presstime="100ms"
+		presstime="0ms"
 		searchpropertyid="c2cd1782-4ee3-4847-9ab8-1fdd341df115">
 			<comment>
 			</comment>
@@ -14950,10 +14910,9 @@ igAooooAKKKKAP/Z
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="132;7"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="6c8baf12-4d30-43b6-9003-1801c889ef63"
 		sx="283"
@@ -15134,10 +15093,9 @@ RRRQAUUUUAFFFFABRRRQAUUUUAf/2Q==
 		</mouseitem>
 		<keysequenceitem
 		KeySequence="stationsstraat"
-		duration="100ms"
 		enabled="True"
 		optional="False"
-		presstime="100ms"
+		presstime="0ms"
 		searchpropertyid="7ba7390f-4532-407f-a548-bc44723cdec6">
 			<comment>
 			</comment>
@@ -16230,10 +16188,9 @@ UyQooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/2Q==
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="52;6"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="248d15a5-0861-4b27-b777-5d8d1691c610"
 		sx="203"
@@ -16418,10 +16375,9 @@ yycQooopkhRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAH//2Q==
 		</mouseitem>
 		<keysequenceitem
 		KeySequence="120"
-		duration="100ms"
 		enabled="True"
 		optional="False"
-		presstime="100ms"
+		presstime="0ms"
 		searchpropertyid="c09f47bc-dee6-403b-a80f-39c3f873854a">
 			<comment>
 			</comment>
@@ -16600,10 +16556,9 @@ vBxVqhO6uOceWTiFFFFMkKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//Z
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="38;6"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="91304ef0-5d14-4de1-9038-8cb5e48f4a51"
 		sx="189"
@@ -16782,10 +16737,9 @@ irVCd1cc48snEKKKKZIUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//9k=
 		</mouseitem>
 		<keysequenceitem
 		KeySequence="2800"
-		duration="100ms"
 		enabled="True"
 		optional="False"
-		presstime="100ms"
+		presstime="0ms"
 		searchpropertyid="4f3f5c19-4ebe-4683-8864-0420cc6d39aa">
 			<comment>
 			</comment>
@@ -16962,10 +16916,9 @@ AUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//Z
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="5;12"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="81650470-ec24-4779-91a0-a1a6a3841356"
 		sx="840"
@@ -17808,10 +17761,9 @@ FFFFABRRRQB//9k=
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="27;8"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="bf7870de-0f00-48ac-979a-051d35e90181"
 		sx="864"
@@ -17923,10 +17875,9 @@ KACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/2Q==
 		</mouseitem>
 		<keysequenceitem
 		KeySequence="3112"
-		duration="100ms"
 		enabled="True"
 		optional="False"
-		presstime="100ms"
+		presstime="0ms"
 		searchpropertyid="5a9b9265-872c-436f-93af-8b3b9da8164c">
 			<comment>
 			</comment>
@@ -18033,10 +17984,9 @@ KKKAP//Z
 		</keysequenceitem>
 		<keysequenceitem
 		KeySequence="2999"
-		duration="100ms"
 		enabled="True"
 		optional="False"
-		presstime="100ms"
+		presstime="0ms"
 		searchpropertyid="884baddb-ad1b-4817-b1d7-bd6f7ff5f352">
 			<comment>
 			</comment>
@@ -18145,10 +18095,9 @@ gAooooAKKKKACiiigAooooAKKKKAP//Z
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="65;19"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="04889845-5724-4f4b-aeeb-cafa6248c34a"
 		sx="83"
@@ -19001,7 +18950,6 @@ KAP/2Q==
 		</mouseitem>
 		<validationitem
 		action="AttributeEqual"
-		duration="100ms"
 		enabled="True"
 		optional="False"
 		searchpropertyid="2e526cf0-2a04-49ea-8b36-53bfea17654e">
@@ -36908,10 +36856,9 @@ UUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB/9k=
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="20;9"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="f41f3143-b1f7-4970-b6a0-82238a5369f4"
 		sx="718"
@@ -37156,10 +37103,9 @@ oAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/9k=
 		</mouseitem>
 		<keysequenceitem
 		KeySequence="*HUISHOUD*"
-		duration="100ms"
 		enabled="True"
 		optional="False"
-		presstime="100ms"
+		presstime="0ms"
 		searchpropertyid="ed55e5d1-63cb-4a6b-95d7-63f463d528a0">
 			<comment>
 			</comment>
@@ -42927,10 +42873,9 @@ P9a/+6v9adQAUUUUAFFFFABRRRQAUUUUAFFFFAH/2Q==
 		<mouseitem
 		action="Move"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="12;-2"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="2a2fdd36-987a-4dac-9aff-3328d33e2a44"
 		sx="686"
@@ -43737,10 +43682,9 @@ P9a/+6v9adQAUUUUAFFFFABRRRQAUUUUAFFFFAH/2Q==
 		<mouseitem
 		action="Up"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="653;311"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="9d6469ac-b96c-4bee-a92d-d31f2062d51f"
 		sx="682"
@@ -44478,10 +44422,9 @@ P9a/+6v9adQAUUUUAFFFFABRRRQAUUUUAFFFFAH/2Q==
 		<mouseitem
 		action="Up"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="427;5"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="af3394fa-5bf9-4898-be2e-57ffecf7e0ff"
 		sx="443"
@@ -44541,10 +44484,9 @@ P9a/+6v9adQAUUUUAFFFFABRRRQAUUUUAFFFFAH/2Q==
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="6;11"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="debca559-a879-49fc-b623-999b76ce11a6"
 		sx="688"
@@ -45413,10 +45355,9 @@ R/U/zoAtUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQA0f61
 		<mouseitem
 		action="Down"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="210;23"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="30f2b5be-5906-465f-a63f-43472a641c0d"
 		sx="247"
@@ -46547,10 +46488,9 @@ ooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/2Q==
 		<mouseitem
 		action="Move"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="218;15"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="1c83ebc0-c35b-4cd9-afc4-f264f7798958"
 		sx="247"
@@ -47445,10 +47385,9 @@ ooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/2Q==
 		<mouseitem
 		action="Up"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="6;12"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="c54e0c40-d79d-4943-b25b-5fb869c9173c"
 		sx="678"
@@ -48255,10 +48194,9 @@ ooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/2Q==
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="49;13"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="0b6de393-55fe-4039-b060-6a80cb6a197b"
 		sx="67"
@@ -49112,7 +49050,6 @@ FFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAH//Z
 		</mouseitem>
 		<validationitem
 		action="AttributeEqual"
-		duration="100ms"
 		enabled="True"
 		optional="False"
 		searchpropertyid="b72ea037-ff88-4f62-9bd7-324aae8e80ad">
@@ -49293,10 +49230,9 @@ UUUAFFFFABRRRQAUUUUAFFFFAH//2Q==
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="59;20"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="bc4f2a06-b24b-4bf5-b7d0-0bf20dbffab9"
 		sx="455"
@@ -49567,10 +49503,9 @@ JJTeSepdyx/Mk0nqCP/Z
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="207;10"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="937ae886-42bd-4822-b82e-8b5887e6e94b"
 		sx="432"
@@ -50670,10 +50605,9 @@ R/8Avo1pRnMSE9So/lRRQARf6lP90fyooooA/9k=
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="124;5"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="33b88f6a-562d-42d0-bf35-c9bbf5f3fbd8"
 		sx="350"
@@ -51013,10 +50947,9 @@ r/WiigB1FFFABRRRQAUUUUAFFFFABRRRQAUUUUAf/9k=
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="141;15"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="aa1e9bf1-fdc0-4331-9e47-59d2f4ac74fb"
 		sx="366"
@@ -52118,10 +52051,9 @@ UUUAf//Z
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="138;4"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="0f4b8aea-c981-43f9-9772-d484e33f7d54"
 		sx="364"
@@ -52520,10 +52452,9 @@ APfB/wAKN4/uv/3wf8KdRQA3eP7r/wDfB/wo3j+6/wD3wf8ACnUUAN3j+6//AHwf8KN4/uv/AN8H
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="139;17"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="905cec25-8e24-4eee-a4be-84685565358b"
 		sx="364"
@@ -53636,10 +53567,9 @@ iQnqVH8qKKACL/Up/uj+VFFFAH//2Q==
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="72;4"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="29692c0e-8df6-400c-8ba8-0fc00e7b66a1"
 		sx="298"
@@ -53975,10 +53905,9 @@ f/BAyrh2juZURiqq5AUHAAz0ooopDP/Z
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="108;15"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="73da1c78-4f48-4792-aaad-84ab2637259e"
 		sx="333"
@@ -55099,10 +55028,9 @@ bJ/z0f8A76NFFAB5sn/PR/8Avo1pRnMSE9So/lRRQARf6lP90fyooooA/9k=
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="60;2"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="fbd9cbcd-3508-448b-b20c-c841c998066c"
 		sx="286"
@@ -55424,10 +55352,9 @@ iigD/9k=
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="8;10"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="6dff3022-2524-4dab-95dc-28e829c51cd7"
 		sx="530"
@@ -55606,10 +55533,9 @@ FFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//Z
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="185;7"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="b5d6cb46-a9b2-4d4b-922e-70209b7fc4ad"
 		sx="365"
@@ -55759,10 +55685,9 @@ fbz/AHP/AB6gC6YoyxYopJxkkdccj8qUqCwYgZHQ46VR+3n+5/49R9vP9z/x6gC/RVD7ef7n/j1H
 		</mouseitem>
 		<keysequenceitem
 		KeySequence="30"
-		duration="100ms"
 		enabled="True"
 		optional="False"
-		presstime="100ms"
+		presstime="0ms"
 		searchpropertyid="284968cf-15d0-4bbd-995d-f82e29e4087c">
 			<comment>
 			</comment>
@@ -55903,10 +55828,9 @@ j8qUqCwYgZHQ46VR+3n+5/49R9vP9z/x6gC/RVD7ef7n/j1H28/3P/HqAL9FUPt5/uf+PUfbz/c/
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="Center"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="c6894479-c0dc-43da-a887-c7f44ace3e68"
 		sx="251"
@@ -56770,10 +56694,9 @@ n1oooAMn1oyfWiigAyfWjJ9aKKADJ9aMn1oooAMn1ooooA//2Q==
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="Center"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="ccc64d19-0c01-44b4-ad57-7a93a880eef4"
 		sx="372"
@@ -57639,10 +57562,9 @@ WjJ9aKKADJ9aKKKAP//Z
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="73;11"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="44468719-2779-40f4-b4da-8f2407ba6691"
 		sx="476"
@@ -58505,10 +58427,9 @@ Af/Z
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="42;10"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="c062bea3-125e-4662-82b9-830e54b43873"
 		sx="679"
@@ -59365,10 +59286,9 @@ rRk+tFFABk+tGT60UUAGT60ZPrRRQAZPrRk+tFFABk+tFFFAH//Z
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="92;12"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="95627cb3-1403-42a7-8a5c-b8bdc4848072"
 		sx="612"
@@ -60232,10 +60152,9 @@ Rk+tFFABk+tGT60UUAGT60ZPrRRQAZPrRk+tFFABk+tGT60UUAGT60ZPrRRQAZPrRRRQB//Z
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="41;12"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="31e5b9c4-422d-4001-95b0-349b9c974164"
 		sx="795"
@@ -61097,10 +61016,9 @@ f//Z
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="35;12"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="b1f1a888-5c39-4520-bf7b-31da9c740203"
 		sx="906"
@@ -61961,10 +61879,9 @@ Bk+tGT60UUAGT60ZPrRRQAZPrRk+tFFABk+tGT60UUAGT60UUUAf/9k=
 		<mouseitem
 		action="Up"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="36;10"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="3cd4c87d-07bb-4796-8ee2-e74cd468bb9a"
 		sx="1024"
@@ -62749,10 +62666,9 @@ Bk+tGT60UUAGT60ZPrRRQAZPrRk+tFFABk+tGT60UUAGT60UUUAf/9k=
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="18;16"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="20b79e04-fd19-4e48-85dc-e84e19240f21"
 		sx="1123"
@@ -63612,10 +63528,9 @@ GT60UUAGT60ZPrRRQAZPrRk+tFFABk+tGT60UUAGT60ZPrRRQAZPrRRRQB//2Q==
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="Center"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="a86a641f-c6da-4663-a5d0-005108e9bd19"
 		sx="45"
@@ -64477,10 +64392,9 @@ FFFADU6yf739BTqKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD/9k=
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="67;16"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="7bfd5a2e-8e16-4320-84dc-3931fbc317ea"
 		sx="1039"
@@ -64682,10 +64596,9 @@ AUUUUAFFFFAH/9k=
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="579;98"
-		movetime="300ms"
+		movetime="0ms"
 		optional="False"
 		searchpropertyid="1b503a23-3dd4-4642-b600-994ec2fc28ec"
 		sx="619"
@@ -64874,10 +64787,9 @@ o0ebJ/z0f/vo0UUAHmyf89H/AO+jR5sn/PR/++jRRQAebJ/z0f8A76NHmyf89H/76NFFAB5sn/PR
 		</mouseitem>
 		<keysequenceitem
 		KeySequence="test"
-		duration="100ms"
 		enabled="True"
 		optional="False"
-		presstime="100ms"
+		presstime="0ms"
 		searchpropertyid="da5fe6c5-aeae-4e1f-b671-22fc4687f01c">
 			<comment>
 			</comment>
@@ -65049,7 +64961,6 @@ Af/Z
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
 		enabled="True"
 		loc="51;18"
 		movetime="300ms"
@@ -65905,7 +65816,6 @@ UAFFFFAH/9k=
 		</mouseitem>
 		<validationitem
 		action="AttributeEqual"
-		duration="100ms"
 		enabled="True"
 		optional="False"
 		searchpropertyid="d0ee51cc-ee03-40a7-b8ca-ad5fa7d1c987">
