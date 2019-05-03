@@ -42,8 +42,8 @@ namespace TGNOS
         /// that will in turn invoke this method.</remarks>
         void ITestModule.Run()
         {
-            Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Mouse.DefaultMoveTime = 0;
+            Keyboard.DefaultKeyPressTime = 0;
             Delay.SpeedFactor = 1.0;
         }
     }
