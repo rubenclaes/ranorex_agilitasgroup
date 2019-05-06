@@ -61,6 +61,15 @@ namespace TGNOS
             varBirthDateSpouse = "01011950";
             varLastNameSpouse = "test";
             varFirstNameSpouse = "test";
+            varTaxSituationDate = "03052019";
+            varMarriageDate = "03052019";
+            varIndividualDisability = "20";
+            varNoOfDependants = "1";
+            varNoOfDependantsDisability = "1";
+            varNumberOf65plusDependants = "1";
+            varNumberOf65plusDependantsDisability = "1";
+            varNoOfDependantChildren = "1";
+            varNoOfDependantChildrenDisability = "1";
         }
 
         /// <summary>
@@ -313,6 +322,114 @@ namespace TGNOS
             set { _varFirstNameSpouse = value; }
         }
 
+        string _varTaxSituationDate;
+
+        /// <summary>
+        /// Gets or sets the value of variable varTaxSituationDate.
+        /// </summary>
+        [TestVariable("bbe1883c-0d5b-4125-98ba-3be47becc705")]
+        public string varTaxSituationDate
+        {
+            get { return _varTaxSituationDate; }
+            set { _varTaxSituationDate = value; }
+        }
+
+        string _varMarriageDate;
+
+        /// <summary>
+        /// Gets or sets the value of variable varMarriageDate.
+        /// </summary>
+        [TestVariable("40865a97-d47b-47a7-9247-5d139e93f60f")]
+        public string varMarriageDate
+        {
+            get { return _varMarriageDate; }
+            set { _varMarriageDate = value; }
+        }
+
+        string _varIndividualDisability;
+
+        /// <summary>
+        /// Gets or sets the value of variable varIndividualDisability.
+        /// </summary>
+        [TestVariable("7a46a540-ad26-426e-a6ed-ab5b83915380")]
+        public string varIndividualDisability
+        {
+            get { return _varIndividualDisability; }
+            set { _varIndividualDisability = value; }
+        }
+
+        string _varNoOfDependants;
+
+        /// <summary>
+        /// Gets or sets the value of variable varNoOfDependants.
+        /// </summary>
+        [TestVariable("60703ea9-8665-4b71-971d-2d556cd5de02")]
+        public string varNoOfDependants
+        {
+            get { return _varNoOfDependants; }
+            set { _varNoOfDependants = value; }
+        }
+
+        string _varNoOfDependantsDisability;
+
+        /// <summary>
+        /// Gets or sets the value of variable varNoOfDependantsDisability.
+        /// </summary>
+        [TestVariable("de12af87-2da1-4d0a-bc97-7b122ea8981d")]
+        public string varNoOfDependantsDisability
+        {
+            get { return _varNoOfDependantsDisability; }
+            set { _varNoOfDependantsDisability = value; }
+        }
+
+        string _varNumberOf65plusDependants;
+
+        /// <summary>
+        /// Gets or sets the value of variable varNumberOf65plusDependants.
+        /// </summary>
+        [TestVariable("de96a692-18dd-4520-bd1f-a614f4351865")]
+        public string varNumberOf65plusDependants
+        {
+            get { return _varNumberOf65plusDependants; }
+            set { _varNumberOf65plusDependants = value; }
+        }
+
+        string _varNumberOf65plusDependantsDisability;
+
+        /// <summary>
+        /// Gets or sets the value of variable varNumberOf65plusDependantsDisability.
+        /// </summary>
+        [TestVariable("09b1392c-7da6-4468-9931-a661e5c166c2")]
+        public string varNumberOf65plusDependantsDisability
+        {
+            get { return _varNumberOf65plusDependantsDisability; }
+            set { _varNumberOf65plusDependantsDisability = value; }
+        }
+
+        string _varNoOfDependantChildren;
+
+        /// <summary>
+        /// Gets or sets the value of variable varNoOfDependantChildren.
+        /// </summary>
+        [TestVariable("2221a5f7-9a40-42fd-b653-716f85de4eac")]
+        public string varNoOfDependantChildren
+        {
+            get { return _varNoOfDependantChildren; }
+            set { _varNoOfDependantChildren = value; }
+        }
+
+        string _varNoOfDependantChildrenDisability;
+
+        /// <summary>
+        /// Gets or sets the value of variable varNoOfDependantChildrenDisability.
+        /// </summary>
+        [TestVariable("535019b0-8d3b-4d44-a3a6-4ec221898965")]
+        public string varNoOfDependantChildrenDisability
+        {
+            get { return _varNoOfDependantChildrenDisability; }
+            set { _varNoOfDependantChildrenDisability = value; }
+        }
+
         /// <summary>
         /// Gets or sets the value of variable varGender.
         /// </summary>
@@ -349,482 +466,443 @@ namespace TGNOS
 
             Init();
 
-            // Start Individu wissen
-            Report.Log(ReportLevel.Info, "Section", "Start Individu wissen", new RecordItemIndex(0));
-            
-            repo.ApplicationUnderTest.Individu.Click("44;13");
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TgnosClientComponentsWinTgnosApp.Open' at 50;5.", repo.TgnosClientComponentsWinTgnosApp.OpenInfo, new RecordItemIndex(2));
-            repo.TgnosClientComponentsWinTgnosApp.Open.Click("50;5");
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.OpzoekenIndividuStart.INSZNummer' at 4;9.", repo.ApplicationUnderTest.OpzoekenIndividuStart.INSZNummerInfo, new RecordItemIndex(3));
-            repo.ApplicationUnderTest.OpzoekenIndividuStart.INSZNummer.Click("4;9");
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Left}{Left}' with focus on 'ApplicationUnderTest.OpzoekenIndividuStart.INSZNummer'.", repo.ApplicationUnderTest.OpzoekenIndividuStart.INSZNummerInfo, new RecordItemIndex(4));
-            repo.ApplicationUnderTest.OpzoekenIndividuStart.INSZNummer.PressKeys("{Left}{Left}");
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Left}' with focus on 'ApplicationUnderTest.OpzoekenIndividuStart.INSZNummer'.", repo.ApplicationUnderTest.OpzoekenIndividuStart.INSZNummerInfo, new RecordItemIndex(5));
-            repo.ApplicationUnderTest.OpzoekenIndividuStart.INSZNummer.PressKeys("{Left}");
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Left up}' with focus on 'ApplicationUnderTest.OpzoekenIndividuStart.INSZNummer'.", repo.ApplicationUnderTest.OpzoekenIndividuStart.INSZNummerInfo, new RecordItemIndex(6));
-            repo.ApplicationUnderTest.OpzoekenIndividuStart.INSZNummer.PressKeys("{Left up}");
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varRRNr' with focus on 'ApplicationUnderTest.OpzoekenIndividuStart.INSZNummer'.", repo.ApplicationUnderTest.OpzoekenIndividuStart.INSZNummerInfo, new RecordItemIndex(7));
-            repo.ApplicationUnderTest.OpzoekenIndividuStart.INSZNummer.PressKeys(varRRNr);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.OpzoekenIndividuStart.BtnOpzoeken' at 17;11.", repo.ApplicationUnderTest.OpzoekenIndividuStart.BtnOpzoekenInfo, new RecordItemIndex(8));
-            repo.ApplicationUnderTest.OpzoekenIndividuStart.BtnOpzoeken.Click("17;11");
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'ApplicationUnderTest.OpzoekenIndividuStart.DtgrdZoekResultaat' at 21;26.", repo.ApplicationUnderTest.OpzoekenIndividuStart.DtgrdZoekResultaatInfo, new RecordItemIndex(9));
-            repo.ApplicationUnderTest.OpzoekenIndividuStart.DtgrdZoekResultaat.DoubleClick("21;26");
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgBasisInformatie.BtnIndividuWissen' at 43;9.", repo.ApplicationUnderTest.TbpgBasisInformatie.BtnIndividuWissenInfo, new RecordItemIndex(10));
-            repo.ApplicationUnderTest.TbpgBasisInformatie.BtnIndividuWissen.Click("43;9");
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'enter{Return}'.", new RecordItemIndex(11));
-            Keyboard.Press("enter{Return}");
-            
-            // Einde Individu wissen
-            Report.Log(ReportLevel.Info, "Section", "Einde Individu wissen", new RecordItemIndex(12));
-            
             // Start Nieuw Individu
-            Report.Log(ReportLevel.Info, "Section", "Start Nieuw Individu", new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Section", "Start Nieuw Individu", new RecordItemIndex(0));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.OpzoekenIndividuStart.BtnOpzoeken' at 17;11.", repo.ApplicationUnderTest.OpzoekenIndividuStart.BtnOpzoekenInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.OpzoekenIndividuStart.BtnOpzoeken' at 17;11.", repo.ApplicationUnderTest.OpzoekenIndividuStart.BtnOpzoekenInfo, new RecordItemIndex(1));
             repo.ApplicationUnderTest.OpzoekenIndividuStart.BtnOpzoeken.Click("17;11");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.OpzoekenIndividuStart.BtnNieuw' at 28;11.", repo.ApplicationUnderTest.OpzoekenIndividuStart.BtnNieuwInfo, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.OpzoekenIndividuStart.BtnNieuw' at 28;11.", repo.ApplicationUnderTest.OpzoekenIndividuStart.BtnNieuwInfo, new RecordItemIndex(2));
             repo.ApplicationUnderTest.OpzoekenIndividuStart.BtnNieuw.Click("28;11");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgBasisInformatie.Familienaam' at 61;13.", repo.ApplicationUnderTest.TbpgBasisInformatie.FamilienaamInfo, new RecordItemIndex(16));
-            repo.ApplicationUnderTest.TbpgBasisInformatie.Familienaam.Click("61;13");
+            fillBasicInfo(null);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varLastName' with focus on 'ApplicationUnderTest.TbpgBasisInformatie.Familienaam'.", repo.ApplicationUnderTest.TbpgBasisInformatie.FamilienaamInfo, new RecordItemIndex(17));
-            repo.ApplicationUnderTest.TbpgBasisInformatie.Familienaam.PressKeys(varLastName);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgBasisInformatie.Familienaam' at 61;13.", repo.ApplicationUnderTest.TbpgBasisInformatie.FamilienaamInfo, new RecordItemIndex(4));
+            //repo.ApplicationUnderTest.TbpgBasisInformatie.Familienaam.Click("61;13");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgBasisInformatie.Voornaam1' at 55;6.", repo.ApplicationUnderTest.TbpgBasisInformatie.Voornaam1Info, new RecordItemIndex(18));
-            repo.ApplicationUnderTest.TbpgBasisInformatie.Voornaam1.Click("55;6");
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varLastName' with focus on 'ApplicationUnderTest.TbpgBasisInformatie.Familienaam'.", repo.ApplicationUnderTest.TbpgBasisInformatie.FamilienaamInfo, new RecordItemIndex(5));
+            //repo.ApplicationUnderTest.TbpgBasisInformatie.Familienaam.PressKeys(varLastName);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varFirstName' with focus on 'ApplicationUnderTest.TbpgBasisInformatie.Voornaam1'.", repo.ApplicationUnderTest.TbpgBasisInformatie.Voornaam1Info, new RecordItemIndex(19));
-            repo.ApplicationUnderTest.TbpgBasisInformatie.Voornaam1.PressKeys(varFirstName);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgBasisInformatie.Voornaam1' at 55;6.", repo.ApplicationUnderTest.TbpgBasisInformatie.Voornaam1Info, new RecordItemIndex(6));
+            //repo.ApplicationUnderTest.TbpgBasisInformatie.Voornaam1.Click("55;6");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgBasisInformatie.INSZNummer1' at 1;8.", repo.ApplicationUnderTest.TbpgBasisInformatie.INSZNummer1Info, new RecordItemIndex(20));
-            repo.ApplicationUnderTest.TbpgBasisInformatie.INSZNummer1.Click("1;8");
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varFirstName' with focus on 'ApplicationUnderTest.TbpgBasisInformatie.Voornaam1'.", repo.ApplicationUnderTest.TbpgBasisInformatie.Voornaam1Info, new RecordItemIndex(7));
+            //repo.ApplicationUnderTest.TbpgBasisInformatie.Voornaam1.PressKeys(varFirstName);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varRRNr' with focus on 'ApplicationUnderTest.TbpgBasisInformatie.INSZNummer1'.", repo.ApplicationUnderTest.TbpgBasisInformatie.INSZNummer1Info, new RecordItemIndex(21));
-            repo.ApplicationUnderTest.TbpgBasisInformatie.INSZNummer1.PressKeys(varRRNr);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgBasisInformatie.INSZNummer1' at 1;8.", repo.ApplicationUnderTest.TbpgBasisInformatie.INSZNummer1Info, new RecordItemIndex(8));
+            //repo.ApplicationUnderTest.TbpgBasisInformatie.INSZNummer1.Click("1;8");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgBasisInformatie.Geboorteplaats' at 16;7.", repo.ApplicationUnderTest.TbpgBasisInformatie.GeboorteplaatsInfo, new RecordItemIndex(22));
-            repo.ApplicationUnderTest.TbpgBasisInformatie.Geboorteplaats.Click("16;7");
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varRRNr' with focus on 'ApplicationUnderTest.TbpgBasisInformatie.INSZNummer1'.", repo.ApplicationUnderTest.TbpgBasisInformatie.INSZNummer1Info, new RecordItemIndex(9));
+            //repo.ApplicationUnderTest.TbpgBasisInformatie.INSZNummer1.PressKeys(varRRNr);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varBirthCity' with focus on 'ApplicationUnderTest.TbpgBasisInformatie.Geboorteplaats'.", repo.ApplicationUnderTest.TbpgBasisInformatie.GeboorteplaatsInfo, new RecordItemIndex(23));
-            repo.ApplicationUnderTest.TbpgBasisInformatie.Geboorteplaats.PressKeys(varBirthCity);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgBasisInformatie.Geboorteplaats' at 16;7.", repo.ApplicationUnderTest.TbpgBasisInformatie.GeboorteplaatsInfo, new RecordItemIndex(10));
+            //repo.ApplicationUnderTest.TbpgBasisInformatie.Geboorteplaats.Click("16;7");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgBasisInformatie.TextAsterisk' at 31;6.", repo.ApplicationUnderTest.TbpgBasisInformatie.TextAsteriskInfo, new RecordItemIndex(24));
-            repo.ApplicationUnderTest.TbpgBasisInformatie.TextAsterisk.Click("31;6");
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varBirthCity' with focus on 'ApplicationUnderTest.TbpgBasisInformatie.Geboorteplaats'.", repo.ApplicationUnderTest.TbpgBasisInformatie.GeboorteplaatsInfo, new RecordItemIndex(11));
+            //repo.ApplicationUnderTest.TbpgBasisInformatie.Geboorteplaats.PressKeys(varBirthCity);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varBirthDate' with focus on 'ApplicationUnderTest.TbpgBasisInformatie.TextAsterisk'.", repo.ApplicationUnderTest.TbpgBasisInformatie.TextAsteriskInfo, new RecordItemIndex(25));
-            repo.ApplicationUnderTest.TbpgBasisInformatie.TextAsterisk.PressKeys(varBirthDate);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgBasisInformatie.TextAsterisk' at 31;6.", repo.ApplicationUnderTest.TbpgBasisInformatie.TextAsteriskInfo, new RecordItemIndex(12));
+            //repo.ApplicationUnderTest.TbpgBasisInformatie.TextAsterisk.Click("31;6");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.CboComboBox' at 41;7.", repo.ApplicationUnderTest.Individu1.CboComboBoxInfo, new RecordItemIndex(26));
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varBirthDate' with focus on 'ApplicationUnderTest.TbpgBasisInformatie.TextAsterisk'.", repo.ApplicationUnderTest.TbpgBasisInformatie.TextAsteriskInfo, new RecordItemIndex(13));
+            //repo.ApplicationUnderTest.TbpgBasisInformatie.TextAsterisk.PressKeys(varBirthDate);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.CboComboBox' at 41;7.", repo.ApplicationUnderTest.Individu1.CboComboBoxInfo, new RecordItemIndex(14));
             repo.ApplicationUnderTest.Individu1.CboComboBox.Click("41;7");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Belgie' at 28;5.", repo.List1000.BelgieInfo, new RecordItemIndex(27));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Belgie' at 28;5.", repo.List1000.BelgieInfo, new RecordItemIndex(15));
             repo.List1000.Belgie.Click("28;5");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.CboComboBox1' at 64;14.", repo.ApplicationUnderTest.Individu1.CboComboBox1Info, new RecordItemIndex(28));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.CboComboBox1' at 64;14.", repo.ApplicationUnderTest.Individu1.CboComboBox1Info, new RecordItemIndex(16));
             repo.ApplicationUnderTest.Individu1.CboComboBox1.Click("64;14");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.ListGender' at 57;6.", repo.List1000.ListGenderInfo, new RecordItemIndex(29));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.ListGender' at 57;6.", repo.List1000.ListGenderInfo, new RecordItemIndex(17));
             repo.List1000.ListGender.Click("57;6");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.Geldig' at 91;6.", repo.ApplicationUnderTest.Individu1.GeldigInfo, new RecordItemIndex(30));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.Geldig' at 91;6.", repo.ApplicationUnderTest.Individu1.GeldigInfo, new RecordItemIndex(18));
             repo.ApplicationUnderTest.Individu1.Geldig.Click("91;6");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.Geldig' at 91;10.", repo.ApplicationUnderTest.Individu1.GeldigInfo, new RecordItemIndex(31));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.Geldig' at 91;10.", repo.ApplicationUnderTest.Individu1.GeldigInfo, new RecordItemIndex(19));
             repo.ApplicationUnderTest.Individu1.Geldig.Click("91;10");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.BtnOpslaan' at 59;13.", repo.ApplicationUnderTest.Individu1.BtnOpslaanInfo, new RecordItemIndex(32));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.BtnOpslaan' at 59;13.", repo.ApplicationUnderTest.Individu1.BtnOpslaanInfo, new RecordItemIndex(20));
             repo.ApplicationUnderTest.Individu1.BtnOpslaan.Click("59;13");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='\t\tHet opslaan is voltooid.') on item 'ApplicationUnderTest.Individu1.TextHetOpslaanIsVoltooid'.", repo.ApplicationUnderTest.Individu1.TextHetOpslaanIsVoltooidInfo, new RecordItemIndex(33));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='\t\tHet opslaan is voltooid.') on item 'ApplicationUnderTest.Individu1.TextHetOpslaanIsVoltooid'.", repo.ApplicationUnderTest.Individu1.TextHetOpslaanIsVoltooidInfo, new RecordItemIndex(21));
             Validate.AttributeEqual(repo.ApplicationUnderTest.Individu1.TextHetOpslaanIsVoltooidInfo, "Text", "\t\tHet opslaan is voltooid.");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.Signalitiek' at 68;12.", repo.ApplicationUnderTest.Individu1.SignalitiekInfo, new RecordItemIndex(34));
+            // Einde Basisinformatie
+            Report.Log(ReportLevel.Info, "Section", "Einde Basisinformatie", new RecordItemIndex(22));
+            
+            // Start Signalitiek
+            Report.Log(ReportLevel.Info, "Section", "Start Signalitiek", new RecordItemIndex(23));
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.Signalitiek' at 68;12.", repo.ApplicationUnderTest.Individu1.SignalitiekInfo, new RecordItemIndex(24));
             repo.ApplicationUnderTest.Individu1.Signalitiek.Click("68;12");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.CboComboBox2' at 84;6.", repo.ApplicationUnderTest.Individu1.CboComboBox2Info, new RecordItemIndex(35));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.CboComboBox2' at 84;6.", repo.ApplicationUnderTest.Individu1.CboComboBox2Info, new RecordItemIndex(25));
             repo.ApplicationUnderTest.Individu1.CboComboBox2.Click("84;6");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Belgische' at 48;5.", repo.List1000.BelgischeInfo, new RecordItemIndex(36));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Belgische' at 48;5.", repo.List1000.BelgischeInfo, new RecordItemIndex(26));
             repo.List1000.Belgische.Click("48;5");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgSignalitiek.GsmNr' at 40;13.", repo.ApplicationUnderTest.TbpgSignalitiek.GsmNrInfo, new RecordItemIndex(37));
-            repo.ApplicationUnderTest.TbpgSignalitiek.GsmNr.Click("40;13");
+            fillSignalism();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varMobile' with focus on 'ApplicationUnderTest.TbpgSignalitiek.GsmNr'.", repo.ApplicationUnderTest.TbpgSignalitiek.GsmNrInfo, new RecordItemIndex(38));
-            repo.ApplicationUnderTest.TbpgSignalitiek.GsmNr.PressKeys(varMobile);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgSignalitiek.GsmNr' at 40;13.", repo.ApplicationUnderTest.TbpgSignalitiek.GsmNrInfo, new RecordItemIndex(28));
+            //repo.ApplicationUnderTest.TbpgSignalitiek.GsmNr.Click("40;13");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgSignalitiek.TelefoonnrThuis' at 35;7.", repo.ApplicationUnderTest.TbpgSignalitiek.TelefoonnrThuisInfo, new RecordItemIndex(39));
-            repo.ApplicationUnderTest.TbpgSignalitiek.TelefoonnrThuis.Click("35;7");
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varMobile' with focus on 'ApplicationUnderTest.TbpgSignalitiek.GsmNr'.", repo.ApplicationUnderTest.TbpgSignalitiek.GsmNrInfo, new RecordItemIndex(29));
+            //repo.ApplicationUnderTest.TbpgSignalitiek.GsmNr.PressKeys(varMobile);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varPhone' with focus on 'ApplicationUnderTest.TbpgSignalitiek.TelefoonnrThuis'.", repo.ApplicationUnderTest.TbpgSignalitiek.TelefoonnrThuisInfo, new RecordItemIndex(40));
-            repo.ApplicationUnderTest.TbpgSignalitiek.TelefoonnrThuis.PressKeys(varPhone);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgSignalitiek.TelefoonnrThuis' at 35;7.", repo.ApplicationUnderTest.TbpgSignalitiek.TelefoonnrThuisInfo, new RecordItemIndex(30));
+            //repo.ApplicationUnderTest.TbpgSignalitiek.TelefoonnrThuis.Click("35;7");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.Text' at 28;8.", repo.ApplicationUnderTest.Individu1.TextInfo, new RecordItemIndex(41));
-            repo.ApplicationUnderTest.Individu1.Text.Click("28;8");
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varPhone' with focus on 'ApplicationUnderTest.TbpgSignalitiek.TelefoonnrThuis'.", repo.ApplicationUnderTest.TbpgSignalitiek.TelefoonnrThuisInfo, new RecordItemIndex(31));
+            //repo.ApplicationUnderTest.TbpgSignalitiek.TelefoonnrThuis.PressKeys(varPhone);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varEmail' with focus on 'ApplicationUnderTest.Individu1.Text'.", repo.ApplicationUnderTest.Individu1.TextInfo, new RecordItemIndex(42));
-            repo.ApplicationUnderTest.Individu1.Text.PressKeys(varEmail);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgSignalitiek.Email' at 28;8.", repo.ApplicationUnderTest.TbpgSignalitiek.EmailInfo, new RecordItemIndex(32));
+            //repo.ApplicationUnderTest.TbpgSignalitiek.Email.Click("28;8");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgSignalitiek.Text1' at 132;7.", repo.ApplicationUnderTest.TbpgSignalitiek.Text1Info, new RecordItemIndex(43));
-            repo.ApplicationUnderTest.TbpgSignalitiek.Text1.Click("132;7");
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varEmail' with focus on 'ApplicationUnderTest.TbpgSignalitiek.Email'.", repo.ApplicationUnderTest.TbpgSignalitiek.EmailInfo, new RecordItemIndex(33));
+            //repo.ApplicationUnderTest.TbpgSignalitiek.Email.PressKeys(varEmail);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varStreet' with focus on 'ApplicationUnderTest.TbpgSignalitiek.TxtStraat1'.", repo.ApplicationUnderTest.TbpgSignalitiek.TxtStraat1Info, new RecordItemIndex(44));
-            repo.ApplicationUnderTest.TbpgSignalitiek.TxtStraat1.PressKeys(varStreet);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgSignalitiek.Text1' at 132;7.", repo.ApplicationUnderTest.TbpgSignalitiek.Text1Info, new RecordItemIndex(34));
+            //repo.ApplicationUnderTest.TbpgSignalitiek.Text1.Click("132;7");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgSignalitiek.Straat' at 52;6.", repo.ApplicationUnderTest.TbpgSignalitiek.StraatInfo, new RecordItemIndex(45));
-            repo.ApplicationUnderTest.TbpgSignalitiek.Straat.Click("52;6");
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varStreet' with focus on 'ApplicationUnderTest.TbpgSignalitiek.TxtStraat1'.", repo.ApplicationUnderTest.TbpgSignalitiek.TxtStraat1Info, new RecordItemIndex(35));
+            //repo.ApplicationUnderTest.TbpgSignalitiek.TxtStraat1.PressKeys(varStreet);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varStraatNo' with focus on 'ApplicationUnderTest.TbpgSignalitiek.Straat'.", repo.ApplicationUnderTest.TbpgSignalitiek.StraatInfo, new RecordItemIndex(46));
-            repo.ApplicationUnderTest.TbpgSignalitiek.Straat.PressKeys(varStraatNo);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgSignalitiek.Straat' at 52;6.", repo.ApplicationUnderTest.TbpgSignalitiek.StraatInfo, new RecordItemIndex(36));
+            //repo.ApplicationUnderTest.TbpgSignalitiek.Straat.Click("52;6");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgSignalitiek.Text2' at 38;6.", repo.ApplicationUnderTest.TbpgSignalitiek.Text2Info, new RecordItemIndex(47));
-            repo.ApplicationUnderTest.TbpgSignalitiek.Text2.Click("38;6");
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varStraatNo' with focus on 'ApplicationUnderTest.TbpgSignalitiek.Straat'.", repo.ApplicationUnderTest.TbpgSignalitiek.StraatInfo, new RecordItemIndex(37));
+            //repo.ApplicationUnderTest.TbpgSignalitiek.Straat.PressKeys(varStraatNo);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varZipCode' with focus on 'ApplicationUnderTest.TbpgSignalitiek.Text2'.", repo.ApplicationUnderTest.TbpgSignalitiek.Text2Info, new RecordItemIndex(48));
-            repo.ApplicationUnderTest.TbpgSignalitiek.Text2.PressKeys(varZipCode);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgSignalitiek.Text2' at 38;6.", repo.ApplicationUnderTest.TbpgSignalitiek.Text2Info, new RecordItemIndex(38));
+            //repo.ApplicationUnderTest.TbpgSignalitiek.Text2.Click("38;6");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.CbxCheckBox' at 5;12.", repo.ApplicationUnderTest.Individu1.CbxCheckBoxInfo, new RecordItemIndex(49));
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varZipCode' with focus on 'ApplicationUnderTest.TbpgSignalitiek.Text2'.", repo.ApplicationUnderTest.TbpgSignalitiek.Text2Info, new RecordItemIndex(39));
+            //repo.ApplicationUnderTest.TbpgSignalitiek.Text2.PressKeys(varZipCode);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.CbxCheckBox' at 5;12.", repo.ApplicationUnderTest.Individu1.CbxCheckBoxInfo, new RecordItemIndex(40));
             repo.ApplicationUnderTest.Individu1.CbxCheckBox.Click("5;12");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgSignalitiek.TextAsterisk1' at 27;8.", repo.ApplicationUnderTest.TbpgSignalitiek.TextAsterisk1Info, new RecordItemIndex(50));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgSignalitiek.TextAsterisk1' at 27;8.", repo.ApplicationUnderTest.TbpgSignalitiek.TextAsterisk1Info, new RecordItemIndex(41));
             repo.ApplicationUnderTest.TbpgSignalitiek.TextAsterisk1.Click("27;8");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varDateValidFrom' with focus on 'ApplicationUnderTest.TbpgSignalitiek.TextAsterisk1'.", repo.ApplicationUnderTest.TbpgSignalitiek.TextAsterisk1Info, new RecordItemIndex(51));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varDateValidFrom' with focus on 'ApplicationUnderTest.TbpgSignalitiek.TextAsterisk1'.", repo.ApplicationUnderTest.TbpgSignalitiek.TextAsterisk1Info, new RecordItemIndex(42));
             repo.ApplicationUnderTest.TbpgSignalitiek.TextAsterisk1.PressKeys(varDateValidFrom);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.BtnOpslaan' at 65;19.", repo.ApplicationUnderTest.Individu1.BtnOpslaanInfo, new RecordItemIndex(52));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.BtnOpslaan' at 65;19.", repo.ApplicationUnderTest.Individu1.BtnOpslaanInfo, new RecordItemIndex(43));
             repo.ApplicationUnderTest.Individu1.BtnOpslaan.Click("65;19");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Het opslaan is voltooid.') on item 'ApplicationUnderTest.Individu1.HetOpslaanIsVoltooid'.", repo.ApplicationUnderTest.Individu1.HetOpslaanIsVoltooidInfo, new RecordItemIndex(53));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Het opslaan is voltooid.') on item 'ApplicationUnderTest.Individu1.HetOpslaanIsVoltooid'.", repo.ApplicationUnderTest.Individu1.HetOpslaanIsVoltooidInfo, new RecordItemIndex(44));
             Validate.AttributeEqual(repo.ApplicationUnderTest.Individu1.HetOpslaanIsVoltooidInfo, "Text", "Het opslaan is voltooid.");
             
             // Start Fiscaal en Verloning Tab
-            Report.Log(ReportLevel.Info, "Section", "Start Fiscaal en Verloning Tab", new RecordItemIndex(54));
+            Report.Log(ReportLevel.Info, "Section", "Start Fiscaal en Verloning Tab", new RecordItemIndex(45));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.FiscaalVerloning' at 63;17.", repo.ApplicationUnderTest.Individu1.FiscaalVerloningInfo, new RecordItemIndex(55));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.FiscaalVerloning' at 63;17.", repo.ApplicationUnderTest.Individu1.FiscaalVerloningInfo, new RecordItemIndex(46));
             repo.ApplicationUnderTest.Individu1.FiscaalVerloning.Click("63;17");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.CboComboBox3' at 211;10.", repo.ApplicationUnderTest.Individu1.CboComboBox3Info, new RecordItemIndex(56));
-            repo.ApplicationUnderTest.Individu1.CboComboBox3.Click("211;10");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgFiscaalVerloning.CboComboBox3' at 211;10.", repo.ApplicationUnderTest.TbpgFiscaalVerloning.CboComboBox3Info, new RecordItemIndex(47));
+            repo.ApplicationUnderTest.TbpgFiscaalVerloning.CboComboBox3.Click("211;10");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Gehuwd' at 63;6.", repo.List1000.GehuwdInfo, new RecordItemIndex(57));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Gehuwd' at 63;6.", repo.List1000.GehuwdInfo, new RecordItemIndex(48));
             repo.List1000.Gehuwd.Click("63;6");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.TextAsterisk1' at 3;5.", repo.ApplicationUnderTest.Individu1.TextAsterisk1Info, new RecordItemIndex(58));
-            repo.ApplicationUnderTest.Individu1.TextAsterisk1.Click("3;5");
+            fillTaxPayroll();
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '03052019' with focus on 'ApplicationUnderTest.Individu1.TextAsterisk1'.", repo.ApplicationUnderTest.Individu1.TextAsterisk1Info, new RecordItemIndex(59));
-            repo.ApplicationUnderTest.Individu1.TextAsterisk1.PressKeys("03052019");
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgFiscaalVerloning.TextAsterisk1' at 3;5.", repo.ApplicationUnderTest.TbpgFiscaalVerloning.TextAsterisk1Info, new RecordItemIndex(50));
+            //repo.ApplicationUnderTest.TbpgFiscaalVerloning.TextAsterisk1.Click("3;5");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.TextAsterisk2' at Center.", repo.ApplicationUnderTest.Individu1.TextAsterisk2Info, new RecordItemIndex(60));
-            repo.ApplicationUnderTest.Individu1.TextAsterisk2.Click();
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varTaxSituationDate' with focus on 'ApplicationUnderTest.TbpgFiscaalVerloning.TextAsterisk1'.", repo.ApplicationUnderTest.TbpgFiscaalVerloning.TextAsterisk1Info, new RecordItemIndex(51));
+            //repo.ApplicationUnderTest.TbpgFiscaalVerloning.TextAsterisk1.PressKeys(varTaxSituationDate);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '03052019' with focus on 'ApplicationUnderTest.Individu1.TextAsterisk2'.", repo.ApplicationUnderTest.Individu1.TextAsterisk2Info, new RecordItemIndex(61));
-            repo.ApplicationUnderTest.Individu1.TextAsterisk2.PressKeys("03052019");
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgFiscaalVerloning.TextAsterisk2' at Center.", repo.ApplicationUnderTest.TbpgFiscaalVerloning.TextAsterisk2Info, new RecordItemIndex(52));
+            //repo.ApplicationUnderTest.TbpgFiscaalVerloning.TextAsterisk2.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.NaamEchtgenoOTE' at 62;10.", repo.ApplicationUnderTest.Individu1.NaamEchtgenoOTEInfo, new RecordItemIndex(62));
-            repo.ApplicationUnderTest.Individu1.NaamEchtgenoOTE.Click("62;10");
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varMarriageDate' with focus on 'ApplicationUnderTest.TbpgFiscaalVerloning.TextAsterisk2'.", repo.ApplicationUnderTest.TbpgFiscaalVerloning.TextAsterisk2Info, new RecordItemIndex(53));
+            //repo.ApplicationUnderTest.TbpgFiscaalVerloning.TextAsterisk2.PressKeys(varMarriageDate);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varLastNameSpouse'.", new RecordItemIndex(63));
-            Keyboard.Press(varLastNameSpouse);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgFiscaalVerloning.NaamEchtgenoOTE' at 62;10.", repo.ApplicationUnderTest.TbpgFiscaalVerloning.NaamEchtgenoOTEInfo, new RecordItemIndex(54));
+            //repo.ApplicationUnderTest.TbpgFiscaalVerloning.NaamEchtgenoOTE.Click("62;10");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.VoornaamEchtgenoOTE' at 18;7.", repo.ApplicationUnderTest.Individu1.VoornaamEchtgenoOTEInfo, new RecordItemIndex(64));
-            repo.ApplicationUnderTest.Individu1.VoornaamEchtgenoOTE.Click("18;7");
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varLastNameSpouse'.", new RecordItemIndex(55));
+            //Keyboard.Press(varLastNameSpouse);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varFirstNameSpouse' with focus on 'ApplicationUnderTest.Individu1.VoornaamEchtgenoOTE'.", repo.ApplicationUnderTest.Individu1.VoornaamEchtgenoOTEInfo, new RecordItemIndex(65));
-            repo.ApplicationUnderTest.Individu1.VoornaamEchtgenoOTE.PressKeys(varFirstNameSpouse);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgFiscaalVerloning.VoornaamEchtgenoOTE' at 18;7.", repo.ApplicationUnderTest.TbpgFiscaalVerloning.VoornaamEchtgenoOTEInfo, new RecordItemIndex(56));
+            //repo.ApplicationUnderTest.TbpgFiscaalVerloning.VoornaamEchtgenoOTE.Click("18;7");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.TextAsterisk' at 69;7.", repo.ApplicationUnderTest.Individu1.TextAsteriskInfo, new RecordItemIndex(66));
-            repo.ApplicationUnderTest.Individu1.TextAsterisk.Click("69;7");
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varFirstNameSpouse' with focus on 'ApplicationUnderTest.TbpgFiscaalVerloning.VoornaamEchtgenoOTE'.", repo.ApplicationUnderTest.TbpgFiscaalVerloning.VoornaamEchtgenoOTEInfo, new RecordItemIndex(57));
+            //repo.ApplicationUnderTest.TbpgFiscaalVerloning.VoornaamEchtgenoOTE.PressKeys(varFirstNameSpouse);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varBirthDateSpouse'.", new RecordItemIndex(67));
-            Keyboard.Press(varBirthDateSpouse);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgFiscaalVerloning.TextAsterisk' at 69;7.", repo.ApplicationUnderTest.TbpgFiscaalVerloning.TextAsteriskInfo, new RecordItemIndex(58));
+            //repo.ApplicationUnderTest.TbpgFiscaalVerloning.TextAsterisk.Click("69;7");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.CboComboBox4' at 83;9.", repo.ApplicationUnderTest.Individu1.CboComboBox4Info, new RecordItemIndex(68));
-            repo.ApplicationUnderTest.Individu1.CboComboBox4.Click("83;9");
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varBirthDateSpouse'.", new RecordItemIndex(59));
+            //Keyboard.Press(varBirthDateSpouse);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.EchtgenootMetBeroepsinkomen' at 85;4.", repo.List1000.EchtgenootMetBeroepsinkomenInfo, new RecordItemIndex(69));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgFiscaalVerloning.CboComboBox4' at 83;9.", repo.ApplicationUnderTest.TbpgFiscaalVerloning.CboComboBox4Info, new RecordItemIndex(60));
+            repo.ApplicationUnderTest.TbpgFiscaalVerloning.CboComboBox4.Click("83;9");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.EchtgenootMetBeroepsinkomen' at 85;4.", repo.List1000.EchtgenootMetBeroepsinkomenInfo, new RecordItemIndex(61));
             repo.List1000.EchtgenootMetBeroepsinkomen.Click("85;4");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.CboComboBox5' at 93;14.", repo.ApplicationUnderTest.Individu1.CboComboBox5Info, new RecordItemIndex(70));
-            repo.ApplicationUnderTest.Individu1.CboComboBox5.Click("93;14");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgFiscaalVerloning.CboComboBox5' at 93;14.", repo.ApplicationUnderTest.TbpgFiscaalVerloning.CboComboBox5Info, new RecordItemIndex(62));
+            repo.ApplicationUnderTest.TbpgFiscaalVerloning.CboComboBox5.Click("93;14");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Arbeider' at 54;4.", repo.List1000.ArbeiderInfo, new RecordItemIndex(71));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Arbeider' at 54;4.", repo.List1000.ArbeiderInfo, new RecordItemIndex(63));
             repo.List1000.Arbeider.Click("54;4");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.CboComboBox6' at 65;16.", repo.ApplicationUnderTest.Individu1.CboComboBox6Info, new RecordItemIndex(72));
-            repo.ApplicationUnderTest.Individu1.CboComboBox6.Click("65;16");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgFiscaalVerloning.CboComboBox6' at 65;16.", repo.ApplicationUnderTest.TbpgFiscaalVerloning.CboComboBox6Info, new RecordItemIndex(64));
+            repo.ApplicationUnderTest.TbpgFiscaalVerloning.CboComboBox6.Click("65;16");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Bankrekening' at 60;5.", repo.List1000.BankrekeningInfo, new RecordItemIndex(73));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Bankrekening' at 60;5.", repo.List1000.BankrekeningInfo, new RecordItemIndex(65));
             repo.List1000.Bankrekening.Click("60;5");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.IBAN' at 43;8.", repo.ApplicationUnderTest.Individu1.IBANInfo, new RecordItemIndex(74));
-            repo.ApplicationUnderTest.Individu1.IBAN.Click("43;8");
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgFiscaalVerloning.IBAN' at 43;8.", repo.ApplicationUnderTest.TbpgFiscaalVerloning.IBANInfo, new RecordItemIndex(66));
+            //repo.ApplicationUnderTest.TbpgFiscaalVerloning.IBAN.Click("43;8");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varBankNumber' with focus on 'ApplicationUnderTest.Individu1.IBAN'.", repo.ApplicationUnderTest.Individu1.IBANInfo, new RecordItemIndex(75));
-            repo.ApplicationUnderTest.Individu1.IBAN.PressKeys(varBankNumber);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varBankNumber' with focus on 'ApplicationUnderTest.TbpgFiscaalVerloning.IBAN'.", repo.ApplicationUnderTest.TbpgFiscaalVerloning.IBANInfo, new RecordItemIndex(67));
+            //repo.ApplicationUnderTest.TbpgFiscaalVerloning.IBAN.PressKeys(varBankNumber);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.CbxCheckBox1' at 8;12.", repo.ApplicationUnderTest.Individu1.CbxCheckBox1Info, new RecordItemIndex(76));
-            repo.ApplicationUnderTest.Individu1.CbxCheckBox1.Click("8;12");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgFiscaalVerloning.CbxCheckBox1' at 8;12.", repo.ApplicationUnderTest.TbpgFiscaalVerloning.CbxCheckBox1Info, new RecordItemIndex(68));
+            repo.ApplicationUnderTest.TbpgFiscaalVerloning.CbxCheckBox1.Click("8;12");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.TextPercentInvaliditeitIndividu' at 64;9.", repo.ApplicationUnderTest.Individu1.TextPercentInvaliditeitIndividuInfo, new RecordItemIndex(77));
-            repo.ApplicationUnderTest.Individu1.TextPercentInvaliditeitIndividu.Click("64;9");
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgFiscaalVerloning.TextPercentInvaliditeitIndividu' at 64;9.", repo.ApplicationUnderTest.TbpgFiscaalVerloning.TextPercentInvaliditeitIndividuInfo, new RecordItemIndex(69));
+            //repo.ApplicationUnderTest.TbpgFiscaalVerloning.TextPercentInvaliditeitIndividu.Click("64;9");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '20' with focus on 'ApplicationUnderTest.Individu1.TextPercentInvaliditeitIndividu'.", repo.ApplicationUnderTest.Individu1.TextPercentInvaliditeitIndividuInfo, new RecordItemIndex(78));
-            repo.ApplicationUnderTest.Individu1.TextPercentInvaliditeitIndividu.PressKeys("20");
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varIndividualDisability' with focus on 'ApplicationUnderTest.TbpgFiscaalVerloning.TextPercentInvaliditeitIndividu'.", repo.ApplicationUnderTest.TbpgFiscaalVerloning.TextPercentInvaliditeitIndividuInfo, new RecordItemIndex(70));
+            //repo.ApplicationUnderTest.TbpgFiscaalVerloning.TextPercentInvaliditeitIndividu.PressKeys(varIndividualDisability);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.CbxCheckBox2' at 10;12.", repo.ApplicationUnderTest.Individu1.CbxCheckBox2Info, new RecordItemIndex(79));
-            repo.ApplicationUnderTest.Individu1.CbxCheckBox2.Click("10;12");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgFiscaalVerloning.CbxCheckBox2' at 10;12.", repo.ApplicationUnderTest.TbpgFiscaalVerloning.CbxCheckBox2Info, new RecordItemIndex(71));
+            repo.ApplicationUnderTest.TbpgFiscaalVerloning.CbxCheckBox2.Click("10;12");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.AantPersTenLasteValide' at 81;6.", repo.ApplicationUnderTest.Individu1.AantPersTenLasteValideInfo, new RecordItemIndex(80));
-            repo.ApplicationUnderTest.Individu1.AantPersTenLasteValide.Click("81;6");
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgFiscaalVerloning.AantPersTenLasteValide' at 81;6.", repo.ApplicationUnderTest.TbpgFiscaalVerloning.AantPersTenLasteValideInfo, new RecordItemIndex(72));
+            //repo.ApplicationUnderTest.TbpgFiscaalVerloning.AantPersTenLasteValide.Click("81;6");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '1' with focus on 'ApplicationUnderTest.Individu1.AantPersTenLasteValide'.", repo.ApplicationUnderTest.Individu1.AantPersTenLasteValideInfo, new RecordItemIndex(81));
-            repo.ApplicationUnderTest.Individu1.AantPersTenLasteValide.PressKeys("1");
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varNoOfDependants' with focus on 'ApplicationUnderTest.TbpgFiscaalVerloning.AantPersTenLasteValide'.", repo.ApplicationUnderTest.TbpgFiscaalVerloning.AantPersTenLasteValideInfo, new RecordItemIndex(73));
+            //repo.ApplicationUnderTest.TbpgFiscaalVerloning.AantPersTenLasteValide.PressKeys(varNoOfDependants);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.AantPersTenLasteValide' at 81;6.", repo.ApplicationUnderTest.Individu1.AantPersTenLasteValideInfo, new RecordItemIndex(82));
-            repo.ApplicationUnderTest.Individu1.AantPersTenLasteValide.Click("81;6");
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgFiscaalVerloning.AantPersTenLasteAndersvalide' at 38;5.", repo.ApplicationUnderTest.TbpgFiscaalVerloning.AantPersTenLasteAndersvalideInfo, new RecordItemIndex(74));
+            //repo.ApplicationUnderTest.TbpgFiscaalVerloning.AantPersTenLasteAndersvalide.Click("38;5");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '1' with focus on 'ApplicationUnderTest.Individu1.AantPersTenLasteValide'.", repo.ApplicationUnderTest.Individu1.AantPersTenLasteValideInfo, new RecordItemIndex(83));
-            repo.ApplicationUnderTest.Individu1.AantPersTenLasteValide.PressKeys("1");
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varNoOfDependantsDisability' with focus on 'ApplicationUnderTest.TbpgFiscaalVerloning.TxtTextBox'.", repo.ApplicationUnderTest.TbpgFiscaalVerloning.TxtTextBoxInfo, new RecordItemIndex(75));
+            //repo.ApplicationUnderTest.TbpgFiscaalVerloning.TxtTextBox.PressKeys(varNoOfDependantsDisability);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Down item 'ApplicationUnderTest.Individu1.AantPersTenLasteAndersvalide' at 38;5.", repo.ApplicationUnderTest.Individu1.AantPersTenLasteAndersvalideInfo, new RecordItemIndex(84));
-            repo.ApplicationUnderTest.Individu1.AantPersTenLasteAndersvalide.MoveTo("38;5");
-            Mouse.ButtonDown(System.Windows.Forms.MouseButtons.Left);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgFiscaalVerloning.Aant65PlusPersTenLasteValide' at 78;7.", repo.ApplicationUnderTest.TbpgFiscaalVerloning.Aant65PlusPersTenLasteValideInfo, new RecordItemIndex(76));
+            //repo.ApplicationUnderTest.TbpgFiscaalVerloning.Aant65PlusPersTenLasteValide.Click("78;7");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Up item 'ApplicationUnderTest.Individu1.AantPersTenLasteAndersvalide' at 80;5.", repo.ApplicationUnderTest.Individu1.AantPersTenLasteAndersvalideInfo, new RecordItemIndex(85));
-            repo.ApplicationUnderTest.Individu1.AantPersTenLasteAndersvalide.MoveTo("80;5");
-            Mouse.ButtonUp(System.Windows.Forms.MouseButtons.Left);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varNumberOf65plusDependants' with focus on 'ApplicationUnderTest.TbpgFiscaalVerloning.Aant65PlusPersTenLasteValide'.", repo.ApplicationUnderTest.TbpgFiscaalVerloning.Aant65PlusPersTenLasteValideInfo, new RecordItemIndex(77));
+            //repo.ApplicationUnderTest.TbpgFiscaalVerloning.Aant65PlusPersTenLasteValide.PressKeys(varNumberOf65plusDependants);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '1' with focus on 'ApplicationUnderTest.Individu1.TxtTextBox'.", repo.ApplicationUnderTest.Individu1.TxtTextBoxInfo, new RecordItemIndex(86));
-            repo.ApplicationUnderTest.Individu1.TxtTextBox.PressKeys("1");
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgFiscaalVerloning.Aant65PlusTenLasteAndersvalide' at 77;10.", repo.ApplicationUnderTest.TbpgFiscaalVerloning.Aant65PlusTenLasteAndersvalideInfo, new RecordItemIndex(78));
+            //repo.ApplicationUnderTest.TbpgFiscaalVerloning.Aant65PlusTenLasteAndersvalide.Click("77;10");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.Aant65PlusPersTenLasteValide' at 78;7.", repo.ApplicationUnderTest.Individu1.Aant65PlusPersTenLasteValideInfo, new RecordItemIndex(87));
-            repo.ApplicationUnderTest.Individu1.Aant65PlusPersTenLasteValide.Click("78;7");
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varNumberOf65plusDependantsDisability' with focus on 'ApplicationUnderTest.TbpgFiscaalVerloning.Aant65PlusTenLasteAndersvalide'.", repo.ApplicationUnderTest.TbpgFiscaalVerloning.Aant65PlusTenLasteAndersvalideInfo, new RecordItemIndex(79));
+            //repo.ApplicationUnderTest.TbpgFiscaalVerloning.Aant65PlusTenLasteAndersvalide.PressKeys(varNumberOf65plusDependantsDisability);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '1' with focus on 'ApplicationUnderTest.Individu1.Aant65PlusPersTenLasteValide'.", repo.ApplicationUnderTest.Individu1.Aant65PlusPersTenLasteValideInfo, new RecordItemIndex(88));
-            repo.ApplicationUnderTest.Individu1.Aant65PlusPersTenLasteValide.PressKeys("1");
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgFiscaalVerloning.AantKindTenLasteValide' at 76;6.", repo.ApplicationUnderTest.TbpgFiscaalVerloning.AantKindTenLasteValideInfo, new RecordItemIndex(80));
+            //repo.ApplicationUnderTest.TbpgFiscaalVerloning.AantKindTenLasteValide.Click("76;6");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Down item 'ApplicationUnderTest.Individu1.Aant65PlusTenLasteAndersvalide' at 77;10.", repo.ApplicationUnderTest.Individu1.Aant65PlusTenLasteAndersvalideInfo, new RecordItemIndex(89));
-            repo.ApplicationUnderTest.Individu1.Aant65PlusTenLasteAndersvalide.MoveTo("77;10");
-            Mouse.ButtonDown(System.Windows.Forms.MouseButtons.Left);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varNoOfDependantChildren' with focus on 'ApplicationUnderTest.TbpgFiscaalVerloning.AantKindTenLasteValide'.", repo.ApplicationUnderTest.TbpgFiscaalVerloning.AantKindTenLasteValideInfo, new RecordItemIndex(81));
+            //repo.ApplicationUnderTest.TbpgFiscaalVerloning.AantKindTenLasteValide.PressKeys(varNoOfDependantChildren);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Up item 'ApplicationUnderTest.Individu1.Aant65PlusTenLasteAndersvalide' at 77;10.", repo.ApplicationUnderTest.Individu1.Aant65PlusTenLasteAndersvalideInfo, new RecordItemIndex(90));
-            repo.ApplicationUnderTest.Individu1.Aant65PlusTenLasteAndersvalide.MoveTo("77;10");
-            Mouse.ButtonUp(System.Windows.Forms.MouseButtons.Left);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgFiscaalVerloning.AantKindTenLasteAndersvalide' at 75;9.", repo.ApplicationUnderTest.TbpgFiscaalVerloning.AantKindTenLasteAndersvalideInfo, new RecordItemIndex(82));
+            //repo.ApplicationUnderTest.TbpgFiscaalVerloning.AantKindTenLasteAndersvalide.Click("75;9");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '1' with focus on 'ApplicationUnderTest.Individu1.Aant65PlusTenLasteAndersvalide'.", repo.ApplicationUnderTest.Individu1.Aant65PlusTenLasteAndersvalideInfo, new RecordItemIndex(91));
-            repo.ApplicationUnderTest.Individu1.Aant65PlusTenLasteAndersvalide.PressKeys("1");
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varNoOfDependantChildrenDisability' with focus on 'ApplicationUnderTest.TbpgFiscaalVerloning.AantKindTenLasteAndersvalide'.", repo.ApplicationUnderTest.TbpgFiscaalVerloning.AantKindTenLasteAndersvalideInfo, new RecordItemIndex(83));
+            //repo.ApplicationUnderTest.TbpgFiscaalVerloning.AantKindTenLasteAndersvalide.PressKeys(varNoOfDependantChildrenDisability);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.AantKindTenLasteValide' at 76;6.", repo.ApplicationUnderTest.Individu1.AantKindTenLasteValideInfo, new RecordItemIndex(92));
-            repo.ApplicationUnderTest.Individu1.AantKindTenLasteValide.Click("76;6");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgFiscaalVerloning.CboComboBox7' at 69;5.", repo.ApplicationUnderTest.TbpgFiscaalVerloning.CboComboBox7Info, new RecordItemIndex(84));
+            repo.ApplicationUnderTest.TbpgFiscaalVerloning.CboComboBox7.Click("69;5");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '1' with focus on 'ApplicationUnderTest.Individu1.AantKindTenLasteValide'.", repo.ApplicationUnderTest.Individu1.AantKindTenLasteValideInfo, new RecordItemIndex(93));
-            repo.ApplicationUnderTest.Individu1.AantKindTenLasteValide.PressKeys("1");
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.AantKindTenLasteAndersvalide' at 75;9.", repo.ApplicationUnderTest.Individu1.AantKindTenLasteAndersvalideInfo, new RecordItemIndex(94));
-            repo.ApplicationUnderTest.Individu1.AantKindTenLasteAndersvalide.Click("75;9");
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '1' with focus on 'ApplicationUnderTest.Individu1.AantKindTenLasteAndersvalide'.", repo.ApplicationUnderTest.Individu1.AantKindTenLasteAndersvalideInfo, new RecordItemIndex(95));
-            repo.ApplicationUnderTest.Individu1.AantKindTenLasteAndersvalide.PressKeys("1");
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.CboComboBox7' at 69;5.", repo.ApplicationUnderTest.Individu1.CboComboBox7Info, new RecordItemIndex(96));
-            repo.ApplicationUnderTest.Individu1.CboComboBox7.Click("69;5");
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.ListItem5deEn6deMiddelbaarASO' at 72;3.", repo.List1000.ListItem5deEn6deMiddelbaarASOInfo, new RecordItemIndex(97));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.ListItem5deEn6deMiddelbaarASO' at 72;3.", repo.List1000.ListItem5deEn6deMiddelbaarASOInfo, new RecordItemIndex(85));
             repo.List1000.ListItem5deEn6deMiddelbaarASO.Click("72;3");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.BtnOpslaan' at 37;10.", repo.ApplicationUnderTest.Individu1.BtnOpslaanInfo, new RecordItemIndex(98));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.BtnOpslaan' at 37;10.", repo.ApplicationUnderTest.Individu1.BtnOpslaanInfo, new RecordItemIndex(86));
             repo.ApplicationUnderTest.Individu1.BtnOpslaan.Click("37;10");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='\t\tHet opslaan is voltooid.') on item 'ApplicationUnderTest.Individu1.TextHetOpslaanIsVoltooid'.", repo.ApplicationUnderTest.Individu1.TextHetOpslaanIsVoltooidInfo, new RecordItemIndex(99));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='\t\tHet opslaan is voltooid.') on item 'ApplicationUnderTest.Individu1.TextHetOpslaanIsVoltooid'.", repo.ApplicationUnderTest.Individu1.TextHetOpslaanIsVoltooidInfo, new RecordItemIndex(87));
             Validate.AttributeEqual(repo.ApplicationUnderTest.Individu1.TextHetOpslaanIsVoltooidInfo, "Text", "\t\tHet opslaan is voltooid.");
             
             // Start Aspiraties
-            Report.Log(ReportLevel.Info, "Section", "Start Aspiraties", new RecordItemIndex(100));
+            Report.Log(ReportLevel.Info, "Section", "Start Aspiraties", new RecordItemIndex(88));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.Aspiraties' at 69;16.", repo.ApplicationUnderTest.Individu1.AspiratiesInfo, new RecordItemIndex(101));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.Aspiraties' at 69;16.", repo.ApplicationUnderTest.Individu1.AspiratiesInfo, new RecordItemIndex(89));
             repo.ApplicationUnderTest.Individu1.Aspiraties.Click("69;16");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.BtnNieuwBeroep' at 38;7.", repo.ApplicationUnderTest.Individu1.BtnNieuwBeroepInfo, new RecordItemIndex(102));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.BtnNieuwBeroep' at 38;7.", repo.ApplicationUnderTest.Individu1.BtnNieuwBeroepInfo, new RecordItemIndex(90));
             repo.ApplicationUnderTest.Individu1.BtnNieuwBeroep.Click("38;7");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(103));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(91));
             Keyboard.Press("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(104));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(92));
             Keyboard.Press("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '*'.", new RecordItemIndex(105));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '*'.", new RecordItemIndex(93));
             Keyboard.Press("*");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varProfession'.", new RecordItemIndex(106));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varProfession'.", new RecordItemIndex(94));
             Keyboard.Press(varProfession);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '*'.", new RecordItemIndex(107));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '*'.", new RecordItemIndex(95));
             Keyboard.Press("*");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(108));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(96));
             Keyboard.Press("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}'.", new RecordItemIndex(109));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}'.", new RecordItemIndex(97));
             Keyboard.Press("{Return}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'ApplicationUnderTest.TreeItem93399HuishoudelijkeHulp' at 67;6.", repo.ApplicationUnderTest.TreeItem93399HuishoudelijkeHulpInfo, new RecordItemIndex(110));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'ApplicationUnderTest.TreeItem93399HuishoudelijkeHulp' at 67;6.", repo.ApplicationUnderTest.TreeItem93399HuishoudelijkeHulpInfo, new RecordItemIndex(98));
             repo.ApplicationUnderTest.TreeItem93399HuishoudelijkeHulp.DoubleClick("67;6");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}{Tab}{Tab}{Tab}{Tab}{Return}' with focus on 'ApplicationUnderTest.TreeItem93399HuishoudelijkeHulp'.", repo.ApplicationUnderTest.TreeItem93399HuishoudelijkeHulpInfo, new RecordItemIndex(111));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}{Tab}{Tab}{Tab}{Tab}{Return}' with focus on 'ApplicationUnderTest.TreeItem93399HuishoudelijkeHulp'.", repo.ApplicationUnderTest.TreeItem93399HuishoudelijkeHulpInfo, new RecordItemIndex(99));
             repo.ApplicationUnderTest.TreeItem93399HuishoudelijkeHulp.PressKeys("{Tab}{Tab}{Tab}{Tab}{Tab}{Return}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.MobiliteitStraalKm' at 121;7.", repo.ApplicationUnderTest.Individu1.MobiliteitStraalKmInfo, new RecordItemIndex(112));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.MobiliteitStraalKm' at 121;7.", repo.ApplicationUnderTest.Individu1.MobiliteitStraalKmInfo, new RecordItemIndex(100));
             repo.ApplicationUnderTest.Individu1.MobiliteitStraalKm.Click("121;7");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varMobilityRadusKm' with focus on 'ApplicationUnderTest.Individu1.MobiliteitStraalKm'.", repo.ApplicationUnderTest.Individu1.MobiliteitStraalKmInfo, new RecordItemIndex(113));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varMobilityRadusKm' with focus on 'ApplicationUnderTest.Individu1.MobiliteitStraalKm'.", repo.ApplicationUnderTest.Individu1.MobiliteitStraalKmInfo, new RecordItemIndex(101));
             repo.ApplicationUnderTest.Individu1.MobiliteitStraalKm.PressKeys(varMobilityRadusKm);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.CboComboBox8' at 146;10.", repo.ApplicationUnderTest.Individu1.CboComboBox8Info, new RecordItemIndex(114));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.CboComboBox8' at 146;10.", repo.ApplicationUnderTest.Individu1.CboComboBox8Info, new RecordItemIndex(102));
             repo.ApplicationUnderTest.Individu1.CboComboBox8.Click("146;10");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Auto' at 86;6.", repo.List1000.AutoInfo, new RecordItemIndex(115));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Auto' at 86;6.", repo.List1000.AutoInfo, new RecordItemIndex(103));
             repo.List1000.Auto.Click("86;6");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.CbxCheckBox3' at 6;11.", repo.ApplicationUnderTest.Individu1.CbxCheckBox3Info, new RecordItemIndex(116));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.CbxCheckBox3' at 6;11.", repo.ApplicationUnderTest.Individu1.CbxCheckBox3Info, new RecordItemIndex(104));
             repo.ApplicationUnderTest.Individu1.CbxCheckBox3.Click("6;11");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Down item 'ApplicationUnderTest.Individu1.CbxCheckBox4' at 4;6.", repo.ApplicationUnderTest.Individu1.CbxCheckBox4Info, new RecordItemIndex(117));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Down item 'ApplicationUnderTest.Individu1.CbxCheckBox4' at 4;6.", repo.ApplicationUnderTest.Individu1.CbxCheckBox4Info, new RecordItemIndex(105));
             repo.ApplicationUnderTest.Individu1.CbxCheckBox4.MoveTo("4;6");
             Mouse.ButtonDown(System.Windows.Forms.MouseButtons.Left);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'ApplicationUnderTest.Individu1.CbxCheckBox4' at 12;-2.", repo.ApplicationUnderTest.Individu1.CbxCheckBox4Info, new RecordItemIndex(118));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'ApplicationUnderTest.Individu1.CbxCheckBox4' at 12;-2.", repo.ApplicationUnderTest.Individu1.CbxCheckBox4Info, new RecordItemIndex(106));
             repo.ApplicationUnderTest.Individu1.CbxCheckBox4.MoveTo("12;-2");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Up item 'ApplicationUnderTest.Individu1.GrpAspiraties' at 653;311.", repo.ApplicationUnderTest.Individu1.GrpAspiratiesInfo, new RecordItemIndex(119));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Up item 'ApplicationUnderTest.Individu1.GrpAspiraties' at 653;311.", repo.ApplicationUnderTest.Individu1.GrpAspiratiesInfo, new RecordItemIndex(107));
             repo.ApplicationUnderTest.Individu1.GrpAspiraties.MoveTo("653;311");
             Mouse.ButtonUp(System.Windows.Forms.MouseButtons.Left);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Up item 'ApplicationUnderTest.TgnosDetailIndividu' at 427;5.", repo.ApplicationUnderTest.TgnosDetailIndividuInfo, new RecordItemIndex(120));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Up item 'ApplicationUnderTest.TgnosDetailIndividu' at 427;5.", repo.ApplicationUnderTest.TgnosDetailIndividuInfo, new RecordItemIndex(108));
             repo.ApplicationUnderTest.TgnosDetailIndividu.MoveTo("427;5");
             Mouse.ButtonUp(System.Windows.Forms.MouseButtons.Left);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.CbxCheckBox4' at 6;11.", repo.ApplicationUnderTest.Individu1.CbxCheckBox4Info, new RecordItemIndex(121));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.CbxCheckBox4' at 6;11.", repo.ApplicationUnderTest.Individu1.CbxCheckBox4Info, new RecordItemIndex(109));
             repo.ApplicationUnderTest.Individu1.CbxCheckBox4.Click("6;11");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Down item 'ApplicationUnderTest.Individu1.TxtGewensteUurloonBrutoAspiraties' at 210;23.", repo.ApplicationUnderTest.Individu1.TxtGewensteUurloonBrutoAspiratiesInfo, new RecordItemIndex(122));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Down item 'ApplicationUnderTest.Individu1.TxtGewensteUurloonBrutoAspiraties' at 210;23.", repo.ApplicationUnderTest.Individu1.TxtGewensteUurloonBrutoAspiratiesInfo, new RecordItemIndex(110));
             repo.ApplicationUnderTest.Individu1.TxtGewensteUurloonBrutoAspiraties.MoveTo("210;23");
             Mouse.ButtonDown(System.Windows.Forms.MouseButtons.Left);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'ApplicationUnderTest.Individu1.TxtGewensteUurloonBrutoAspiraties' at 218;15.", repo.ApplicationUnderTest.Individu1.TxtGewensteUurloonBrutoAspiratiesInfo, new RecordItemIndex(123));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'ApplicationUnderTest.Individu1.TxtGewensteUurloonBrutoAspiraties' at 218;15.", repo.ApplicationUnderTest.Individu1.TxtGewensteUurloonBrutoAspiratiesInfo, new RecordItemIndex(111));
             repo.ApplicationUnderTest.Individu1.TxtGewensteUurloonBrutoAspiraties.MoveTo("218;15");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Up item 'ApplicationUnderTest.Individu1.CbxCheckBox5' at 6;12.", repo.ApplicationUnderTest.Individu1.CbxCheckBox5Info, new RecordItemIndex(124));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Up item 'ApplicationUnderTest.Individu1.CbxCheckBox5' at 6;12.", repo.ApplicationUnderTest.Individu1.CbxCheckBox5Info, new RecordItemIndex(112));
             repo.ApplicationUnderTest.Individu1.CbxCheckBox5.MoveTo("6;12");
             Mouse.ButtonUp(System.Windows.Forms.MouseButtons.Left);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.BtnOpslaan' at 49;13.", repo.ApplicationUnderTest.Individu1.BtnOpslaanInfo, new RecordItemIndex(125));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.BtnOpslaan' at 49;13.", repo.ApplicationUnderTest.Individu1.BtnOpslaanInfo, new RecordItemIndex(113));
             repo.ApplicationUnderTest.Individu1.BtnOpslaan.Click("49;13");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='\t\tEén of meerdere fouten hebben zich voorgedaan tijdens het opslaan van de gegevens.') on item 'ApplicationUnderTest.Individu1.TextEenOfMeerdereFoutenHebbenZich'.", repo.ApplicationUnderTest.Individu1.TextEenOfMeerdereFoutenHebbenZichInfo, new RecordItemIndex(126));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='\t\tEén of meerdere fouten hebben zich voorgedaan tijdens het opslaan van de gegevens.') on item 'ApplicationUnderTest.Individu1.TextEenOfMeerdereFoutenHebbenZich'.", repo.ApplicationUnderTest.Individu1.TextEenOfMeerdereFoutenHebbenZichInfo, new RecordItemIndex(114));
             Validate.AttributeEqual(repo.ApplicationUnderTest.Individu1.TextEenOfMeerdereFoutenHebbenZichInfo, "Text", "\t\tEén of meerdere fouten hebben zich voorgedaan tijdens het opslaan van de gegevens.");
             
             // Start Dienstencheque
-            Report.Log(ReportLevel.Info, "Section", "Start Dienstencheque", new RecordItemIndex(127));
+            Report.Log(ReportLevel.Info, "Section", "Start Dienstencheque", new RecordItemIndex(115));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.Dienstencheque' at 59;20.", repo.ApplicationUnderTest.Individu1.DienstenchequeInfo, new RecordItemIndex(128));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.Dienstencheque' at 59;20.", repo.ApplicationUnderTest.Individu1.DienstenchequeInfo, new RecordItemIndex(116));
             repo.ApplicationUnderTest.Individu1.Dienstencheque.Click("59;20");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.CboComboBox9' at 207;10.", repo.ApplicationUnderTest.Individu1.CboComboBox9Info, new RecordItemIndex(129));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.CboComboBox9' at 207;10.", repo.ApplicationUnderTest.Individu1.CboComboBox9Info, new RecordItemIndex(117));
             repo.ApplicationUnderTest.Individu1.CboComboBox9.Click("207;10");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.OntvangtGeenUitkering' at 124;5.", repo.List1000.OntvangtGeenUitkeringInfo, new RecordItemIndex(130));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.OntvangtGeenUitkering' at 124;5.", repo.List1000.OntvangtGeenUitkeringInfo, new RecordItemIndex(118));
             repo.List1000.OntvangtGeenUitkering.Click("124;5");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.CboComboBox10' at 141;15.", repo.ApplicationUnderTest.Individu1.CboComboBox10Info, new RecordItemIndex(131));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.CboComboBox10' at 141;15.", repo.ApplicationUnderTest.Individu1.CboComboBox10Info, new RecordItemIndex(119));
             repo.ApplicationUnderTest.Individu1.CboComboBox10.Click("141;15");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.GEENTewerkstellingBijEenAnderDCQBe' at 138;4.", repo.List1000.GEENTewerkstellingBijEenAnderDCQBeInfo, new RecordItemIndex(132));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.GEENTewerkstellingBijEenAnderDCQBe' at 138;4.", repo.List1000.GEENTewerkstellingBijEenAnderDCQBeInfo, new RecordItemIndex(120));
             repo.List1000.GEENTewerkstellingBijEenAnderDCQBe.Click("138;4");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.CboComboBox11' at 139;17.", repo.ApplicationUnderTest.Individu1.CboComboBox11Info, new RecordItemIndex(133));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.CboComboBox11' at 139;17.", repo.ApplicationUnderTest.Individu1.CboComboBox11Info, new RecordItemIndex(121));
             repo.ApplicationUnderTest.Individu1.CboComboBox11.Click("139;17");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Structureel' at 72;4.", repo.List1000.StructureelInfo, new RecordItemIndex(134));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Structureel' at 72;4.", repo.List1000.StructureelInfo, new RecordItemIndex(122));
             repo.List1000.Structureel.Click("72;4");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.CboComboBox12' at 108;15.", repo.ApplicationUnderTest.Individu1.CboComboBox12Info, new RecordItemIndex(135));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.CboComboBox12' at 108;15.", repo.ApplicationUnderTest.Individu1.CboComboBox12Info, new RecordItemIndex(123));
             repo.ApplicationUnderTest.Individu1.CboComboBox12.Click("108;15");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.NietBelangrijk' at 60;2.", repo.List1000.NietBelangrijkInfo, new RecordItemIndex(136));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.NietBelangrijk' at 60;2.", repo.List1000.NietBelangrijkInfo, new RecordItemIndex(124));
             repo.List1000.NietBelangrijk.Click("60;2");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.PoetsenVanDeWoning' at 8;10.", repo.ApplicationUnderTest.Individu1.PoetsenVanDeWoningInfo, new RecordItemIndex(137));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.PoetsenVanDeWoning' at 8;10.", repo.ApplicationUnderTest.Individu1.PoetsenVanDeWoningInfo, new RecordItemIndex(125));
             repo.ApplicationUnderTest.Individu1.PoetsenVanDeWoning.Click("8;10");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.UrenPerWeek' at 185;7.", repo.ApplicationUnderTest.Individu1.UrenPerWeekInfo, new RecordItemIndex(138));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.UrenPerWeek' at 185;7.", repo.ApplicationUnderTest.Individu1.UrenPerWeekInfo, new RecordItemIndex(126));
             repo.ApplicationUnderTest.Individu1.UrenPerWeek.Click("185;7");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varHoursPerWeek' with focus on 'ApplicationUnderTest.Individu1.UrenPerWeek'.", repo.ApplicationUnderTest.Individu1.UrenPerWeekInfo, new RecordItemIndex(139));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varHoursPerWeek' with focus on 'ApplicationUnderTest.Individu1.UrenPerWeek'.", repo.ApplicationUnderTest.Individu1.UrenPerWeekInfo, new RecordItemIndex(127));
             repo.ApplicationUnderTest.Individu1.UrenPerWeek.PressKeys(varHoursPerWeek);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.LblMaandagVmVoorkeur' at Center.", repo.ApplicationUnderTest.Individu1.LblMaandagVmVoorkeurInfo, new RecordItemIndex(140));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.LblMaandagVmVoorkeur' at Center.", repo.ApplicationUnderTest.Individu1.LblMaandagVmVoorkeurInfo, new RecordItemIndex(128));
             repo.ApplicationUnderTest.Individu1.LblMaandagVmVoorkeur.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.LblMaandagNmVoorkeur' at Center.", repo.ApplicationUnderTest.Individu1.LblMaandagNmVoorkeurInfo, new RecordItemIndex(141));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.LblMaandagNmVoorkeur' at Center.", repo.ApplicationUnderTest.Individu1.LblMaandagNmVoorkeurInfo, new RecordItemIndex(129));
             repo.ApplicationUnderTest.Individu1.LblMaandagNmVoorkeur.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.LblDinsdagVmVoorkeur' at 73;11.", repo.ApplicationUnderTest.Individu1.LblDinsdagVmVoorkeurInfo, new RecordItemIndex(142));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.LblDinsdagVmVoorkeur' at 73;11.", repo.ApplicationUnderTest.Individu1.LblDinsdagVmVoorkeurInfo, new RecordItemIndex(130));
             repo.ApplicationUnderTest.Individu1.LblDinsdagVmVoorkeur.Click("73;11");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.LblWoensdagVmVoorkeur' at 42;10.", repo.ApplicationUnderTest.Individu1.LblWoensdagVmVoorkeurInfo, new RecordItemIndex(143));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.LblWoensdagVmVoorkeur' at 42;10.", repo.ApplicationUnderTest.Individu1.LblWoensdagVmVoorkeurInfo, new RecordItemIndex(131));
             repo.ApplicationUnderTest.Individu1.LblWoensdagVmVoorkeur.Click("42;10");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.LblDinsdagNmVoorkeur' at 92;12.", repo.ApplicationUnderTest.Individu1.LblDinsdagNmVoorkeurInfo, new RecordItemIndex(144));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.LblDinsdagNmVoorkeur' at 92;12.", repo.ApplicationUnderTest.Individu1.LblDinsdagNmVoorkeurInfo, new RecordItemIndex(132));
             repo.ApplicationUnderTest.Individu1.LblDinsdagNmVoorkeur.Click("92;12");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.LblWoensdagNmVoorkeur' at 41;12.", repo.ApplicationUnderTest.Individu1.LblWoensdagNmVoorkeurInfo, new RecordItemIndex(145));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.LblWoensdagNmVoorkeur' at 41;12.", repo.ApplicationUnderTest.Individu1.LblWoensdagNmVoorkeurInfo, new RecordItemIndex(133));
             repo.ApplicationUnderTest.Individu1.LblWoensdagNmVoorkeur.Click("41;12");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.LblDonderdagVmVoorkeur' at 35;12.", repo.ApplicationUnderTest.Individu1.LblDonderdagVmVoorkeurInfo, new RecordItemIndex(146));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.LblDonderdagVmVoorkeur' at 35;12.", repo.ApplicationUnderTest.Individu1.LblDonderdagVmVoorkeurInfo, new RecordItemIndex(134));
             repo.ApplicationUnderTest.Individu1.LblDonderdagVmVoorkeur.Click("35;12");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Up item 'ApplicationUnderTest.Individu1.LblDonderdagNmVoorkeur' at 36;10.", repo.ApplicationUnderTest.Individu1.LblDonderdagNmVoorkeurInfo, new RecordItemIndex(147));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Up item 'ApplicationUnderTest.Individu1.LblDonderdagNmVoorkeur' at 36;10.", repo.ApplicationUnderTest.Individu1.LblDonderdagNmVoorkeurInfo, new RecordItemIndex(135));
             repo.ApplicationUnderTest.Individu1.LblDonderdagNmVoorkeur.MoveTo("36;10");
             Mouse.ButtonUp(System.Windows.Forms.MouseButtons.Left);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.LblVrijdagVmVoorkeur' at 18;16.", repo.ApplicationUnderTest.Individu1.LblVrijdagVmVoorkeurInfo, new RecordItemIndex(148));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.LblVrijdagVmVoorkeur' at 18;16.", repo.ApplicationUnderTest.Individu1.LblVrijdagVmVoorkeurInfo, new RecordItemIndex(136));
             repo.ApplicationUnderTest.Individu1.LblVrijdagVmVoorkeur.Click("18;16");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.BtnOpslaan' at Center.", repo.ApplicationUnderTest.Individu1.BtnOpslaanInfo, new RecordItemIndex(149));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.BtnOpslaan' at Center.", repo.ApplicationUnderTest.Individu1.BtnOpslaanInfo, new RecordItemIndex(137));
             repo.ApplicationUnderTest.Individu1.BtnOpslaan.Click();
             
             // Start Opmerkingen
-            Report.Log(ReportLevel.Info, "Section", "Start Opmerkingen", new RecordItemIndex(150));
+            Report.Log(ReportLevel.Info, "Section", "Start Opmerkingen", new RecordItemIndex(138));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.Opmerkingen' at 67;16.", repo.ApplicationUnderTest.Individu1.OpmerkingenInfo, new RecordItemIndex(151));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.Opmerkingen' at 67;16.", repo.ApplicationUnderTest.Individu1.OpmerkingenInfo, new RecordItemIndex(139));
             repo.ApplicationUnderTest.Individu1.Opmerkingen.Click("67;16");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.OpmerkingenBijFunctioneleRelevantie' at 579;98.", repo.ApplicationUnderTest.Individu1.OpmerkingenBijFunctioneleRelevantieInfo, new RecordItemIndex(152));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.OpmerkingenBijFunctioneleRelevantie' at 579;98.", repo.ApplicationUnderTest.Individu1.OpmerkingenBijFunctioneleRelevantieInfo, new RecordItemIndex(140));
             repo.ApplicationUnderTest.Individu1.OpmerkingenBijFunctioneleRelevantie.Click("579;98");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varComment' with focus on 'ApplicationUnderTest.Individu1.OpmerkingenBijFunctioneleRelevantie'.", repo.ApplicationUnderTest.Individu1.OpmerkingenBijFunctioneleRelevantieInfo, new RecordItemIndex(153));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varComment' with focus on 'ApplicationUnderTest.Individu1.OpmerkingenBijFunctioneleRelevantie'.", repo.ApplicationUnderTest.Individu1.OpmerkingenBijFunctioneleRelevantieInfo, new RecordItemIndex(141));
             repo.ApplicationUnderTest.Individu1.OpmerkingenBijFunctioneleRelevantie.PressKeys(varComment);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.BtnOpslaan' at 51;18.", repo.ApplicationUnderTest.Individu1.BtnOpslaanInfo, new RecordItemIndex(154));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.Individu1.BtnOpslaan' at 51;18.", repo.ApplicationUnderTest.Individu1.BtnOpslaanInfo, new RecordItemIndex(142));
             repo.ApplicationUnderTest.Individu1.BtnOpslaan.Click("51;18");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='\t\tHet opslaan is voltooid.') on item 'ApplicationUnderTest.Individu1.TextHetOpslaanIsVoltooid'.", repo.ApplicationUnderTest.Individu1.TextHetOpslaanIsVoltooidInfo, new RecordItemIndex(155));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='\t\tHet opslaan is voltooid.') on item 'ApplicationUnderTest.Individu1.TextHetOpslaanIsVoltooid'.", repo.ApplicationUnderTest.Individu1.TextHetOpslaanIsVoltooidInfo, new RecordItemIndex(143));
             Validate.AttributeEqual(repo.ApplicationUnderTest.Individu1.TextHetOpslaanIsVoltooidInfo, "Text", "\t\tHet opslaan is voltooid.");
+            
+            // Einde Nieuw Individu
+            Report.Log(ReportLevel.Info, "Section", "Einde Nieuw Individu", new RecordItemIndex(144));
             
         }
 

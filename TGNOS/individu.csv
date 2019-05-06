@@ -1,2 +1,2 @@
-varFirstName;varLastName;varBirthCity;varRRNr;varGender
-Ranorex;Test;Mechelen;55010116297;Man
+﻿varFirstName,varLastName,varBirthCity,varRRNr,varBirthDate,varMobile,varPhone,varEmail,varStreet,varZipCode,varDateValidFrom,varStraatNo,varProfession,varMobilityRadusKm,varHoursPerWeek,varComment,varBankNumber,varBirthDateSpouse,varLastNameSpouse,varFirstNameSpouse,varGender,varMarriageDate,varTaxSituationDate,							
+Ranorex,Test,Mechelen,55010116297,01011955,0472611353,015800100,tgnos.test@agilitasgroup.be,stationsstraat,2800,31122999,120,HUISHOUD,20,30,test,be26733024201429,01011950,test,test,Man,06052019,06052019,

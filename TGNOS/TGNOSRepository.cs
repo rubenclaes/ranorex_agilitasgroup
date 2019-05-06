@@ -123,6 +123,7 @@ namespace TGNOS
             TGNOSRepositoryFolders.TbpgBasisInformatieFolder _tbpgbasisinformatie;
             TGNOSRepositoryFolders.TbpgSignalitiekFolder _tbpgsignalitiek;
             TGNOSRepositoryFolders.OpzoekenIndividuStartFolder _opzoekenindividustart;
+            TGNOSRepositoryFolders.TbpgFiscaalVerloningFolder _tbpgfiscaalverloning;
             RepoItemInfo _individuInfo;
             RepoItemInfo _buttonokInfo;
             RepoItemInfo _buttonok1Info;
@@ -150,6 +151,7 @@ namespace TGNOS
                 _tbpgbasisinformatie = new TGNOSRepositoryFolders.TbpgBasisInformatieFolder(this);
                 _tbpgsignalitiek = new TGNOSRepositoryFolders.TbpgSignalitiekFolder(this);
                 _opzoekenindividustart = new TGNOSRepositoryFolders.OpzoekenIndividuStartFolder(this);
+                _tbpgfiscaalverloning = new TGNOSRepositoryFolders.TbpgFiscaalVerloningFolder(this);
                 _individuInfo = new RepoItemInfo(this, "Individu", "?/?/menuitem[@accessiblename='Individu']", 30000, null, "7be7ff5e-9a32-4424-85a1-61cbc051fcbb");
                 _buttonokInfo = new RepoItemInfo(this, "ButtonOK", "button[@controlname='ButtonOK']", 30000, null, "971e97d5-1cf8-45d0-9bf8-3a9204c12af3");
                 _buttonok1Info = new RepoItemInfo(this, "ButtonOK1", "button[@controlname='ButtonOK']", 30000, null, "9992ac9e-6f6a-4520-a781-bd351c3f3280");
@@ -611,6 +613,15 @@ namespace TGNOS
             {
                 get { return _opzoekenindividustart; }
             }
+
+            /// <summary>
+            /// The TbpgFiscaalVerloning folder.
+            /// </summary>
+            [RepositoryFolder("f1090c6c-14c7-47f8-a941-d1768e9c3840")]
+            public virtual TGNOSRepositoryFolders.TbpgFiscaalVerloningFolder TbpgFiscaalVerloning
+            {
+                get { return _tbpgfiscaalverloning; }
+            }
         }
 
         /// <summary>
@@ -626,37 +637,13 @@ namespace TGNOS
             RepoItemInfo _geldigInfo;
             RepoItemInfo _cbxcheckboxInfo;
             RepoItemInfo _cbocombobox2Info;
-            RepoItemInfo _textInfo;
             RepoItemInfo _hetopslaanisvoltooidInfo;
             RepoItemInfo _texthetopslaanisvoltooidInfo;
             RepoItemInfo _fiscaalverloningInfo;
-            RepoItemInfo _cbocombobox3Info;
             RepoItemInfo _list02052019Info;
             RepoItemInfo _dtfiskalesituatiedatumfiskaalverloningInfo;
             RepoItemInfo _tbpgfiskaal1Info;
             RepoItemInfo _list020520191Info;
-            RepoItemInfo _naamechtgenooteInfo;
-            RepoItemInfo _voornaamechtgenooteInfo;
-            RepoItemInfo _textasteriskInfo;
-            RepoItemInfo _cbocombobox4Info;
-            RepoItemInfo _cbocombobox5Info;
-            RepoItemInfo _cbocombobox6Info;
-            RepoItemInfo _ibanInfo;
-            RepoItemInfo _cbxcheckbox1Info;
-            RepoItemInfo _textpercentinvaliditeitindividuInfo;
-            RepoItemInfo _cbxcheckbox2Info;
-            RepoItemInfo _aantperstenlastevalideInfo;
-            RepoItemInfo _aantperstenlasteandersvalideInfo;
-            RepoItemInfo _txttextboxInfo;
-            RepoItemInfo _aant65plusperstenlastevalideInfo;
-            RepoItemInfo _aant65plustenlasteandersvalideInfo;
-            RepoItemInfo _aantkindtenlastevalideInfo;
-            RepoItemInfo _aantkindtenlasteandersvalideInfo;
-            RepoItemInfo _openInfo;
-            RepoItemInfo _closeInfo;
-            RepoItemInfo _groupboxkinderentenlasteInfo;
-            RepoItemInfo _grpgezinssituatieInfo;
-            RepoItemInfo _cbocombobox7Info;
             RepoItemInfo _aspiratiesInfo;
             RepoItemInfo _btnnieuwberoepInfo;
             RepoItemInfo _mobiliteitstraalkmInfo;
@@ -689,8 +676,6 @@ namespace TGNOS
             RepoItemInfo _toevoegenbuttonInfo;
             RepoItemInfo _opmerkingenInfo;
             RepoItemInfo _opmerkingenbijfunctionelerelevantieInfo;
-            RepoItemInfo _textasterisk1Info;
-            RepoItemInfo _textasterisk2Info;
 
             /// <summary>
             /// Creates a new Individu1  folder.
@@ -705,37 +690,13 @@ namespace TGNOS
                 _geldigInfo = new RepoItemInfo(this, "Geldig", "?/?/tabpage[@controlname='tbpgBasisInformatie']//table[@controlname='dtgrdIndividuRollen']/row[@accessiblename='Individu']/cell[@accessiblename='Geldig']", 30000, null, "6601a132-72c4-4466-93a1-871e8f148c61");
                 _cbxcheckboxInfo = new RepoItemInfo(this, "CbxCheckBox", "?/?/tabpage[@controlname='tbpgSignalitiek']//container[@controlname='chkVisumKunstenaar_Signalitiek']/checkbox[@controlname='cbxCheckBox']", 30000, null, "2d39257d-ee1e-4555-9970-526532bbbec4");
                 _cbocombobox2Info = new RepoItemInfo(this, "CboComboBox2", "?/?/tabpage[@controlname='tbpgSignalitiek']//container[@controlname='uccmbNationaliteit_Signalitiek']/combobox[@controlname='cboComboBox']", 30000, null, "debc57a2-055b-42d0-b056-447d8c89e571");
-                _textInfo = new RepoItemInfo(this, "Text", "?/?/tabpage[@controlname='tbpgSignalitiek']//text[@controlname='uctxtEmail_Signalitiek']/text[@accessiblerole='Text']", 30000, null, "c6abc9c1-b201-4406-b349-e08e2ac8b149");
                 _hetopslaanisvoltooidInfo = new RepoItemInfo(this, "HetOpslaanIsVoltooid", "?/?/text[@accessiblename='Het opslaan is voltooid.']", 30000, null, "69fef7f2-537f-4bad-98a5-2bebbf29ff4e");
                 _texthetopslaanisvoltooidInfo = new RepoItemInfo(this, "TextHetOpslaanIsVoltooid", "?/?/text[@accessiblename~'^Het\\ opslaan\\ is\\ voltooid']", 30000, null, "c4694675-9a7c-4232-88e7-5b374afed039");
                 _fiscaalverloningInfo = new RepoItemInfo(this, "FiscaalVerloning", "?/?/tabpage[@accessiblename='Fiscaal & Verloning']", 30000, null, "eaca2dc7-d909-4b9f-bee3-3e37ae89898a");
-                _cbocombobox3Info = new RepoItemInfo(this, "CboComboBox3", "?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpfiskaal']/?/?/combobox[@controlname='cboComboBox']", 30000, null, "97aafc37-6283-4f41-94d4-35772fe32402");
                 _list02052019Info = new RepoItemInfo(this, "List02052019", "tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpfiskaal']//list[@accessiblename='02/05/2019']", 30000, null, "6c657a85-3d7a-4573-911e-693d8772b354");
                 _dtfiskalesituatiedatumfiskaalverloningInfo = new RepoItemInfo(this, "DtFiskaleSituatieDatumFiskaalVerloning", "?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpfiskaal']/container[@controlname='dtFiskaleSituatieDatum_FiskaalVerloning']", 30000, null, "041dbc61-18de-414a-982c-7343c7de68d0");
                 _tbpgfiskaal1Info = new RepoItemInfo(this, "TbpgFiskaal1", "?/?/tabpage[@controlname='tbpgFiscaleSituatie']/container[@controlname='TbpgFiskaal1']", 30000, null, "5902093e-1e65-4a8f-b30d-f23c67324469");
                 _list020520191Info = new RepoItemInfo(this, "List020520191", "tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpfiskaal']/container[@controlname='dtDatumHuwelijk_FiskaalVerloning']/datetime[@controlname='dtpDateTimePicker']/list[@accessiblename='02/05/2019']", 30000, null, "df164dc4-0292-46c5-9f02-7703ceeae584");
-                _naamechtgenooteInfo = new RepoItemInfo(this, "NaamEchtgenoOTE", "tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpfiskaal']//text[@accessiblename='Naam echtgeno(o)t(e)']", 30000, null, "8d8359d3-d2fe-4960-b865-c3f018c9a986");
-                _voornaamechtgenooteInfo = new RepoItemInfo(this, "VoornaamEchtgenoOTE", "tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpfiskaal']//text[@accessiblename='Voornaam echtgeno(o)t(e)']", 30000, null, "c6e20579-672a-4848-bd55-6bb674c793b9");
-                _textasteriskInfo = new RepoItemInfo(this, "TextAsterisk", "tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpfiskaal']/container[@controlname='dtGeboorteDatumEchtgenote_FiskaalVerloning']/text[@controlname='txtDatum']/text[@accessiblename='*']", 30000, null, "da21b313-d452-403a-86bc-23253daca793");
-                _cbocombobox4Info = new RepoItemInfo(this, "CboComboBox4", "?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpfiskaal']/container[@controlname='cmbEigenInkomenEchtgenote_FiskaalVerloning']/combobox[@controlname='cboComboBox']", 30000, null, "1d99d52a-179f-4499-964d-26acd773ac60");
-                _cbocombobox5Info = new RepoItemInfo(this, "CboComboBox5", "?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpfiskaal']/container[@controlname='cmbBeroepEchtgenote_FiskaalVerloning']/combobox[@controlname='cboComboBox']", 30000, null, "ed0b6d9d-bf67-477e-b74a-189517e6639d");
-                _cbocombobox6Info = new RepoItemInfo(this, "CboComboBox6", "?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpVerloning']/?/?/combobox[@controlname='cboComboBox']", 30000, null, "5f478ef4-8169-421b-9e8a-295fc8133ea3");
-                _ibanInfo = new RepoItemInfo(this, "IBAN", "tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpVerloning']//text[@accessiblename='IBAN']", 30000, null, "a0a4b5fa-88d2-494c-9385-495323630363");
-                _cbxcheckbox1Info = new RepoItemInfo(this, "CbxCheckBox1", "?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpGezinssituatie']/?/?/checkbox[@controlname='cbxCheckBox']", 30000, null, "6922edf9-2ae0-415e-a613-8b0f7a7b8309");
-                _textpercentinvaliditeitindividuInfo = new RepoItemInfo(this, "TextPercentInvaliditeitIndividu", "?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpGezinssituatie']/container[@controlname='txtPercentageInvaliditeitIndividu_FiskaalVerloning']/?/?/text[@accessiblename='% Invaliditeit individu']", 30000, null, "0b5829f2-b78f-4e6f-8f08-6e621de1fe22");
-                _cbxcheckbox2Info = new RepoItemInfo(this, "CbxCheckBox2", "?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpGezinssituatie']/container[@controlname='chkEchgenoteAndersValide_FiskaalVerloning']/checkbox[@controlname='cbxCheckBox']", 30000, null, "89de18e9-c75b-43c3-b6fd-afe47a4c8dc5");
-                _aantperstenlastevalideInfo = new RepoItemInfo(this, "AantPersTenLasteValide", "?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpGezinssituatie']/container[@controlname='txtAantalAnderePersonenTenLaste_Valide_FiskaalVerloning']/?/?/text[@accessiblename~'^Aant\\.\\ pers\\.\\ ten\\ laste\\ val']", 30000, null, "b6cca9a9-4add-4469-b943-60e89ad026a6");
-                _aantperstenlasteandersvalideInfo = new RepoItemInfo(this, "AantPersTenLasteAndersvalide", "?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpGezinssituatie']/container[@controlname='txtAantalAnderePersonenTenLaste_Andersvalide_FiskaalVerloning']/?/?/text[@accessiblename~'^Aant\\.\\ pers\\.\\ ten\\ laste\\ and']", 30000, null, "485c55f1-c841-40c6-a418-435d46017dad");
-                _txttextboxInfo = new RepoItemInfo(this, "TxtTextBox", "?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpGezinssituatie']/container[@controlname='txtAantalAnderePersonenTenLaste_Andersvalide_FiskaalVerloning']/text[@controlname='txtTextBox']", 30000, null, "355747ad-8146-4d70-be12-1795e5f7d240");
-                _aant65plusperstenlastevalideInfo = new RepoItemInfo(this, "Aant65PlusPersTenLasteValide", "?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpGezinssituatie']/container[@controlname='txtAantal65PlusPersonenTenlaste_Valide_FiskaalVerloning']/?/?/text[@accessiblename~'^Aant\\.\\ 65\\+\\ pers\\.\\ ten\\ laste']", 30000, null, "1553a1e6-ded6-4662-a51d-2c9d0b4aab94");
-                _aant65plustenlasteandersvalideInfo = new RepoItemInfo(this, "Aant65PlusTenLasteAndersvalide", "?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpGezinssituatie']/container[@controlname='txtAantal65PlusPersonenTenLaste_Andersvalide_FiskaalVerloning']/?/?/text[@accessiblename~'^Aant\\.\\ 65\\+\\ ten\\ laste\\ ander']", 30000, null, "433f3762-2f0c-42bd-bf2f-f49813a78c93");
-                _aantkindtenlastevalideInfo = new RepoItemInfo(this, "AantKindTenLasteValide", "?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpGezinssituatie']/container[@controlname='groupBoxKinderenTenLaste']//text[@accessiblename~'^Aant\\.\\ kind\\.\\ ten\\ laste\\ val']", 30000, null, "24a738a4-b7e7-4d66-8625-33dfd6ef225d");
-                _aantkindtenlasteandersvalideInfo = new RepoItemInfo(this, "AantKindTenLasteAndersvalide", "?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpGezinssituatie']/container[@controlname='groupBoxKinderenTenLaste']//text[@accessiblename~'^Aant\\.\\ kind\\.\\ ten\\ laste\\ and']", 30000, null, "90425078-75a5-41ac-964e-8f322a788f7e");
-                _openInfo = new RepoItemInfo(this, "Open", "?/?/tabpage[@controlname='tbpgFiscaleSituatie']//container[@controlname='groupBoxKinderenTenLaste']/?/?/combobox[@controlname='cboComboBox']/button[@accessiblename='Open']", 30000, null, "e36a57f3-5246-4d63-bdba-4cc290f2ba06");
-                _closeInfo = new RepoItemInfo(this, "Close", "?/?/tabpage[@controlname='tbpgFiscaleSituatie']//container[@controlname='groupBoxKinderenTenLaste']/?/?/combobox[@controlname='cboComboBox']/button[@accessiblename='Close']", 30000, null, "f169b1c1-2087-42da-95e1-036540d66624");
-                _groupboxkinderentenlasteInfo = new RepoItemInfo(this, "GroupBoxKinderenTenLaste", "?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpGezinssituatie']/container[@controlname='groupBoxKinderenTenLaste']", 30000, null, "3f08e29c-1140-4829-9388-947585a59df1");
-                _grpgezinssituatieInfo = new RepoItemInfo(this, "GrpGezinssituatie", "?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpGezinssituatie']", 30000, null, "258f9f31-f77d-47d0-b2d2-09ec54b8f610");
-                _cbocombobox7Info = new RepoItemInfo(this, "CboComboBox7", "?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpOverige']/?/?/combobox[@controlname='cboComboBox']", 30000, null, "74591bf1-00d3-49f4-89fa-68f04a58a62e");
                 _aspiratiesInfo = new RepoItemInfo(this, "Aspiraties", "?/?/tabpage[@accessiblename='Aspiraties']", 30000, null, "17e2d88b-b450-4e71-a710-81e7e8d6bb0a");
                 _btnnieuwberoepInfo = new RepoItemInfo(this, "BtnNieuwBeroep", "tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgAspiraties']//button[@controlname='btnNieuwBeroep']", 30000, null, "0262afba-da3a-4e3a-8a19-b1981754f35a");
                 _mobiliteitstraalkmInfo = new RepoItemInfo(this, "MobiliteitStraalKm", "tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgAspiraties']//container[@controlname='txtMobiliteitStraalKm_Aspiraties']/?/?/text[@accessiblename='Mobiliteit straal km']", 30000, null, "4cbad03b-1755-4032-81d8-cbf44aa677a6");
@@ -768,8 +729,6 @@ namespace TGNOS
                 _toevoegenbuttonInfo = new RepoItemInfo(this, "ToevoegenButton", "?/?/tabpage[@controlname='tbpgCV']/?/?/container[@controlname='documentenGroupBox']/button[@controlname='toevoegenButton']", 30000, null, "00b34979-a4ec-4ded-a9ab-2300e36292be");
                 _opmerkingenInfo = new RepoItemInfo(this, "Opmerkingen", "?/?/tabpage[@accessiblename='Opmerkingen']", 30000, null, "78795e67-3352-41f5-8f8e-b897ef61ac2a");
                 _opmerkingenbijfunctionelerelevantieInfo = new RepoItemInfo(this, "OpmerkingenBijFunctioneleRelevantie", "tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgOpmerkingen']//text[@accessiblename~'^Opmerkingen\\ bij\\ functione']", 30000, null, "e7ad5606-f1d9-4166-83f6-ab2ebfe493ad");
-                _textasterisk1Info = new RepoItemInfo(this, "TextAsterisk1", "tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpfiskaal']//text[@accessiblename='*']", 30000, null, "1b47f449-6bf6-43db-8d2d-06786ae0f87c");
-                _textasterisk2Info = new RepoItemInfo(this, "TextAsterisk2", "tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpfiskaal']/container[@controlname='dtDatumHuwelijk_FiskaalVerloning']/text[@controlname='txtDatum']/text[@accessiblename='*']", 30000, null, "b4f7b676-c5d6-4f0f-bbf1-00860b682898");
             }
 
             /// <summary>
@@ -965,30 +924,6 @@ namespace TGNOS
             }
 
             /// <summary>
-            /// The Text item.
-            /// </summary>
-            [RepositoryItem("c6abc9c1-b201-4406-b349-e08e2ac8b149")]
-            public virtual Ranorex.Text Text
-            {
-                get
-                {
-                    return _textInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Text item info.
-            /// </summary>
-            [RepositoryItemInfo("c6abc9c1-b201-4406-b349-e08e2ac8b149")]
-            public virtual RepoItemInfo TextInfo
-            {
-                get
-                {
-                    return _textInfo;
-                }
-            }
-
-            /// <summary>
             /// The HetOpslaanIsVoltooid item.
             /// </summary>
             [RepositoryItem("69fef7f2-537f-4bad-98a5-2bebbf29ff4e")]
@@ -1057,30 +992,6 @@ namespace TGNOS
                 get
                 {
                     return _fiscaalverloningInfo;
-                }
-            }
-
-            /// <summary>
-            /// The CboComboBox3 item.
-            /// </summary>
-            [RepositoryItem("97aafc37-6283-4f41-94d4-35772fe32402")]
-            public virtual Ranorex.ComboBox CboComboBox3
-            {
-                get
-                {
-                    return _cbocombobox3Info.CreateAdapter<Ranorex.ComboBox>(true);
-                }
-            }
-
-            /// <summary>
-            /// The CboComboBox3 item info.
-            /// </summary>
-            [RepositoryItemInfo("97aafc37-6283-4f41-94d4-35772fe32402")]
-            public virtual RepoItemInfo CboComboBox3Info
-            {
-                get
-                {
-                    return _cbocombobox3Info;
                 }
             }
 
@@ -1177,534 +1088,6 @@ namespace TGNOS
                 get
                 {
                     return _list020520191Info;
-                }
-            }
-
-            /// <summary>
-            /// The NaamEchtgenoOTE item.
-            /// </summary>
-            [RepositoryItem("8d8359d3-d2fe-4960-b865-c3f018c9a986")]
-            public virtual Ranorex.Text NaamEchtgenoOTE
-            {
-                get
-                {
-                    return _naamechtgenooteInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The NaamEchtgenoOTE item info.
-            /// </summary>
-            [RepositoryItemInfo("8d8359d3-d2fe-4960-b865-c3f018c9a986")]
-            public virtual RepoItemInfo NaamEchtgenoOTEInfo
-            {
-                get
-                {
-                    return _naamechtgenooteInfo;
-                }
-            }
-
-            /// <summary>
-            /// The VoornaamEchtgenoOTE item.
-            /// </summary>
-            [RepositoryItem("c6e20579-672a-4848-bd55-6bb674c793b9")]
-            public virtual Ranorex.Text VoornaamEchtgenoOTE
-            {
-                get
-                {
-                    return _voornaamechtgenooteInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The VoornaamEchtgenoOTE item info.
-            /// </summary>
-            [RepositoryItemInfo("c6e20579-672a-4848-bd55-6bb674c793b9")]
-            public virtual RepoItemInfo VoornaamEchtgenoOTEInfo
-            {
-                get
-                {
-                    return _voornaamechtgenooteInfo;
-                }
-            }
-
-            /// <summary>
-            /// The TextAsterisk item.
-            /// </summary>
-            [RepositoryItem("da21b313-d452-403a-86bc-23253daca793")]
-            public virtual Ranorex.Text TextAsterisk
-            {
-                get
-                {
-                    return _textasteriskInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The TextAsterisk item info.
-            /// </summary>
-            [RepositoryItemInfo("da21b313-d452-403a-86bc-23253daca793")]
-            public virtual RepoItemInfo TextAsteriskInfo
-            {
-                get
-                {
-                    return _textasteriskInfo;
-                }
-            }
-
-            /// <summary>
-            /// The CboComboBox4 item.
-            /// </summary>
-            [RepositoryItem("1d99d52a-179f-4499-964d-26acd773ac60")]
-            public virtual Ranorex.ComboBox CboComboBox4
-            {
-                get
-                {
-                    return _cbocombobox4Info.CreateAdapter<Ranorex.ComboBox>(true);
-                }
-            }
-
-            /// <summary>
-            /// The CboComboBox4 item info.
-            /// </summary>
-            [RepositoryItemInfo("1d99d52a-179f-4499-964d-26acd773ac60")]
-            public virtual RepoItemInfo CboComboBox4Info
-            {
-                get
-                {
-                    return _cbocombobox4Info;
-                }
-            }
-
-            /// <summary>
-            /// The CboComboBox5 item.
-            /// </summary>
-            [RepositoryItem("ed0b6d9d-bf67-477e-b74a-189517e6639d")]
-            public virtual Ranorex.ComboBox CboComboBox5
-            {
-                get
-                {
-                    return _cbocombobox5Info.CreateAdapter<Ranorex.ComboBox>(true);
-                }
-            }
-
-            /// <summary>
-            /// The CboComboBox5 item info.
-            /// </summary>
-            [RepositoryItemInfo("ed0b6d9d-bf67-477e-b74a-189517e6639d")]
-            public virtual RepoItemInfo CboComboBox5Info
-            {
-                get
-                {
-                    return _cbocombobox5Info;
-                }
-            }
-
-            /// <summary>
-            /// The CboComboBox6 item.
-            /// </summary>
-            [RepositoryItem("5f478ef4-8169-421b-9e8a-295fc8133ea3")]
-            public virtual Ranorex.ComboBox CboComboBox6
-            {
-                get
-                {
-                    return _cbocombobox6Info.CreateAdapter<Ranorex.ComboBox>(true);
-                }
-            }
-
-            /// <summary>
-            /// The CboComboBox6 item info.
-            /// </summary>
-            [RepositoryItemInfo("5f478ef4-8169-421b-9e8a-295fc8133ea3")]
-            public virtual RepoItemInfo CboComboBox6Info
-            {
-                get
-                {
-                    return _cbocombobox6Info;
-                }
-            }
-
-            /// <summary>
-            /// The IBAN item.
-            /// </summary>
-            [RepositoryItem("a0a4b5fa-88d2-494c-9385-495323630363")]
-            public virtual Ranorex.Text IBAN
-            {
-                get
-                {
-                    return _ibanInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The IBAN item info.
-            /// </summary>
-            [RepositoryItemInfo("a0a4b5fa-88d2-494c-9385-495323630363")]
-            public virtual RepoItemInfo IBANInfo
-            {
-                get
-                {
-                    return _ibanInfo;
-                }
-            }
-
-            /// <summary>
-            /// The CbxCheckBox1 item.
-            /// </summary>
-            [RepositoryItem("6922edf9-2ae0-415e-a613-8b0f7a7b8309")]
-            public virtual Ranorex.CheckBox CbxCheckBox1
-            {
-                get
-                {
-                    return _cbxcheckbox1Info.CreateAdapter<Ranorex.CheckBox>(true);
-                }
-            }
-
-            /// <summary>
-            /// The CbxCheckBox1 item info.
-            /// </summary>
-            [RepositoryItemInfo("6922edf9-2ae0-415e-a613-8b0f7a7b8309")]
-            public virtual RepoItemInfo CbxCheckBox1Info
-            {
-                get
-                {
-                    return _cbxcheckbox1Info;
-                }
-            }
-
-            /// <summary>
-            /// The TextPercentInvaliditeitIndividu item.
-            /// </summary>
-            [RepositoryItem("0b5829f2-b78f-4e6f-8f08-6e621de1fe22")]
-            public virtual Ranorex.Text TextPercentInvaliditeitIndividu
-            {
-                get
-                {
-                    return _textpercentinvaliditeitindividuInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The TextPercentInvaliditeitIndividu item info.
-            /// </summary>
-            [RepositoryItemInfo("0b5829f2-b78f-4e6f-8f08-6e621de1fe22")]
-            public virtual RepoItemInfo TextPercentInvaliditeitIndividuInfo
-            {
-                get
-                {
-                    return _textpercentinvaliditeitindividuInfo;
-                }
-            }
-
-            /// <summary>
-            /// The CbxCheckBox2 item.
-            /// </summary>
-            [RepositoryItem("89de18e9-c75b-43c3-b6fd-afe47a4c8dc5")]
-            public virtual Ranorex.CheckBox CbxCheckBox2
-            {
-                get
-                {
-                    return _cbxcheckbox2Info.CreateAdapter<Ranorex.CheckBox>(true);
-                }
-            }
-
-            /// <summary>
-            /// The CbxCheckBox2 item info.
-            /// </summary>
-            [RepositoryItemInfo("89de18e9-c75b-43c3-b6fd-afe47a4c8dc5")]
-            public virtual RepoItemInfo CbxCheckBox2Info
-            {
-                get
-                {
-                    return _cbxcheckbox2Info;
-                }
-            }
-
-            /// <summary>
-            /// The AantPersTenLasteValide item.
-            /// </summary>
-            [RepositoryItem("b6cca9a9-4add-4469-b943-60e89ad026a6")]
-            public virtual Ranorex.Text AantPersTenLasteValide
-            {
-                get
-                {
-                    return _aantperstenlastevalideInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The AantPersTenLasteValide item info.
-            /// </summary>
-            [RepositoryItemInfo("b6cca9a9-4add-4469-b943-60e89ad026a6")]
-            public virtual RepoItemInfo AantPersTenLasteValideInfo
-            {
-                get
-                {
-                    return _aantperstenlastevalideInfo;
-                }
-            }
-
-            /// <summary>
-            /// The AantPersTenLasteAndersvalide item.
-            /// </summary>
-            [RepositoryItem("485c55f1-c841-40c6-a418-435d46017dad")]
-            public virtual Ranorex.Text AantPersTenLasteAndersvalide
-            {
-                get
-                {
-                    return _aantperstenlasteandersvalideInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The AantPersTenLasteAndersvalide item info.
-            /// </summary>
-            [RepositoryItemInfo("485c55f1-c841-40c6-a418-435d46017dad")]
-            public virtual RepoItemInfo AantPersTenLasteAndersvalideInfo
-            {
-                get
-                {
-                    return _aantperstenlasteandersvalideInfo;
-                }
-            }
-
-            /// <summary>
-            /// The TxtTextBox item.
-            /// </summary>
-            [RepositoryItem("355747ad-8146-4d70-be12-1795e5f7d240")]
-            public virtual Ranorex.Text TxtTextBox
-            {
-                get
-                {
-                    return _txttextboxInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The TxtTextBox item info.
-            /// </summary>
-            [RepositoryItemInfo("355747ad-8146-4d70-be12-1795e5f7d240")]
-            public virtual RepoItemInfo TxtTextBoxInfo
-            {
-                get
-                {
-                    return _txttextboxInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Aant65PlusPersTenLasteValide item.
-            /// </summary>
-            [RepositoryItem("1553a1e6-ded6-4662-a51d-2c9d0b4aab94")]
-            public virtual Ranorex.Text Aant65PlusPersTenLasteValide
-            {
-                get
-                {
-                    return _aant65plusperstenlastevalideInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Aant65PlusPersTenLasteValide item info.
-            /// </summary>
-            [RepositoryItemInfo("1553a1e6-ded6-4662-a51d-2c9d0b4aab94")]
-            public virtual RepoItemInfo Aant65PlusPersTenLasteValideInfo
-            {
-                get
-                {
-                    return _aant65plusperstenlastevalideInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Aant65PlusTenLasteAndersvalide item.
-            /// </summary>
-            [RepositoryItem("433f3762-2f0c-42bd-bf2f-f49813a78c93")]
-            public virtual Ranorex.Text Aant65PlusTenLasteAndersvalide
-            {
-                get
-                {
-                    return _aant65plustenlasteandersvalideInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Aant65PlusTenLasteAndersvalide item info.
-            /// </summary>
-            [RepositoryItemInfo("433f3762-2f0c-42bd-bf2f-f49813a78c93")]
-            public virtual RepoItemInfo Aant65PlusTenLasteAndersvalideInfo
-            {
-                get
-                {
-                    return _aant65plustenlasteandersvalideInfo;
-                }
-            }
-
-            /// <summary>
-            /// The AantKindTenLasteValide item.
-            /// </summary>
-            [RepositoryItem("24a738a4-b7e7-4d66-8625-33dfd6ef225d")]
-            public virtual Ranorex.Text AantKindTenLasteValide
-            {
-                get
-                {
-                    return _aantkindtenlastevalideInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The AantKindTenLasteValide item info.
-            /// </summary>
-            [RepositoryItemInfo("24a738a4-b7e7-4d66-8625-33dfd6ef225d")]
-            public virtual RepoItemInfo AantKindTenLasteValideInfo
-            {
-                get
-                {
-                    return _aantkindtenlastevalideInfo;
-                }
-            }
-
-            /// <summary>
-            /// The AantKindTenLasteAndersvalide item.
-            /// </summary>
-            [RepositoryItem("90425078-75a5-41ac-964e-8f322a788f7e")]
-            public virtual Ranorex.Text AantKindTenLasteAndersvalide
-            {
-                get
-                {
-                    return _aantkindtenlasteandersvalideInfo.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The AantKindTenLasteAndersvalide item info.
-            /// </summary>
-            [RepositoryItemInfo("90425078-75a5-41ac-964e-8f322a788f7e")]
-            public virtual RepoItemInfo AantKindTenLasteAndersvalideInfo
-            {
-                get
-                {
-                    return _aantkindtenlasteandersvalideInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Open item.
-            /// </summary>
-            [RepositoryItem("e36a57f3-5246-4d63-bdba-4cc290f2ba06")]
-            public virtual Ranorex.Button Open
-            {
-                get
-                {
-                    return _openInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Open item info.
-            /// </summary>
-            [RepositoryItemInfo("e36a57f3-5246-4d63-bdba-4cc290f2ba06")]
-            public virtual RepoItemInfo OpenInfo
-            {
-                get
-                {
-                    return _openInfo;
-                }
-            }
-
-            /// <summary>
-            /// The Close item.
-            /// </summary>
-            [RepositoryItem("f169b1c1-2087-42da-95e1-036540d66624")]
-            public virtual Ranorex.Button Close
-            {
-                get
-                {
-                    return _closeInfo.CreateAdapter<Ranorex.Button>(true);
-                }
-            }
-
-            /// <summary>
-            /// The Close item info.
-            /// </summary>
-            [RepositoryItemInfo("f169b1c1-2087-42da-95e1-036540d66624")]
-            public virtual RepoItemInfo CloseInfo
-            {
-                get
-                {
-                    return _closeInfo;
-                }
-            }
-
-            /// <summary>
-            /// The GroupBoxKinderenTenLaste item.
-            /// </summary>
-            [RepositoryItem("3f08e29c-1140-4829-9388-947585a59df1")]
-            public virtual Ranorex.Container GroupBoxKinderenTenLaste
-            {
-                get
-                {
-                    return _groupboxkinderentenlasteInfo.CreateAdapter<Ranorex.Container>(true);
-                }
-            }
-
-            /// <summary>
-            /// The GroupBoxKinderenTenLaste item info.
-            /// </summary>
-            [RepositoryItemInfo("3f08e29c-1140-4829-9388-947585a59df1")]
-            public virtual RepoItemInfo GroupBoxKinderenTenLasteInfo
-            {
-                get
-                {
-                    return _groupboxkinderentenlasteInfo;
-                }
-            }
-
-            /// <summary>
-            /// The GrpGezinssituatie item.
-            /// </summary>
-            [RepositoryItem("258f9f31-f77d-47d0-b2d2-09ec54b8f610")]
-            public virtual Ranorex.Container GrpGezinssituatie
-            {
-                get
-                {
-                    return _grpgezinssituatieInfo.CreateAdapter<Ranorex.Container>(true);
-                }
-            }
-
-            /// <summary>
-            /// The GrpGezinssituatie item info.
-            /// </summary>
-            [RepositoryItemInfo("258f9f31-f77d-47d0-b2d2-09ec54b8f610")]
-            public virtual RepoItemInfo GrpGezinssituatieInfo
-            {
-                get
-                {
-                    return _grpgezinssituatieInfo;
-                }
-            }
-
-            /// <summary>
-            /// The CboComboBox7 item.
-            /// </summary>
-            [RepositoryItem("74591bf1-00d3-49f4-89fa-68f04a58a62e")]
-            public virtual Ranorex.ComboBox CboComboBox7
-            {
-                get
-                {
-                    return _cbocombobox7Info.CreateAdapter<Ranorex.ComboBox>(true);
-                }
-            }
-
-            /// <summary>
-            /// The CboComboBox7 item info.
-            /// </summary>
-            [RepositoryItemInfo("74591bf1-00d3-49f4-89fa-68f04a58a62e")]
-            public virtual RepoItemInfo CboComboBox7Info
-            {
-                get
-                {
-                    return _cbocombobox7Info;
                 }
             }
 
@@ -2475,54 +1858,6 @@ namespace TGNOS
                     return _opmerkingenbijfunctionelerelevantieInfo;
                 }
             }
-
-            /// <summary>
-            /// The TextAsterisk1 item.
-            /// </summary>
-            [RepositoryItem("1b47f449-6bf6-43db-8d2d-06786ae0f87c")]
-            public virtual Ranorex.Text TextAsterisk1
-            {
-                get
-                {
-                    return _textasterisk1Info.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The TextAsterisk1 item info.
-            /// </summary>
-            [RepositoryItemInfo("1b47f449-6bf6-43db-8d2d-06786ae0f87c")]
-            public virtual RepoItemInfo TextAsterisk1Info
-            {
-                get
-                {
-                    return _textasterisk1Info;
-                }
-            }
-
-            /// <summary>
-            /// The TextAsterisk2 item.
-            /// </summary>
-            [RepositoryItem("b4f7b676-c5d6-4f0f-bbf1-00860b682898")]
-            public virtual Ranorex.Text TextAsterisk2
-            {
-                get
-                {
-                    return _textasterisk2Info.CreateAdapter<Ranorex.Text>(true);
-                }
-            }
-
-            /// <summary>
-            /// The TextAsterisk2 item info.
-            /// </summary>
-            [RepositoryItemInfo("b4f7b676-c5d6-4f0f-bbf1-00860b682898")]
-            public virtual RepoItemInfo TextAsterisk2Info
-            {
-                get
-                {
-                    return _textasterisk2Info;
-                }
-            }
         }
 
         /// <summary>
@@ -2787,6 +2122,7 @@ namespace TGNOS
             RepoItemInfo _straatInfo;
             RepoItemInfo _text2Info;
             RepoItemInfo _text1Info;
+            RepoItemInfo _emailInfo;
 
             /// <summary>
             /// Creates a new TbpgSignalitiek  folder.
@@ -2802,6 +2138,7 @@ namespace TGNOS
                 _straatInfo = new RepoItemInfo(this, "Straat", "?/?/container[@controlname='grpbxSignalitiekAlgemeen']/container[@controlname='grpWettelijkAdres']//text[@accessiblename='Straat:']", 30000, null, "348b5723-15f7-41e1-8875-b7fbe5553a71");
                 _text2Info = new RepoItemInfo(this, "Text2", "?/?/container[@controlname='grpbxSignalitiekAlgemeen']/container[@controlname='grpWettelijkAdres']//text[@controlname='txtPostCode']/text[@accessiblerole='Text']", 30000, null, "19323db1-4726-4cd0-82a5-c1685da54f16");
                 _text1Info = new RepoItemInfo(this, "Text1", "?/?/container[@controlname='grpbxSignalitiekAlgemeen']/container[@controlname='grpWettelijkAdres']//text[@controlname='txtStraat1']/text[@accessiblerole='Text']", 30000, null, "ee9fdf22-4181-404a-bb4b-eaa56d93b20b");
+                _emailInfo = new RepoItemInfo(this, "Email", ".//text[@controlname='uctxtEmail_Signalitiek']/text[@accessiblerole='Text']", 30000, null, "b62e7518-9ec4-420d-b43c-bc950c9a047c");
             }
 
             /// <summary>
@@ -3017,6 +2354,30 @@ namespace TGNOS
                 get
                 {
                     return _text1Info;
+                }
+            }
+
+            /// <summary>
+            /// The Email item.
+            /// </summary>
+            [RepositoryItem("b62e7518-9ec4-420d-b43c-bc950c9a047c")]
+            public virtual Ranorex.Text Email
+            {
+                get
+                {
+                    return _emailInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Email item info.
+            /// </summary>
+            [RepositoryItemInfo("b62e7518-9ec4-420d-b43c-bc950c9a047c")]
+            public virtual RepoItemInfo EmailInfo
+            {
+                get
+                {
+                    return _emailInfo;
                 }
             }
         }
@@ -3291,6 +2652,696 @@ namespace TGNOS
                 get
                 {
                     return _dtgrdzoekresultaatInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The TbpgFiscaalVerloningFolder folder.
+        /// </summary>
+        [RepositoryFolder("f1090c6c-14c7-47f8-a941-d1768e9c3840")]
+        public partial class TbpgFiscaalVerloningFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _cbocombobox3Info;
+            RepoItemInfo _textasterisk1Info;
+            RepoItemInfo _textasterisk2Info;
+            RepoItemInfo _naamechtgenooteInfo;
+            RepoItemInfo _voornaamechtgenooteInfo;
+            RepoItemInfo _textasteriskInfo;
+            RepoItemInfo _cbocombobox4Info;
+            RepoItemInfo _cbocombobox5Info;
+            RepoItemInfo _cbocombobox6Info;
+            RepoItemInfo _ibanInfo;
+            RepoItemInfo _cbxcheckbox1Info;
+            RepoItemInfo _textpercentinvaliditeitindividuInfo;
+            RepoItemInfo _cbxcheckbox2Info;
+            RepoItemInfo _aantperstenlastevalideInfo;
+            RepoItemInfo _aantperstenlasteandersvalideInfo;
+            RepoItemInfo _txttextboxInfo;
+            RepoItemInfo _aant65plusperstenlastevalideInfo;
+            RepoItemInfo _aant65plustenlasteandersvalideInfo;
+            RepoItemInfo _aantkindtenlastevalideInfo;
+            RepoItemInfo _aantkindtenlasteandersvalideInfo;
+            RepoItemInfo _openInfo;
+            RepoItemInfo _closeInfo;
+            RepoItemInfo _groupboxkinderentenlasteInfo;
+            RepoItemInfo _grpgezinssituatieInfo;
+            RepoItemInfo _cbocombobox7Info;
+
+            /// <summary>
+            /// Creates a new TbpgFiscaalVerloning  folder.
+            /// </summary>
+            public TbpgFiscaalVerloningFolder(RepoGenBaseFolder parentFolder) :
+                    base("TbpgFiscaalVerloning", "?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname=@tbpgfiscalesituatie]", parentFolder, 30000, null, false, "f1090c6c-14c7-47f8-a941-d1768e9c3840", "")
+            {
+                _cbocombobox3Info = new RepoItemInfo(this, "CboComboBox3", "?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpfiskaal']/?/?/combobox[@controlname='cboComboBox']", 30000, null, "97aafc37-6283-4f41-94d4-35772fe32402");
+                _textasterisk1Info = new RepoItemInfo(this, "TextAsterisk1", "?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpfiskaal']//text[@accessiblename='*']", 30000, null, "1b47f449-6bf6-43db-8d2d-06786ae0f87c");
+                _textasterisk2Info = new RepoItemInfo(this, "TextAsterisk2", "?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpfiskaal']/container[@controlname='dtDatumHuwelijk_FiskaalVerloning']/text[@controlname='txtDatum']/text[@accessiblename='*']", 30000, null, "b4f7b676-c5d6-4f0f-bbf1-00860b682898");
+                _naamechtgenooteInfo = new RepoItemInfo(this, "NaamEchtgenoOTE", "?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpfiskaal']//text[@accessiblename='Naam echtgeno(o)t(e)']", 30000, null, "8d8359d3-d2fe-4960-b865-c3f018c9a986");
+                _voornaamechtgenooteInfo = new RepoItemInfo(this, "VoornaamEchtgenoOTE", "?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpfiskaal']//text[@accessiblename='Voornaam echtgeno(o)t(e)']", 30000, null, "c6e20579-672a-4848-bd55-6bb674c793b9");
+                _textasteriskInfo = new RepoItemInfo(this, "TextAsterisk", "?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpfiskaal']/container[@controlname='dtGeboorteDatumEchtgenote_FiskaalVerloning']/text[@controlname='txtDatum']/text[@accessiblename='*']", 30000, null, "da21b313-d452-403a-86bc-23253daca793");
+                _cbocombobox4Info = new RepoItemInfo(this, "CboComboBox4", "?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpfiskaal']/container[@controlname='cmbEigenInkomenEchtgenote_FiskaalVerloning']/combobox[@controlname='cboComboBox']", 30000, null, "1d99d52a-179f-4499-964d-26acd773ac60");
+                _cbocombobox5Info = new RepoItemInfo(this, "CboComboBox5", "?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpfiskaal']/container[@controlname='cmbBeroepEchtgenote_FiskaalVerloning']/combobox[@controlname='cboComboBox']", 30000, null, "ed0b6d9d-bf67-477e-b74a-189517e6639d");
+                _cbocombobox6Info = new RepoItemInfo(this, "CboComboBox6", "?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpVerloning']/?/?/combobox[@controlname='cboComboBox']", 30000, null, "5f478ef4-8169-421b-9e8a-295fc8133ea3");
+                _ibanInfo = new RepoItemInfo(this, "IBAN", "?/?/form[@controlname='Individu']/tabpagelist[@controlname='tabIndividu']/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpVerloning']//text[@accessiblename='IBAN']", 30000, null, "a0a4b5fa-88d2-494c-9385-495323630363");
+                _cbxcheckbox1Info = new RepoItemInfo(this, "CbxCheckBox1", "?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpGezinssituatie']/?/?/checkbox[@controlname='cbxCheckBox']", 30000, null, "6922edf9-2ae0-415e-a613-8b0f7a7b8309");
+                _textpercentinvaliditeitindividuInfo = new RepoItemInfo(this, "TextPercentInvaliditeitIndividu", "?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpGezinssituatie']/container[@controlname='txtPercentageInvaliditeitIndividu_FiskaalVerloning']/?/?/text[@accessiblename='% Invaliditeit individu']", 30000, null, "0b5829f2-b78f-4e6f-8f08-6e621de1fe22");
+                _cbxcheckbox2Info = new RepoItemInfo(this, "CbxCheckBox2", "?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpGezinssituatie']/container[@controlname='chkEchgenoteAndersValide_FiskaalVerloning']/checkbox[@controlname='cbxCheckBox']", 30000, null, "89de18e9-c75b-43c3-b6fd-afe47a4c8dc5");
+                _aantperstenlastevalideInfo = new RepoItemInfo(this, "AantPersTenLasteValide", "?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpGezinssituatie']/container[@controlname='txtAantalAnderePersonenTenLaste_Valide_FiskaalVerloning']/?/?/text[@accessiblename~'^Aant\\.\\ pers\\.\\ ten\\ laste\\ val']", 30000, null, "b6cca9a9-4add-4469-b943-60e89ad026a6");
+                _aantperstenlasteandersvalideInfo = new RepoItemInfo(this, "AantPersTenLasteAndersvalide", "?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpGezinssituatie']/container[@controlname='txtAantalAnderePersonenTenLaste_Andersvalide_FiskaalVerloning']/?/?/text[@accessiblename~'^Aant\\.\\ pers\\.\\ ten\\ laste\\ and']", 30000, null, "485c55f1-c841-40c6-a418-435d46017dad");
+                _txttextboxInfo = new RepoItemInfo(this, "TxtTextBox", "?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpGezinssituatie']/container[@controlname='txtAantalAnderePersonenTenLaste_Andersvalide_FiskaalVerloning']/text[@controlname='txtTextBox']", 30000, null, "355747ad-8146-4d70-be12-1795e5f7d240");
+                _aant65plusperstenlastevalideInfo = new RepoItemInfo(this, "Aant65PlusPersTenLasteValide", "?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpGezinssituatie']/container[@controlname='txtAantal65PlusPersonenTenlaste_Valide_FiskaalVerloning']/?/?/text[@accessiblename~'^Aant\\.\\ 65\\+\\ pers\\.\\ ten\\ laste']", 30000, null, "1553a1e6-ded6-4662-a51d-2c9d0b4aab94");
+                _aant65plustenlasteandersvalideInfo = new RepoItemInfo(this, "Aant65PlusTenLasteAndersvalide", "?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpGezinssituatie']/container[@controlname='txtAantal65PlusPersonenTenLaste_Andersvalide_FiskaalVerloning']/?/?/text[@accessiblename~'^Aant\\.\\ 65\\+\\ ten\\ laste\\ ander']", 30000, null, "433f3762-2f0c-42bd-bf2f-f49813a78c93");
+                _aantkindtenlastevalideInfo = new RepoItemInfo(this, "AantKindTenLasteValide", "?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpGezinssituatie']/container[@controlname='groupBoxKinderenTenLaste']//text[@accessiblename~'^Aant\\.\\ kind\\.\\ ten\\ laste\\ val']", 30000, null, "24a738a4-b7e7-4d66-8625-33dfd6ef225d");
+                _aantkindtenlasteandersvalideInfo = new RepoItemInfo(this, "AantKindTenLasteAndersvalide", "?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpGezinssituatie']/container[@controlname='groupBoxKinderenTenLaste']//text[@accessiblename~'^Aant\\.\\ kind\\.\\ ten\\ laste\\ and']", 30000, null, "90425078-75a5-41ac-964e-8f322a788f7e");
+                _openInfo = new RepoItemInfo(this, "Open", "?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgFiscaleSituatie']//container[@controlname='groupBoxKinderenTenLaste']/?/?/combobox[@controlname='cboComboBox']/button[@accessiblename='Open']", 30000, null, "e36a57f3-5246-4d63-bdba-4cc290f2ba06");
+                _closeInfo = new RepoItemInfo(this, "Close", "?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgFiscaleSituatie']//container[@controlname='groupBoxKinderenTenLaste']/?/?/combobox[@controlname='cboComboBox']/button[@accessiblename='Close']", 30000, null, "f169b1c1-2087-42da-95e1-036540d66624");
+                _groupboxkinderentenlasteInfo = new RepoItemInfo(this, "GroupBoxKinderenTenLaste", "?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpGezinssituatie']/container[@controlname='groupBoxKinderenTenLaste']", 30000, null, "3f08e29c-1140-4829-9388-947585a59df1");
+                _grpgezinssituatieInfo = new RepoItemInfo(this, "GrpGezinssituatie", "?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpGezinssituatie']", 30000, null, "258f9f31-f77d-47d0-b2d2-09ec54b8f610");
+                _cbocombobox7Info = new RepoItemInfo(this, "CboComboBox7", "?/?/form[@controlname='Individu']/?/?/tabpage[@controlname='tbpgFiscaleSituatie']/?/?/container[@controlname='grpOverige']/?/?/combobox[@controlname='cboComboBox']", 30000, null, "74591bf1-00d3-49f4-89fa-68f04a58a62e");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("f1090c6c-14c7-47f8-a941-d1768e9c3840")]
+            public virtual Ranorex.TabPage Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.TabPage>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("f1090c6c-14c7-47f8-a941-d1768e9c3840")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CboComboBox3 item.
+            /// </summary>
+            [RepositoryItem("97aafc37-6283-4f41-94d4-35772fe32402")]
+            public virtual Ranorex.ComboBox CboComboBox3
+            {
+                get
+                {
+                    return _cbocombobox3Info.CreateAdapter<Ranorex.ComboBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CboComboBox3 item info.
+            /// </summary>
+            [RepositoryItemInfo("97aafc37-6283-4f41-94d4-35772fe32402")]
+            public virtual RepoItemInfo CboComboBox3Info
+            {
+                get
+                {
+                    return _cbocombobox3Info;
+                }
+            }
+
+            /// <summary>
+            /// The TextAsterisk1 item.
+            /// </summary>
+            [RepositoryItem("1b47f449-6bf6-43db-8d2d-06786ae0f87c")]
+            public virtual Ranorex.Text TextAsterisk1
+            {
+                get
+                {
+                    return _textasterisk1Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TextAsterisk1 item info.
+            /// </summary>
+            [RepositoryItemInfo("1b47f449-6bf6-43db-8d2d-06786ae0f87c")]
+            public virtual RepoItemInfo TextAsterisk1Info
+            {
+                get
+                {
+                    return _textasterisk1Info;
+                }
+            }
+
+            /// <summary>
+            /// The TextAsterisk2 item.
+            /// </summary>
+            [RepositoryItem("b4f7b676-c5d6-4f0f-bbf1-00860b682898")]
+            public virtual Ranorex.Text TextAsterisk2
+            {
+                get
+                {
+                    return _textasterisk2Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TextAsterisk2 item info.
+            /// </summary>
+            [RepositoryItemInfo("b4f7b676-c5d6-4f0f-bbf1-00860b682898")]
+            public virtual RepoItemInfo TextAsterisk2Info
+            {
+                get
+                {
+                    return _textasterisk2Info;
+                }
+            }
+
+            /// <summary>
+            /// The NaamEchtgenoOTE item.
+            /// </summary>
+            [RepositoryItem("8d8359d3-d2fe-4960-b865-c3f018c9a986")]
+            public virtual Ranorex.Text NaamEchtgenoOTE
+            {
+                get
+                {
+                    return _naamechtgenooteInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The NaamEchtgenoOTE item info.
+            /// </summary>
+            [RepositoryItemInfo("8d8359d3-d2fe-4960-b865-c3f018c9a986")]
+            public virtual RepoItemInfo NaamEchtgenoOTEInfo
+            {
+                get
+                {
+                    return _naamechtgenooteInfo;
+                }
+            }
+
+            /// <summary>
+            /// The VoornaamEchtgenoOTE item.
+            /// </summary>
+            [RepositoryItem("c6e20579-672a-4848-bd55-6bb674c793b9")]
+            public virtual Ranorex.Text VoornaamEchtgenoOTE
+            {
+                get
+                {
+                    return _voornaamechtgenooteInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The VoornaamEchtgenoOTE item info.
+            /// </summary>
+            [RepositoryItemInfo("c6e20579-672a-4848-bd55-6bb674c793b9")]
+            public virtual RepoItemInfo VoornaamEchtgenoOTEInfo
+            {
+                get
+                {
+                    return _voornaamechtgenooteInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TextAsterisk item.
+            /// </summary>
+            [RepositoryItem("da21b313-d452-403a-86bc-23253daca793")]
+            public virtual Ranorex.Text TextAsterisk
+            {
+                get
+                {
+                    return _textasteriskInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TextAsterisk item info.
+            /// </summary>
+            [RepositoryItemInfo("da21b313-d452-403a-86bc-23253daca793")]
+            public virtual RepoItemInfo TextAsteriskInfo
+            {
+                get
+                {
+                    return _textasteriskInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CboComboBox4 item.
+            /// </summary>
+            [RepositoryItem("1d99d52a-179f-4499-964d-26acd773ac60")]
+            public virtual Ranorex.ComboBox CboComboBox4
+            {
+                get
+                {
+                    return _cbocombobox4Info.CreateAdapter<Ranorex.ComboBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CboComboBox4 item info.
+            /// </summary>
+            [RepositoryItemInfo("1d99d52a-179f-4499-964d-26acd773ac60")]
+            public virtual RepoItemInfo CboComboBox4Info
+            {
+                get
+                {
+                    return _cbocombobox4Info;
+                }
+            }
+
+            /// <summary>
+            /// The CboComboBox5 item.
+            /// </summary>
+            [RepositoryItem("ed0b6d9d-bf67-477e-b74a-189517e6639d")]
+            public virtual Ranorex.ComboBox CboComboBox5
+            {
+                get
+                {
+                    return _cbocombobox5Info.CreateAdapter<Ranorex.ComboBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CboComboBox5 item info.
+            /// </summary>
+            [RepositoryItemInfo("ed0b6d9d-bf67-477e-b74a-189517e6639d")]
+            public virtual RepoItemInfo CboComboBox5Info
+            {
+                get
+                {
+                    return _cbocombobox5Info;
+                }
+            }
+
+            /// <summary>
+            /// The CboComboBox6 item.
+            /// </summary>
+            [RepositoryItem("5f478ef4-8169-421b-9e8a-295fc8133ea3")]
+            public virtual Ranorex.ComboBox CboComboBox6
+            {
+                get
+                {
+                    return _cbocombobox6Info.CreateAdapter<Ranorex.ComboBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CboComboBox6 item info.
+            /// </summary>
+            [RepositoryItemInfo("5f478ef4-8169-421b-9e8a-295fc8133ea3")]
+            public virtual RepoItemInfo CboComboBox6Info
+            {
+                get
+                {
+                    return _cbocombobox6Info;
+                }
+            }
+
+            /// <summary>
+            /// The IBAN item.
+            /// </summary>
+            [RepositoryItem("a0a4b5fa-88d2-494c-9385-495323630363")]
+            public virtual Ranorex.Text IBAN
+            {
+                get
+                {
+                    return _ibanInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The IBAN item info.
+            /// </summary>
+            [RepositoryItemInfo("a0a4b5fa-88d2-494c-9385-495323630363")]
+            public virtual RepoItemInfo IBANInfo
+            {
+                get
+                {
+                    return _ibanInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CbxCheckBox1 item.
+            /// </summary>
+            [RepositoryItem("6922edf9-2ae0-415e-a613-8b0f7a7b8309")]
+            public virtual Ranorex.CheckBox CbxCheckBox1
+            {
+                get
+                {
+                    return _cbxcheckbox1Info.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CbxCheckBox1 item info.
+            /// </summary>
+            [RepositoryItemInfo("6922edf9-2ae0-415e-a613-8b0f7a7b8309")]
+            public virtual RepoItemInfo CbxCheckBox1Info
+            {
+                get
+                {
+                    return _cbxcheckbox1Info;
+                }
+            }
+
+            /// <summary>
+            /// The TextPercentInvaliditeitIndividu item.
+            /// </summary>
+            [RepositoryItem("0b5829f2-b78f-4e6f-8f08-6e621de1fe22")]
+            public virtual Ranorex.Text TextPercentInvaliditeitIndividu
+            {
+                get
+                {
+                    return _textpercentinvaliditeitindividuInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TextPercentInvaliditeitIndividu item info.
+            /// </summary>
+            [RepositoryItemInfo("0b5829f2-b78f-4e6f-8f08-6e621de1fe22")]
+            public virtual RepoItemInfo TextPercentInvaliditeitIndividuInfo
+            {
+                get
+                {
+                    return _textpercentinvaliditeitindividuInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CbxCheckBox2 item.
+            /// </summary>
+            [RepositoryItem("89de18e9-c75b-43c3-b6fd-afe47a4c8dc5")]
+            public virtual Ranorex.CheckBox CbxCheckBox2
+            {
+                get
+                {
+                    return _cbxcheckbox2Info.CreateAdapter<Ranorex.CheckBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CbxCheckBox2 item info.
+            /// </summary>
+            [RepositoryItemInfo("89de18e9-c75b-43c3-b6fd-afe47a4c8dc5")]
+            public virtual RepoItemInfo CbxCheckBox2Info
+            {
+                get
+                {
+                    return _cbxcheckbox2Info;
+                }
+            }
+
+            /// <summary>
+            /// The AantPersTenLasteValide item.
+            /// </summary>
+            [RepositoryItem("b6cca9a9-4add-4469-b943-60e89ad026a6")]
+            public virtual Ranorex.Text AantPersTenLasteValide
+            {
+                get
+                {
+                    return _aantperstenlastevalideInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AantPersTenLasteValide item info.
+            /// </summary>
+            [RepositoryItemInfo("b6cca9a9-4add-4469-b943-60e89ad026a6")]
+            public virtual RepoItemInfo AantPersTenLasteValideInfo
+            {
+                get
+                {
+                    return _aantperstenlastevalideInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AantPersTenLasteAndersvalide item.
+            /// </summary>
+            [RepositoryItem("485c55f1-c841-40c6-a418-435d46017dad")]
+            public virtual Ranorex.Text AantPersTenLasteAndersvalide
+            {
+                get
+                {
+                    return _aantperstenlasteandersvalideInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AantPersTenLasteAndersvalide item info.
+            /// </summary>
+            [RepositoryItemInfo("485c55f1-c841-40c6-a418-435d46017dad")]
+            public virtual RepoItemInfo AantPersTenLasteAndersvalideInfo
+            {
+                get
+                {
+                    return _aantperstenlasteandersvalideInfo;
+                }
+            }
+
+            /// <summary>
+            /// The TxtTextBox item.
+            /// </summary>
+            [RepositoryItem("355747ad-8146-4d70-be12-1795e5f7d240")]
+            public virtual Ranorex.Text TxtTextBox
+            {
+                get
+                {
+                    return _txttextboxInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The TxtTextBox item info.
+            /// </summary>
+            [RepositoryItemInfo("355747ad-8146-4d70-be12-1795e5f7d240")]
+            public virtual RepoItemInfo TxtTextBoxInfo
+            {
+                get
+                {
+                    return _txttextboxInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Aant65PlusPersTenLasteValide item.
+            /// </summary>
+            [RepositoryItem("1553a1e6-ded6-4662-a51d-2c9d0b4aab94")]
+            public virtual Ranorex.Text Aant65PlusPersTenLasteValide
+            {
+                get
+                {
+                    return _aant65plusperstenlastevalideInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Aant65PlusPersTenLasteValide item info.
+            /// </summary>
+            [RepositoryItemInfo("1553a1e6-ded6-4662-a51d-2c9d0b4aab94")]
+            public virtual RepoItemInfo Aant65PlusPersTenLasteValideInfo
+            {
+                get
+                {
+                    return _aant65plusperstenlastevalideInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Aant65PlusTenLasteAndersvalide item.
+            /// </summary>
+            [RepositoryItem("433f3762-2f0c-42bd-bf2f-f49813a78c93")]
+            public virtual Ranorex.Text Aant65PlusTenLasteAndersvalide
+            {
+                get
+                {
+                    return _aant65plustenlasteandersvalideInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Aant65PlusTenLasteAndersvalide item info.
+            /// </summary>
+            [RepositoryItemInfo("433f3762-2f0c-42bd-bf2f-f49813a78c93")]
+            public virtual RepoItemInfo Aant65PlusTenLasteAndersvalideInfo
+            {
+                get
+                {
+                    return _aant65plustenlasteandersvalideInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AantKindTenLasteValide item.
+            /// </summary>
+            [RepositoryItem("24a738a4-b7e7-4d66-8625-33dfd6ef225d")]
+            public virtual Ranorex.Text AantKindTenLasteValide
+            {
+                get
+                {
+                    return _aantkindtenlastevalideInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AantKindTenLasteValide item info.
+            /// </summary>
+            [RepositoryItemInfo("24a738a4-b7e7-4d66-8625-33dfd6ef225d")]
+            public virtual RepoItemInfo AantKindTenLasteValideInfo
+            {
+                get
+                {
+                    return _aantkindtenlastevalideInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AantKindTenLasteAndersvalide item.
+            /// </summary>
+            [RepositoryItem("90425078-75a5-41ac-964e-8f322a788f7e")]
+            public virtual Ranorex.Text AantKindTenLasteAndersvalide
+            {
+                get
+                {
+                    return _aantkindtenlasteandersvalideInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AantKindTenLasteAndersvalide item info.
+            /// </summary>
+            [RepositoryItemInfo("90425078-75a5-41ac-964e-8f322a788f7e")]
+            public virtual RepoItemInfo AantKindTenLasteAndersvalideInfo
+            {
+                get
+                {
+                    return _aantkindtenlasteandersvalideInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Open item.
+            /// </summary>
+            [RepositoryItem("e36a57f3-5246-4d63-bdba-4cc290f2ba06")]
+            public virtual Ranorex.Button Open
+            {
+                get
+                {
+                    return _openInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Open item info.
+            /// </summary>
+            [RepositoryItemInfo("e36a57f3-5246-4d63-bdba-4cc290f2ba06")]
+            public virtual RepoItemInfo OpenInfo
+            {
+                get
+                {
+                    return _openInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Close item.
+            /// </summary>
+            [RepositoryItem("f169b1c1-2087-42da-95e1-036540d66624")]
+            public virtual Ranorex.Button Close
+            {
+                get
+                {
+                    return _closeInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Close item info.
+            /// </summary>
+            [RepositoryItemInfo("f169b1c1-2087-42da-95e1-036540d66624")]
+            public virtual RepoItemInfo CloseInfo
+            {
+                get
+                {
+                    return _closeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The GroupBoxKinderenTenLaste item.
+            /// </summary>
+            [RepositoryItem("3f08e29c-1140-4829-9388-947585a59df1")]
+            public virtual Ranorex.Container GroupBoxKinderenTenLaste
+            {
+                get
+                {
+                    return _groupboxkinderentenlasteInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The GroupBoxKinderenTenLaste item info.
+            /// </summary>
+            [RepositoryItemInfo("3f08e29c-1140-4829-9388-947585a59df1")]
+            public virtual RepoItemInfo GroupBoxKinderenTenLasteInfo
+            {
+                get
+                {
+                    return _groupboxkinderentenlasteInfo;
+                }
+            }
+
+            /// <summary>
+            /// The GrpGezinssituatie item.
+            /// </summary>
+            [RepositoryItem("258f9f31-f77d-47d0-b2d2-09ec54b8f610")]
+            public virtual Ranorex.Container GrpGezinssituatie
+            {
+                get
+                {
+                    return _grpgezinssituatieInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The GrpGezinssituatie item info.
+            /// </summary>
+            [RepositoryItemInfo("258f9f31-f77d-47d0-b2d2-09ec54b8f610")]
+            public virtual RepoItemInfo GrpGezinssituatieInfo
+            {
+                get
+                {
+                    return _grpgezinssituatieInfo;
+                }
+            }
+
+            /// <summary>
+            /// The CboComboBox7 item.
+            /// </summary>
+            [RepositoryItem("74591bf1-00d3-49f4-89fa-68f04a58a62e")]
+            public virtual Ranorex.ComboBox CboComboBox7
+            {
+                get
+                {
+                    return _cbocombobox7Info.CreateAdapter<Ranorex.ComboBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CboComboBox7 item info.
+            /// </summary>
+            [RepositoryItemInfo("74591bf1-00d3-49f4-89fa-68f04a58a62e")]
+            public virtual RepoItemInfo CboComboBox7Info
+            {
+                get
+                {
+                    return _cbocombobox7Info;
                 }
             }
         }

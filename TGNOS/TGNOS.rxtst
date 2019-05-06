@@ -134,6 +134,9 @@ rxversion="9.0">
 			datasource="IndividuCSVConnector"
 			id="94e7db56-b3c3-41a8-9870-50194f9b2a31"
 			name="Individu">
+				<description>
+					<![CDATA[Alle gegevens voor het aanmaken van een nieuwe indvidu.]]>
+				</description>
 				<parameters>
 					<param
 					name="Subject"
@@ -193,6 +196,12 @@ rxversion="9.0">
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="b2d2f2ae-2224-4620-bd23-f0f4b25cc001"
+			name="DeleteIndividu"
+			ref="d2bfb565-1997-4de5-ab34-0af5bb7cf1bb"
+			type="Recording">
+			</testmodule>
 			<setup
 			id="b42586d7-7c70-4f16-b7aa-eeea01e3213d"
 			name="setup">
@@ -233,8 +242,121 @@ rxversion="9.0">
 					variableid="259157c9-fdcf-4a5e-bf2e-1115cb3e3b27"
 					variablename="varGender">
 					</var>
+					<var
+					dataname="varBirthDate"
+					datasourceid="fb778891-7e1f-4517-843c-f03075419c98"
+					variableid="b98e9bd0-9b65-4004-ad5d-19d56778a15f"
+					variablename="varBirthDate">
+					</var>
+					<var
+					dataname="varMobile"
+					datasourceid="fb778891-7e1f-4517-843c-f03075419c98"
+					variableid="ec496818-2154-44a2-9a29-a12721b59305"
+					variablename="varMobile">
+					</var>
+					<var
+					dataname="varPhone"
+					datasourceid="fb778891-7e1f-4517-843c-f03075419c98"
+					variableid="46623a0d-72b6-4385-b608-cbaddc79f6cc"
+					variablename="varPhone">
+					</var>
+					<var
+					dataname="varEmail"
+					datasourceid="fb778891-7e1f-4517-843c-f03075419c98"
+					variableid="73d28455-d597-4976-888f-9d77a022845d"
+					variablename="varEmail">
+					</var>
+					<var
+					dataname="varStreet"
+					datasourceid="fb778891-7e1f-4517-843c-f03075419c98"
+					variableid="7a2155a7-cfd8-4d3c-84b9-a8dd91dddb4f"
+					variablename="varStreet">
+					</var>
+					<var
+					dataname="varZipCode"
+					datasourceid="fb778891-7e1f-4517-843c-f03075419c98"
+					variableid="c940f4cd-898b-4c7d-bf44-e3703688fb00"
+					variablename="varZipCode">
+					</var>
+					<var
+					dataname="varDateValidFrom"
+					datasourceid="fb778891-7e1f-4517-843c-f03075419c98"
+					variableid="55060d4a-e5a5-4465-bad4-d35f9f40208b"
+					variablename="varDateValidFrom">
+					</var>
+					<var
+					dataname="varStraatNo"
+					datasourceid="fb778891-7e1f-4517-843c-f03075419c98"
+					variableid="34dbf06e-6a2e-483f-a5ae-59d9e2752ddb"
+					variablename="varStraatNo">
+					</var>
+					<var
+					dataname="varProfession"
+					datasourceid="fb778891-7e1f-4517-843c-f03075419c98"
+					variableid="54413e6a-1140-446d-9293-636e5c6050e2"
+					variablename="varProfession">
+					</var>
+					<var
+					dataname="varMobilityRadusKm"
+					datasourceid="fb778891-7e1f-4517-843c-f03075419c98"
+					variableid="7e8f7fe3-3030-4819-be93-fd3efca23913"
+					variablename="varMobilityRadusKm">
+					</var>
+					<var
+					dataname="varHoursPerWeek"
+					datasourceid="fb778891-7e1f-4517-843c-f03075419c98"
+					variableid="c700bfd0-7f58-412f-aa0e-039d2847ffd3"
+					variablename="varHoursPerWeek">
+					</var>
+					<var
+					dataname="varComment"
+					datasourceid="fb778891-7e1f-4517-843c-f03075419c98"
+					variableid="9d787e81-93a2-4e4a-afb5-15fe1cefcdb2"
+					variablename="varComment">
+					</var>
+					<var
+					dataname="varBankNumber"
+					datasourceid="fb778891-7e1f-4517-843c-f03075419c98"
+					variableid="c7dd239c-9d0d-4532-a50e-6871a69f56c4"
+					variablename="varBankNumber">
+					</var>
+					<var
+					dataname="varBirthDateSpouse"
+					datasourceid="fb778891-7e1f-4517-843c-f03075419c98"
+					variableid="d12ae0e0-2289-41ed-abc8-0eca474fec24"
+					variablename="varBirthDateSpouse">
+					</var>
+					<var
+					dataname="varLastNameSpouse"
+					datasourceid="fb778891-7e1f-4517-843c-f03075419c98"
+					variableid="bbc680df-7fbb-40c2-aa5d-813f28650973"
+					variablename="varLastNameSpouse">
+					</var>
+					<var
+					dataname="varFirstNameSpouse"
+					datasourceid="fb778891-7e1f-4517-843c-f03075419c98"
+					variableid="a945b1e5-3866-4f0b-a8fe-1770d04ec8dd"
+					variablename="varFirstNameSpouse">
+					</var>
+					<var
+					dataname="varMarriageDate"
+					datasourceid="fb778891-7e1f-4517-843c-f03075419c98"
+					variableid="40865a97-d47b-47a7-9247-5d139e93f60f"
+					variablename="varMarriageDate">
+					</var>
+					<var
+					dataname="varTaxSituationDate"
+					datasourceid="fb778891-7e1f-4517-843c-f03075419c98"
+					variableid="bbe1883c-0d5b-4125-98ba-3be47becc705"
+					variablename="varTaxSituationDate">
+					</var>
 				</databinding>
 			</testmodule>
+			<modulegroup
+			id="ecd25a43-5c64-4fb6-9ae1-2bc9e9286ddb"
+			name="ModuleGroup"
+			ref="795ad5b5-c2e1-4f9c-8b44-2066920749f8">
+			</modulegroup>
 			<testmodule
 			id="ef2a24b6-25d3-4769-a9f0-fd6320d258ef"
 			name="CloseAUT"
@@ -261,9 +383,17 @@ rxversion="9.0">
 							</testmodule>
 						</setup>
 						<testmodule
+						id="b2d2f2ae-2224-4620-bd23-f0f4b25cc001"
+						name="DeleteIndividu">
+						</testmodule>
+						<testmodule
 						id="bc9141a9-6dac-4070-ab15-6178e65db5bb"
 						name="Recording1">
 						</testmodule>
+						<modulegroup
+						id="ecd25a43-5c64-4fb6-9ae1-2bc9e9286ddb"
+						name="ModuleGroup">
+						</modulegroup>
 						<teardown
 						id="88bd8843-3daf-4781-821f-3a4f979f2846"
 						name="teardown">
@@ -303,7 +433,64 @@ rxversion="9.0">
 					varRRNr
 				</column>
 				<column>
+					varBirthDate
+				</column>
+				<column>
+					varMobile
+				</column>
+				<column>
+					varPhone
+				</column>
+				<column>
+					varEmail
+				</column>
+				<column>
+					varStreet
+				</column>
+				<column>
+					varZipCode
+				</column>
+				<column>
+					varDateValidFrom
+				</column>
+				<column>
+					varStraatNo
+				</column>
+				<column>
+					varProfession
+				</column>
+				<column>
+					varMobilityRadusKm
+				</column>
+				<column>
+					varHoursPerWeek
+				</column>
+				<column>
+					varComment
+				</column>
+				<column>
+					varBankNumber
+				</column>
+				<column>
+					varBirthDateSpouse
+				</column>
+				<column>
+					varLastNameSpouse
+				</column>
+				<column>
+					varFirstNameSpouse
+				</column>
+				<column>
 					varGender
+				</column>
+				<column>
+					varMarriageDate
+				</column>
+				<column>
+					varTaxSituationDate
+				</column>
+				<column>
+					&#9;					&#9;
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>

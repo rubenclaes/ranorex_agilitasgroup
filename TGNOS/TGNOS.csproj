@@ -14,6 +14,7 @@
     <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
     <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
     <projectdefaultrepository>ae411d81-ff56-4001-9f90-8205bc6c1a18</projectdefaultrepository>
+    <StartAction>Project</StartAction>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -132,6 +133,18 @@
       <UserCode>true</UserCode>
       <id>74851226-fe0f-4a4d-8f31-b8a5d7be6f51</id>
     </Compile>
+    <Compile Include="DeleteIndividu.cs">
+      <BoundTo>9fec65e9-2362-46cc-ac48-518319049dc9</BoundTo>
+      <DependentUpon>DeleteIndividu.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>8cdf200c-f1f8-4fc6-89c3-5badfc241f00</id>
+    </Compile>
+    <Compile Include="DeleteIndividu.UserCode.cs">
+      <BoundTo>9fec65e9-2362-46cc-ac48-518319049dc9</BoundTo>
+      <DependentUpon>DeleteIndividu.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0efd63d1-d3f2-4239-9458-02cc998361e2</id>
+    </Compile>
     <Compile Include="Program.cs">
       <id>03f1ce07-63e9-4799-bf77-165b2f731191</id>
     </Compile>
@@ -165,9 +178,6 @@
       <RepositoryCode>true</RepositoryCode>
       <id>2c7f0ab0-558f-4a48-ae77-84755256ec06</id>
     </Compile>
-    <Compile Include="UserCodeModule1.cs">
-      <id>61037109-7140-4b7e-ab3c-09da4d55ec60</id>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
@@ -185,6 +195,11 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <id>e582c03d-3cc0-4a1d-a4c8-053e9c966118</id>
     </Content>
+    <None Include="DeleteIndividu.rxrec">
+      <BoundTo>ae411d81-ff56-4001-9f90-8205bc6c1a18</BoundTo>
+      <id>9fec65e9-2362-46cc-ac48-518319049dc9</id>
+      <recordtableid>d2bfb565-1997-4de5-ab34-0af5bb7cf1bb</recordtableid>
+    </None>
     <None Include="Recording1.rxrec">
       <BoundTo>ae411d81-ff56-4001-9f90-8205bc6c1a18</BoundTo>
       <id>8886fe75-04f6-4688-8d1d-588a2ec564ea</id>
