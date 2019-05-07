@@ -24,6 +24,11 @@ rxversion="9.0">
 	namespace="TGNOS">
 	</codegen>
 	<variables>
+		<var
+		id="8762e184-ff2f-4bc9-b72c-61f545b1d0dd"
+		name="varRRNr">
+			55010116297
+		</var>
 	</variables>
 	<recorditems>
 		<separatoritem

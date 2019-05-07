@@ -201,6 +201,14 @@ rxversion="9.0">
 			name="DeleteIndividu"
 			ref="d2bfb565-1997-4de5-ab34-0af5bb7cf1bb"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="varRRNr"
+					datasourceid="fb778891-7e1f-4517-843c-f03075419c98"
+					variableid="8762e184-ff2f-4bc9-b72c-61f545b1d0dd"
+					variablename="varRRNr">
+					</var>
+				</databinding>
 			</testmodule>
 			<setup
 			id="b42586d7-7c70-4f16-b7aa-eeea01e3213d"
@@ -350,13 +358,50 @@ rxversion="9.0">
 					variableid="bbe1883c-0d5b-4125-98ba-3be47becc705"
 					variablename="varTaxSituationDate">
 					</var>
+					<var
+					dataname="varIndividualDisability"
+					datasourceid="fb778891-7e1f-4517-843c-f03075419c98"
+					variableid="7a46a540-ad26-426e-a6ed-ab5b83915380"
+					variablename="varIndividualDisability">
+					</var>
+					<var
+					dataname="varNoOfDependantChildren"
+					datasourceid="fb778891-7e1f-4517-843c-f03075419c98"
+					variableid="2221a5f7-9a40-42fd-b653-716f85de4eac"
+					variablename="varNoOfDependantChildren">
+					</var>
+					<var
+					dataname="varNoOfDependantChildrenDisability"
+					datasourceid="fb778891-7e1f-4517-843c-f03075419c98"
+					variableid="535019b0-8d3b-4d44-a3a6-4ec221898965"
+					variablename="varNoOfDependantChildrenDisability">
+					</var>
+					<var
+					dataname="varNoOfDependants"
+					datasourceid="fb778891-7e1f-4517-843c-f03075419c98"
+					variableid="60703ea9-8665-4b71-971d-2d556cd5de02"
+					variablename="varNoOfDependants">
+					</var>
+					<var
+					dataname="varNoOfDependantsDisability"
+					datasourceid="fb778891-7e1f-4517-843c-f03075419c98"
+					variableid="de12af87-2da1-4d0a-bc97-7b122ea8981d"
+					variablename="varNoOfDependantsDisability">
+					</var>
+					<var
+					dataname="varNumberOf65plusDependants"
+					datasourceid="fb778891-7e1f-4517-843c-f03075419c98"
+					variableid="de96a692-18dd-4520-bd1f-a614f4351865"
+					variablename="varNumberOf65plusDependants">
+					</var>
+					<var
+					dataname="varNumberOf65plusDependantsDisability"
+					datasourceid="fb778891-7e1f-4517-843c-f03075419c98"
+					variableid="09b1392c-7da6-4468-9931-a661e5c166c2"
+					variablename="varNumberOf65plusDependantsDisability">
+					</var>
 				</databinding>
 			</testmodule>
-			<modulegroup
-			id="ecd25a43-5c64-4fb6-9ae1-2bc9e9286ddb"
-			name="ModuleGroup"
-			ref="795ad5b5-c2e1-4f9c-8b44-2066920749f8">
-			</modulegroup>
 			<testmodule
 			id="ef2a24b6-25d3-4769-a9f0-fd6320d258ef"
 			name="CloseAUT"
@@ -390,10 +435,6 @@ rxversion="9.0">
 						id="bc9141a9-6dac-4070-ab15-6178e65db5bb"
 						name="Recording1">
 						</testmodule>
-						<modulegroup
-						id="ecd25a43-5c64-4fb6-9ae1-2bc9e9286ddb"
-						name="ModuleGroup">
-						</modulegroup>
 						<teardown
 						id="88bd8843-3daf-4781-821f-3a4f979f2846"
 						name="teardown">
@@ -490,7 +531,25 @@ rxversion="9.0">
 					varTaxSituationDate
 				</column>
 				<column>
-					&#9;					&#9;
+					varIndividualDisability
+				</column>
+				<column>
+					varNoOfDependantChildren
+				</column>
+				<column>
+					varNoOfDependantChildrenDisability
+				</column>
+				<column>
+					varNoOfDependants
+				</column>
+				<column>
+					varNoOfDependantsDisability
+				</column>
+				<column>
+					varNumberOf65plusDependants
+				</column>
+				<column>
+					varNumberOf65plusDependantsDisability
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>

@@ -65,6 +65,366 @@ namespace TGNOS
             set { _varGender = value; }
         }
 
+        string _varFirstName = "ranorex";
+
+        /// <summary>
+        /// Gets or sets the value of variable varFirstName.
+        /// </summary>
+        [TestVariable("d8e69255-9e80-4d19-8d69-0c1719c4c80a")]
+        public string varFirstName
+        {
+            get { return _varFirstName; }
+            set { _varFirstName = value; }
+        }
+
+        string _varLastName = "test";
+
+        /// <summary>
+        /// Gets or sets the value of variable varLastName.
+        /// </summary>
+        [TestVariable("3831d41e-3419-447c-b27e-639b4d82fb58")]
+        public string varLastName
+        {
+            get { return _varLastName; }
+            set { _varLastName = value; }
+        }
+
+        string _varBirthCity = "mechelen";
+
+        /// <summary>
+        /// Gets or sets the value of variable varBirthCity.
+        /// </summary>
+        [TestVariable("4223fa9c-81bd-4ed8-b032-fd5caee1b4b1")]
+        public string varBirthCity
+        {
+            get { return _varBirthCity; }
+            set { _varBirthCity = value; }
+        }
+
+        string _varRRNr = "55010116297";
+
+        /// <summary>
+        /// Gets or sets the value of variable varRRNr.
+        /// </summary>
+        [TestVariable("8762e184-ff2f-4bc9-b72c-61f545b1d0dd")]
+        public string varRRNr
+        {
+            get { return _varRRNr; }
+            set { _varRRNr = value; }
+        }
+
+        string _varBirthDate = "01011955";
+
+        /// <summary>
+        /// Gets or sets the value of variable varBirthDate.
+        /// </summary>
+        [TestVariable("7d2b3462-cd46-41e9-82ce-cc2abbe71400")]
+        public string varBirthDate
+        {
+            get { return _varBirthDate; }
+            set { _varBirthDate = value; }
+        }
+
+        string _varMobile = "0472611353";
+
+        /// <summary>
+        /// Gets or sets the value of variable varMobile.
+        /// </summary>
+        [TestVariable("1549e766-b907-4f81-9435-7704b84458f9")]
+        public string varMobile
+        {
+            get { return _varMobile; }
+            set { _varMobile = value; }
+        }
+
+        string _varPhone = "015800100";
+
+        /// <summary>
+        /// Gets or sets the value of variable varPhone.
+        /// </summary>
+        [TestVariable("928afe2f-1873-429e-bceb-e4f1739c97ce")]
+        public string varPhone
+        {
+            get { return _varPhone; }
+            set { _varPhone = value; }
+        }
+
+        string _varEmail = "tgnos.test@agilitasgroup.be";
+
+        /// <summary>
+        /// Gets or sets the value of variable varEmail.
+        /// </summary>
+        [TestVariable("b4820c35-94a1-4ba7-bee1-f40ee8f493b4")]
+        public string varEmail
+        {
+            get { return _varEmail; }
+            set { _varEmail = value; }
+        }
+
+        string _varStreet = "stationsstraat";
+
+        /// <summary>
+        /// Gets or sets the value of variable varStreet.
+        /// </summary>
+        [TestVariable("288b3dc7-84df-4b48-ad94-d24fe86ac895")]
+        public string varStreet
+        {
+            get { return _varStreet; }
+            set { _varStreet = value; }
+        }
+
+        string _varZipCode = "2800";
+
+        /// <summary>
+        /// Gets or sets the value of variable varZipCode.
+        /// </summary>
+        [TestVariable("f100d64a-f664-4835-a2c4-c53d554b358d")]
+        public string varZipCode
+        {
+            get { return _varZipCode; }
+            set { _varZipCode = value; }
+        }
+
+        string _varDateValidFrom = "31122999";
+
+        /// <summary>
+        /// Gets or sets the value of variable varDateValidFrom.
+        /// </summary>
+        [TestVariable("0bc9c9e4-9345-4a49-9ccd-34d6d5a49f32")]
+        public string varDateValidFrom
+        {
+            get { return _varDateValidFrom; }
+            set { _varDateValidFrom = value; }
+        }
+
+        string _varStraatNo = "120";
+
+        /// <summary>
+        /// Gets or sets the value of variable varStraatNo.
+        /// </summary>
+        [TestVariable("73b3710c-4afc-4af4-8cef-f5bacdfe2388")]
+        public string varStraatNo
+        {
+            get { return _varStraatNo; }
+            set { _varStraatNo = value; }
+        }
+
+        string _varProfession = "HUISHOUD";
+
+        /// <summary>
+        /// Gets or sets the value of variable varProfession.
+        /// </summary>
+        [TestVariable("2d5f0b98-c0f4-4a70-a093-b197b4da0d74")]
+        public string varProfession
+        {
+            get { return _varProfession; }
+            set { _varProfession = value; }
+        }
+
+        string _varMobilityRadusKm = "20";
+
+        /// <summary>
+        /// Gets or sets the value of variable varMobilityRadusKm.
+        /// </summary>
+        [TestVariable("43bd9b68-fd69-4884-bc4b-b6cf3753bd60")]
+        public string varMobilityRadusKm
+        {
+            get { return _varMobilityRadusKm; }
+            set { _varMobilityRadusKm = value; }
+        }
+
+        string _varHoursPerWeek = "30";
+
+        /// <summary>
+        /// Gets or sets the value of variable varHoursPerWeek.
+        /// </summary>
+        [TestVariable("e71df28f-5a22-4f08-bbbb-a69335da082c")]
+        public string varHoursPerWeek
+        {
+            get { return _varHoursPerWeek; }
+            set { _varHoursPerWeek = value; }
+        }
+
+        string _varComment = "test";
+
+        /// <summary>
+        /// Gets or sets the value of variable varComment.
+        /// </summary>
+        [TestVariable("17c79c03-f477-450c-84fa-411d3d76659e")]
+        public string varComment
+        {
+            get { return _varComment; }
+            set { _varComment = value; }
+        }
+
+        string _varBankNumber = "be26733024201429";
+
+        /// <summary>
+        /// Gets or sets the value of variable varBankNumber.
+        /// </summary>
+        [TestVariable("f8567149-31ca-448e-95dc-8618a8111935")]
+        public string varBankNumber
+        {
+            get { return _varBankNumber; }
+            set { _varBankNumber = value; }
+        }
+
+        string _varBirthDateSpouse = "01011950";
+
+        /// <summary>
+        /// Gets or sets the value of variable varBirthDateSpouse.
+        /// </summary>
+        [TestVariable("356f29e6-9d2b-4057-bc2d-639cbed8db2e")]
+        public string varBirthDateSpouse
+        {
+            get { return _varBirthDateSpouse; }
+            set { _varBirthDateSpouse = value; }
+        }
+
+        string _varLastNameSpouse = "test";
+
+        /// <summary>
+        /// Gets or sets the value of variable varLastNameSpouse.
+        /// </summary>
+        [TestVariable("1b97c89f-d028-4a70-a70c-dd38b09a6b26")]
+        public string varLastNameSpouse
+        {
+            get { return _varLastNameSpouse; }
+            set { _varLastNameSpouse = value; }
+        }
+
+        string _varFirstNameSpouse = "test";
+
+        /// <summary>
+        /// Gets or sets the value of variable varFirstNameSpouse.
+        /// </summary>
+        [TestVariable("2fae0397-bb42-46bf-b2a9-289f1faa26d9")]
+        public string varFirstNameSpouse
+        {
+            get { return _varFirstNameSpouse; }
+            set { _varFirstNameSpouse = value; }
+        }
+
+        string _varTaxSituationDate = "03052019";
+
+        /// <summary>
+        /// Gets or sets the value of variable varTaxSituationDate.
+        /// </summary>
+        [TestVariable("c8e6f68d-e405-4434-8c53-980d6c511ea4")]
+        public string varTaxSituationDate
+        {
+            get { return _varTaxSituationDate; }
+            set { _varTaxSituationDate = value; }
+        }
+
+        string _varMarriageDate = "03052019";
+
+        /// <summary>
+        /// Gets or sets the value of variable varMarriageDate.
+        /// </summary>
+        [TestVariable("9b1b6230-10c7-4a1e-9fc2-c36e0b25e840")]
+        public string varMarriageDate
+        {
+            get { return _varMarriageDate; }
+            set { _varMarriageDate = value; }
+        }
+
+        string _varIndividualDisability = "20";
+
+        /// <summary>
+        /// Gets or sets the value of variable varIndividualDisability.
+        /// </summary>
+        [TestVariable("b91db011-27e2-4d65-add1-e9b48d9145bb")]
+        public string varIndividualDisability
+        {
+            get { return _varIndividualDisability; }
+            set { _varIndividualDisability = value; }
+        }
+
+        string _varNoOfDependants = "1";
+
+        /// <summary>
+        /// Gets or sets the value of variable varNoOfDependants.
+        /// </summary>
+        [TestVariable("3bfdfb00-6ed0-4e81-b5af-38f434689279")]
+        public string varNoOfDependants
+        {
+            get { return _varNoOfDependants; }
+            set { _varNoOfDependants = value; }
+        }
+
+        string _varNoOfDependantsDisability = "1";
+
+        /// <summary>
+        /// Gets or sets the value of variable varNoOfDependantsDisability.
+        /// </summary>
+        [TestVariable("266a754a-fab9-40fe-8f8d-f0bf125d171b")]
+        public string varNoOfDependantsDisability
+        {
+            get { return _varNoOfDependantsDisability; }
+            set { _varNoOfDependantsDisability = value; }
+        }
+
+        string _varNumberOf65plusDependants = "1";
+
+        /// <summary>
+        /// Gets or sets the value of variable varNumberOf65plusDependants.
+        /// </summary>
+        [TestVariable("ab9b6bba-567c-4313-9e39-21dfec30ae1f")]
+        public string varNumberOf65plusDependants
+        {
+            get { return _varNumberOf65plusDependants; }
+            set { _varNumberOf65plusDependants = value; }
+        }
+
+        string _varNumberOf65plusDependantsDisability = "1";
+
+        /// <summary>
+        /// Gets or sets the value of variable varNumberOf65plusDependantsDisability.
+        /// </summary>
+        [TestVariable("5f7af60e-87a3-4fe3-a976-6d85003123c3")]
+        public string varNumberOf65plusDependantsDisability
+        {
+            get { return _varNumberOf65plusDependantsDisability; }
+            set { _varNumberOf65plusDependantsDisability = value; }
+        }
+
+        string _varNoOfDependantChildren = "1";
+
+        /// <summary>
+        /// Gets or sets the value of variable varNoOfDependantChildren.
+        /// </summary>
+        [TestVariable("8cb81d9e-d8a8-4d72-89ea-4627fc446862")]
+        public string varNoOfDependantChildren
+        {
+            get { return _varNoOfDependantChildren; }
+            set { _varNoOfDependantChildren = value; }
+        }
+
+        string _varNoOfDependantChildrenDisability = "1";
+
+        /// <summary>
+        /// Gets or sets the value of variable varNoOfDependantChildrenDisability.
+        /// </summary>
+        [TestVariable("7c49ff53-3518-4f6e-85a7-932ebb19f234")]
+        public string varNoOfDependantChildrenDisability
+        {
+            get { return _varNoOfDependantChildrenDisability; }
+            set { _varNoOfDependantChildrenDisability = value; }
+        }
+
+        string _varGender1 = "Man";
+
+        /// <summary>
+        /// Gets or sets the value of variable varGender1.
+        /// </summary>
+        [TestVariable("1cc61c92-22fc-48c5-99a6-58dd03df4dc1")]
+        public string varGender1
+        {
+            get { return _varGender1; }
+            set { _varGender1 = value; }
+        }
+
 #endregion
 
         /// <summary>

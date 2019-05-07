@@ -88,6 +88,12 @@ namespace TGNOS
         	this.myRepo.ApplicationUnderTest.TbpgFiscaalVerloning.AantKindTenLasteValide.TextValue = varNoOfDependantChildren;
         	this.myRepo.ApplicationUnderTest.TbpgFiscaalVerloning.AantKindTenLasteAndersvalide.TextValue = varNoOfDependantChildrenDisability;
         }
+        
+        public void fillAspirations()
+        {
+        	
+        
+        }
 
     }
 }

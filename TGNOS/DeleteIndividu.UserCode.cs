@@ -37,7 +37,9 @@ namespace TGNOS
         public void addRRNr(RepoItemInfo textInfo)
         {
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varRRNr' with focus on 'textInfo'.", textInfo);
+            this.myRepo.ApplicationUnderTest.OpzoekenIndividuStart.INSZNummer.Focus();
             this.myRepo.ApplicationUnderTest.OpzoekenIndividuStart.INSZNummer.TextValue =  varRRNr;
+            this.myRepo.ApplicationUnderTest.OpzoekenIndividuStart.INSZNummer.Focus();
         }
 
     }

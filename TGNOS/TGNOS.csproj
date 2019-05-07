@@ -223,6 +223,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="TGNOS.cd">
+      <id>9e431716-adde-43af-a8fb-178441346104</id>
+    </Content>
     <Content Include="TGNOS.rxtmg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <id>53a4d4db-f50c-417f-a0af-8a877bc6238d</id>

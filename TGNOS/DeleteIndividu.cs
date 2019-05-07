@@ -41,6 +41,7 @@ namespace TGNOS
         /// </summary>
         public DeleteIndividu()
         {
+            varRRNr = "55010116297";
         }
 
         /// <summary>
@@ -52,6 +53,16 @@ namespace TGNOS
         }
 
 #region Variables
+
+        /// <summary>
+        /// Gets or sets the value of variable varRRNr.
+        /// </summary>
+        [TestVariable("8762e184-ff2f-4bc9-b72c-61f545b1d0dd")]
+        public string varRRNr
+        {
+            get { return repo.varRRNr; }
+            set { repo.varRRNr = value; }
+        }
 
 #endregion
 
