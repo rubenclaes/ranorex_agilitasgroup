@@ -79,8 +79,8 @@ namespace TGNOS
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'ApplicationUnderTest'.", repo.ApplicationUnderTest.SelfInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.ApplicationUnderTest.Self, new Duration(0));
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'TGNOS'.", repo.TGNOS.SelfInfo, new RecordItemIndex(0));
+            Host.Current.CloseApplication(repo.TGNOS.Self, new Duration(0));
             Delay.Milliseconds(0);
             
         }

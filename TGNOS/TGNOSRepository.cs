@@ -27,7 +27,7 @@ namespace TGNOS
     public partial class TGNOSRepository : RepoGenBaseFolder
     {
         static TGNOSRepository instance = new TGNOSRepository();
-        TGNOSRepositoryFolders.ApplicationUnderTestAppFolder _applicationundertest;
+        TGNOSRepositoryFolders.TGNOSAppFolder _tgnos;
         TGNOSRepositoryFolders.TgnosClientComponentsWinTgnosAppAppFolder _tgnosclientcomponentswintgnosapp;
         TGNOSRepositoryFolders.List1000AppFolder _list1000;
 
@@ -46,7 +46,7 @@ namespace TGNOS
         public TGNOSRepository() 
             : base("TGNOSRepository", "/", null, 0, false, "8d58e2a6-f5fd-4703-8bb0-c528c01023a7", ".\\RepositoryImages\\TGNOSRepository8d58e2a6.rximgres")
         {
-            _applicationundertest = new TGNOSRepositoryFolders.ApplicationUnderTestAppFolder(this);
+            _tgnos = new TGNOSRepositoryFolders.TGNOSAppFolder(this);
             _tgnosclientcomponentswintgnosapp = new TGNOSRepositoryFolders.TgnosClientComponentsWinTgnosAppAppFolder(this);
             _list1000 = new TGNOSRepositoryFolders.List1000AppFolder(this);
         }
@@ -440,12 +440,12 @@ namespace TGNOS
         }
 
         /// <summary>
-        /// The ApplicationUnderTest folder.
+        /// The TGNOS folder.
         /// </summary>
         [RepositoryFolder("9c9002d3-c5e6-4618-903d-18db0dc91aa4")]
-        public virtual TGNOSRepositoryFolders.ApplicationUnderTestAppFolder ApplicationUnderTest
+        public virtual TGNOSRepositoryFolders.TGNOSAppFolder TGNOS
         {
-            get { return _applicationundertest; }
+            get { return _tgnos; }
         }
 
         /// <summary>
@@ -474,10 +474,10 @@ namespace TGNOS
     public partial class TGNOSRepositoryFolders
     {
         /// <summary>
-        /// The ApplicationUnderTestAppFolder folder.
+        /// The TGNOSAppFolder folder.
         /// </summary>
         [RepositoryFolder("9c9002d3-c5e6-4618-903d-18db0dc91aa4")]
-        public partial class ApplicationUnderTestAppFolder : RepoGenBaseFolder
+        public partial class TGNOSAppFolder : RepoGenBaseFolder
         {
             TGNOSRepositoryFolders.Individu1Folder _individu1;
             TGNOSRepositoryFolders.TbpgBasisInformatieFolder _tbpgbasisinformatie;
@@ -502,10 +502,10 @@ namespace TGNOS
             RepoItemInfo _buttonok2Info;
 
             /// <summary>
-            /// Creates a new ApplicationUnderTest  folder.
+            /// Creates a new TGNOS  folder.
             /// </summary>
-            public ApplicationUnderTestAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("ApplicationUnderTest", "/form[@processname='tgnos.ClientComponents.Win.tgnosApp']", parentFolder, 30000, null, true, "9c9002d3-c5e6-4618-903d-18db0dc91aa4", "")
+            public TGNOSAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("TGNOS", "/form[@processname='tgnos.ClientComponents.Win.tgnosApp']", parentFolder, 30000, null, true, "9c9002d3-c5e6-4618-903d-18db0dc91aa4", "")
             {
                 _individu1 = new TGNOSRepositoryFolders.Individu1Folder(this);
                 _tbpgbasisinformatie = new TGNOSRepositoryFolders.TbpgBasisInformatieFolder(this);

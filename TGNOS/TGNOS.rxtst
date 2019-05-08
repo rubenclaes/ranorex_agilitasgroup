@@ -8,6 +8,10 @@ rxversion="9.0">
 			name="TGNOS"
 			reportlevel="Info;20">
 			</testcase>
+			<testcase
+			id="3f19c219-4584-4286-9582-31f334f4561f"
+			name="Arbeidscontract">
+			</testcase>
 			<testmodule
 			id="436bfc77-350d-4688-9e69-3687e02198da"
 			name="EmailModule"
@@ -402,6 +406,18 @@ rxversion="9.0">
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="c0669d20-8e7a-4eac-8567-6d87a5aafe38"
+			name="Commercieel_Contract">
+			</testcase>
+			<testcase
+			id="e07f1e29-08a8-44d4-8c00-30630f6143b6"
+			name="Organisatie">
+			</testcase>
+			<testcase
+			id="edfb8ea6-eeb5-420c-81d3-ed0a386fe18e"
+			name="Prestaties">
+			</testcase>
 			<testmodule
 			id="ef2a24b6-25d3-4769-a9f0-fd6320d258ef"
 			name="CloseAUT"
@@ -447,6 +463,22 @@ rxversion="9.0">
 							name="EmailModule">
 							</testmodule>
 						</teardown>
+					</testcase>
+					<testcase
+					id="e07f1e29-08a8-44d4-8c00-30630f6143b6"
+					name="Organisatie">
+					</testcase>
+					<testcase
+					id="c0669d20-8e7a-4eac-8567-6d87a5aafe38"
+					name="Commercieel_Contract">
+					</testcase>
+					<testcase
+					id="3f19c219-4584-4286-9582-31f334f4561f"
+					name="Arbeidscontract">
+					</testcase>
+					<testcase
+					id="edfb8ea6-eeb5-420c-81d3-ed0a386fe18e"
+					name="Prestaties">
 					</testcase>
 				</testcase>
 			</testsuite>
@@ -567,7 +599,19 @@ rxversion="9.0">
 			id="0e4b245f-3fe9-415d-be74-726d2dc4392c">
 			</testcontainer>
 			<testcontainer
+			id="3f19c219-4584-4286-9582-31f334f4561f">
+			</testcontainer>
+			<testcontainer
 			id="94e7db56-b3c3-41a8-9870-50194f9b2a31">
+			</testcontainer>
+			<testcontainer
+			id="c0669d20-8e7a-4eac-8567-6d87a5aafe38">
+			</testcontainer>
+			<testcontainer
+			id="e07f1e29-08a8-44d4-8c00-30630f6143b6">
+			</testcontainer>
+			<testcontainer
+			id="edfb8ea6-eeb5-420c-81d3-ed0a386fe18e">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

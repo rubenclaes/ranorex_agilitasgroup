@@ -93,33 +93,33 @@ namespace TGNOS
             // Start Individu wissen
             Report.Log(ReportLevel.Info, "Section", "Start Individu wissen", new RecordItemIndex(0));
             
-            repo.ApplicationUnderTest.Individu.Click("44;13");
+            repo.TGNOS.Individu.Click("44;13");
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TgnosClientComponentsWinTgnosApp.Open' at 50;5.", repo.TgnosClientComponentsWinTgnosApp.OpenInfo, new RecordItemIndex(2));
             repo.TgnosClientComponentsWinTgnosApp.Open.Click("50;5");
             
-            addRRNr(repo.ApplicationUnderTest.OpzoekenIndividuStart.INSZNummerInfo);
+            addRRNr(repo.TGNOS.OpzoekenIndividuStart.INSZNummerInfo);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.OpzoekenIndividuStart.INSZNummer' at 4;9.", repo.ApplicationUnderTest.OpzoekenIndividuStart.INSZNummerInfo, new RecordItemIndex(4));
-            //repo.ApplicationUnderTest.OpzoekenIndividuStart.INSZNummer.Click("4;9");
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.OpzoekenIndividuStart.INSZNummer' at 4;9.", repo.TGNOS.OpzoekenIndividuStart.INSZNummerInfo, new RecordItemIndex(4));
+            //repo.TGNOS.OpzoekenIndividuStart.INSZNummer.Click("4;9");
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Left}{Left}' with focus on 'ApplicationUnderTest.OpzoekenIndividuStart.INSZNummer'.", repo.ApplicationUnderTest.OpzoekenIndividuStart.INSZNummerInfo, new RecordItemIndex(5));
-            //repo.ApplicationUnderTest.OpzoekenIndividuStart.INSZNummer.PressKeys("{Left}{Left}");
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Left}{Left}' with focus on 'TGNOS.OpzoekenIndividuStart.INSZNummer'.", repo.TGNOS.OpzoekenIndividuStart.INSZNummerInfo, new RecordItemIndex(5));
+            //repo.TGNOS.OpzoekenIndividuStart.INSZNummer.PressKeys("{Left}{Left}");
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Left}' with focus on 'ApplicationUnderTest.OpzoekenIndividuStart.INSZNummer'.", repo.ApplicationUnderTest.OpzoekenIndividuStart.INSZNummerInfo, new RecordItemIndex(6));
-            //repo.ApplicationUnderTest.OpzoekenIndividuStart.INSZNummer.PressKeys("{Left}");
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Left}' with focus on 'TGNOS.OpzoekenIndividuStart.INSZNummer'.", repo.TGNOS.OpzoekenIndividuStart.INSZNummerInfo, new RecordItemIndex(6));
+            //repo.TGNOS.OpzoekenIndividuStart.INSZNummer.PressKeys("{Left}");
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Left up}' with focus on 'ApplicationUnderTest.OpzoekenIndividuStart.INSZNummer'.", repo.ApplicationUnderTest.OpzoekenIndividuStart.INSZNummerInfo, new RecordItemIndex(7));
-            //repo.ApplicationUnderTest.OpzoekenIndividuStart.INSZNummer.PressKeys("{Left up}");
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Left up}' with focus on 'TGNOS.OpzoekenIndividuStart.INSZNummer'.", repo.TGNOS.OpzoekenIndividuStart.INSZNummerInfo, new RecordItemIndex(7));
+            //repo.TGNOS.OpzoekenIndividuStart.INSZNummer.PressKeys("{Left up}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.OpzoekenIndividuStart.BtnOpzoeken' at 17;11.", repo.ApplicationUnderTest.OpzoekenIndividuStart.BtnOpzoekenInfo, new RecordItemIndex(8));
-            repo.ApplicationUnderTest.OpzoekenIndividuStart.BtnOpzoeken.Click("17;11");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.OpzoekenIndividuStart.BtnOpzoeken' at 17;11.", repo.TGNOS.OpzoekenIndividuStart.BtnOpzoekenInfo, new RecordItemIndex(8));
+            repo.TGNOS.OpzoekenIndividuStart.BtnOpzoeken.Click("17;11");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'ApplicationUnderTest.OpzoekenIndividuStart.DtgrdZoekResultaat' at 21;26.", repo.ApplicationUnderTest.OpzoekenIndividuStart.DtgrdZoekResultaatInfo, new RecordItemIndex(9));
-            repo.ApplicationUnderTest.OpzoekenIndividuStart.DtgrdZoekResultaat.DoubleClick("21;26");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TGNOS.OpzoekenIndividuStart.DtgrdZoekResultaat' at 21;26.", repo.TGNOS.OpzoekenIndividuStart.DtgrdZoekResultaatInfo, new RecordItemIndex(9));
+            repo.TGNOS.OpzoekenIndividuStart.DtgrdZoekResultaat.DoubleClick("21;26");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ApplicationUnderTest.TbpgBasisInformatie.BtnIndividuWissen' at 43;9.", repo.ApplicationUnderTest.TbpgBasisInformatie.BtnIndividuWissenInfo, new RecordItemIndex(10));
-            repo.ApplicationUnderTest.TbpgBasisInformatie.BtnIndividuWissen.Click("43;9");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgBasisInformatie.BtnIndividuWissen' at 43;9.", repo.TGNOS.TbpgBasisInformatie.BtnIndividuWissenInfo, new RecordItemIndex(10));
+            repo.TGNOS.TbpgBasisInformatie.BtnIndividuWissen.Click("43;9");
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'enter{Return}'.", new RecordItemIndex(11));
             Keyboard.Press("enter{Return}");
