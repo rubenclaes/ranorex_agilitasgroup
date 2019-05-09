@@ -22,9 +22,8 @@ using Ranorex.Core.Testing;
 
 namespace TGNOS
 {
-    public partial class DeleteIndividu
+    public partial class GraydonOrganisatie
     {
-    	private TGNOSRepository myRepo = new TGNOSRepository();
         /// <summary>
         /// This method gets called right after the recording has been started.
         /// It can be used to execute recording specific initialization code.
@@ -32,14 +31,6 @@ namespace TGNOS
         private void Init()
         {
             // Your recording specific initialization code goes here.
-        }
-
-        public void addRRNr(RepoItemInfo textInfo)
-        {
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varRRNr' with focus on 'textInfo'.", textInfo);
-            this.myRepo.TGNOS.OpzoekenIndividuStart.INSZNummer.Focus();
-            this.myRepo.TGNOS.OpzoekenIndividuStart.INSZNummer.TextValue =  varRRNr;
-            this.myRepo.TGNOS.OpzoekenIndividuStart.INSZNummer.Focus();
         }
 
     }

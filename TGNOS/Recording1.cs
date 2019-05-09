@@ -411,440 +411,447 @@ namespace TGNOS
             // Start Nieuw Individu
             Report.Log(ReportLevel.Info, "Section", "Start Nieuw Individu", new RecordItemIndex(0));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.OpzoekenIndividuStart.BtnOpzoeken' at 17;11.", repo.TGNOS.OpzoekenIndividuStart.BtnOpzoekenInfo, new RecordItemIndex(1));
+            repo.TGNOS.Individu.Click("44;13");
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TgnosClientComponentsWinTgnosApp.Open' at 50;5.", repo.TgnosClientComponentsWinTgnosApp.OpenInfo, new RecordItemIndex(2));
+            repo.TgnosClientComponentsWinTgnosApp.Open.Click("50;5");
+            
+            searchIndividu(repo.TGNOS.OpzoekenIndividuStart.INSZNummerInfo);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.OpzoekenIndividuStart.BtnOpzoeken' at 17;11.", repo.TGNOS.OpzoekenIndividuStart.BtnOpzoekenInfo, new RecordItemIndex(4));
             repo.TGNOS.OpzoekenIndividuStart.BtnOpzoeken.Click("17;11");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.OpzoekenIndividuStart.BtnNieuw' at 28;11.", repo.TGNOS.OpzoekenIndividuStart.BtnNieuwInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.OpzoekenIndividuStart.BtnNieuw' at 28;11.", repo.TGNOS.OpzoekenIndividuStart.BtnNieuwInfo, new RecordItemIndex(5));
             repo.TGNOS.OpzoekenIndividuStart.BtnNieuw.Click("28;11");
             
             fillBasicInfo(null);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgBasisInformatie.Familienaam' at 61;13.", repo.TGNOS.TbpgBasisInformatie.FamilienaamInfo, new RecordItemIndex(4));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgBasisInformatie.Familienaam' at 61;13.", repo.TGNOS.TbpgBasisInformatie.FamilienaamInfo, new RecordItemIndex(7));
             //repo.TGNOS.TbpgBasisInformatie.Familienaam.Click("61;13");
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varLastName' with focus on 'TGNOS.TbpgBasisInformatie.Familienaam'.", repo.TGNOS.TbpgBasisInformatie.FamilienaamInfo, new RecordItemIndex(5));
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varLastName' with focus on 'TGNOS.TbpgBasisInformatie.Familienaam'.", repo.TGNOS.TbpgBasisInformatie.FamilienaamInfo, new RecordItemIndex(8));
             //repo.TGNOS.TbpgBasisInformatie.Familienaam.PressKeys(varLastName);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgBasisInformatie.Voornaam1' at 55;6.", repo.TGNOS.TbpgBasisInformatie.Voornaam1Info, new RecordItemIndex(6));
-            //repo.TGNOS.TbpgBasisInformatie.Voornaam1.Click("55;6");
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgBasisInformatie.Voornaam' at 55;6.", repo.TGNOS.TbpgBasisInformatie.VoornaamInfo, new RecordItemIndex(9));
+            //repo.TGNOS.TbpgBasisInformatie.Voornaam.Click("55;6");
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varFirstName' with focus on 'TGNOS.TbpgBasisInformatie.Voornaam1'.", repo.TGNOS.TbpgBasisInformatie.Voornaam1Info, new RecordItemIndex(7));
-            //repo.TGNOS.TbpgBasisInformatie.Voornaam1.PressKeys(varFirstName);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varFirstName' with focus on 'TGNOS.TbpgBasisInformatie.Voornaam'.", repo.TGNOS.TbpgBasisInformatie.VoornaamInfo, new RecordItemIndex(10));
+            //repo.TGNOS.TbpgBasisInformatie.Voornaam.PressKeys(varFirstName);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgBasisInformatie.INSZNummer1' at 1;8.", repo.TGNOS.TbpgBasisInformatie.INSZNummer1Info, new RecordItemIndex(8));
-            //repo.TGNOS.TbpgBasisInformatie.INSZNummer1.Click("1;8");
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgBasisInformatie.INSZNummer' at 1;8.", repo.TGNOS.TbpgBasisInformatie.INSZNummerInfo, new RecordItemIndex(11));
+            //repo.TGNOS.TbpgBasisInformatie.INSZNummer.Click("1;8");
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varRRNr' with focus on 'TGNOS.TbpgBasisInformatie.INSZNummer1'.", repo.TGNOS.TbpgBasisInformatie.INSZNummer1Info, new RecordItemIndex(9));
-            //repo.TGNOS.TbpgBasisInformatie.INSZNummer1.PressKeys(varRRNr);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varRRNr' with focus on 'TGNOS.TbpgBasisInformatie.INSZNummer'.", repo.TGNOS.TbpgBasisInformatie.INSZNummerInfo, new RecordItemIndex(12));
+            //repo.TGNOS.TbpgBasisInformatie.INSZNummer.PressKeys(varRRNr);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgBasisInformatie.Geboorteplaats' at 16;7.", repo.TGNOS.TbpgBasisInformatie.GeboorteplaatsInfo, new RecordItemIndex(10));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgBasisInformatie.Geboorteplaats' at 16;7.", repo.TGNOS.TbpgBasisInformatie.GeboorteplaatsInfo, new RecordItemIndex(13));
             //repo.TGNOS.TbpgBasisInformatie.Geboorteplaats.Click("16;7");
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varBirthCity' with focus on 'TGNOS.TbpgBasisInformatie.Geboorteplaats'.", repo.TGNOS.TbpgBasisInformatie.GeboorteplaatsInfo, new RecordItemIndex(11));
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varBirthCity' with focus on 'TGNOS.TbpgBasisInformatie.Geboorteplaats'.", repo.TGNOS.TbpgBasisInformatie.GeboorteplaatsInfo, new RecordItemIndex(14));
             //repo.TGNOS.TbpgBasisInformatie.Geboorteplaats.PressKeys(varBirthCity);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgBasisInformatie.TextAsterisk' at 31;6.", repo.TGNOS.TbpgBasisInformatie.TextAsteriskInfo, new RecordItemIndex(12));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgBasisInformatie.TextAsterisk' at 31;6.", repo.TGNOS.TbpgBasisInformatie.TextAsteriskInfo, new RecordItemIndex(15));
             //repo.TGNOS.TbpgBasisInformatie.TextAsterisk.Click("31;6");
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varBirthDate' with focus on 'TGNOS.TbpgBasisInformatie.TextAsterisk'.", repo.TGNOS.TbpgBasisInformatie.TextAsteriskInfo, new RecordItemIndex(13));
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varBirthDate' with focus on 'TGNOS.TbpgBasisInformatie.TextAsterisk'.", repo.TGNOS.TbpgBasisInformatie.TextAsteriskInfo, new RecordItemIndex(16));
             //repo.TGNOS.TbpgBasisInformatie.TextAsterisk.PressKeys(varBirthDate);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.CboComboBox' at 41;7.", repo.TGNOS.Individu1.CboComboBoxInfo, new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.CboComboBox' at 41;7.", repo.TGNOS.Individu1.CboComboBoxInfo, new RecordItemIndex(17));
             repo.TGNOS.Individu1.CboComboBox.Click("41;7");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Belgie' at 28;5.", repo.List1000.BelgieInfo, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Belgie' at 28;5.", repo.List1000.BelgieInfo, new RecordItemIndex(18));
             repo.List1000.Belgie.Click("28;5");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.CboComboBox1' at 64;14.", repo.TGNOS.Individu1.CboComboBox1Info, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.CboComboBox1' at 64;14.", repo.TGNOS.Individu1.CboComboBox1Info, new RecordItemIndex(19));
             repo.TGNOS.Individu1.CboComboBox1.Click("64;14");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.ListGender' at 57;6.", repo.List1000.ListGenderInfo, new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.ListGender' at 57;6.", repo.List1000.ListGenderInfo, new RecordItemIndex(20));
             repo.List1000.ListGender.Click("57;6");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.Geldig' at 91;6.", repo.TGNOS.Individu1.GeldigInfo, new RecordItemIndex(18));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.Geldig' at 91;6.", repo.TGNOS.Individu1.GeldigInfo, new RecordItemIndex(21));
             repo.TGNOS.Individu1.Geldig.Click("91;6");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.Geldig' at 91;10.", repo.TGNOS.Individu1.GeldigInfo, new RecordItemIndex(19));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.Geldig' at 91;10.", repo.TGNOS.Individu1.GeldigInfo, new RecordItemIndex(22));
             repo.TGNOS.Individu1.Geldig.Click("91;10");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.BtnOpslaan' at 59;13.", repo.TGNOS.Individu1.BtnOpslaanInfo, new RecordItemIndex(20));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.BtnOpslaan' at 59;13.", repo.TGNOS.Individu1.BtnOpslaanInfo, new RecordItemIndex(23));
             repo.TGNOS.Individu1.BtnOpslaan.Click("59;13");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='\t\tHet opslaan is voltooid.') on item 'TGNOS.Individu1.TextHetOpslaanIsVoltooid'.", repo.TGNOS.Individu1.TextHetOpslaanIsVoltooidInfo, new RecordItemIndex(21));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='\t\tHet opslaan is voltooid.') on item 'TGNOS.Individu1.TextHetOpslaanIsVoltooid'.", repo.TGNOS.Individu1.TextHetOpslaanIsVoltooidInfo, new RecordItemIndex(24));
             Validate.AttributeEqual(repo.TGNOS.Individu1.TextHetOpslaanIsVoltooidInfo, "Text", "\t\tHet opslaan is voltooid.");
             
             // Einde Basisinformatie
-            Report.Log(ReportLevel.Info, "Section", "Einde Basisinformatie", new RecordItemIndex(22));
+            Report.Log(ReportLevel.Info, "Section", "Einde Basisinformatie", new RecordItemIndex(25));
             
             // Start Signalitiek
-            Report.Log(ReportLevel.Info, "Section", "Start Signalitiek", new RecordItemIndex(23));
+            Report.Log(ReportLevel.Info, "Section", "Start Signalitiek", new RecordItemIndex(26));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.Signalitiek' at 68;12.", repo.TGNOS.Individu1.SignalitiekInfo, new RecordItemIndex(24));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.Signalitiek' at 68;12.", repo.TGNOS.Individu1.SignalitiekInfo, new RecordItemIndex(27));
             repo.TGNOS.Individu1.Signalitiek.Click("68;12");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.CboComboBox2' at 84;6.", repo.TGNOS.Individu1.CboComboBox2Info, new RecordItemIndex(25));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.CboComboBox2' at 84;6.", repo.TGNOS.Individu1.CboComboBox2Info, new RecordItemIndex(28));
             repo.TGNOS.Individu1.CboComboBox2.Click("84;6");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Belgische' at 48;5.", repo.List1000.BelgischeInfo, new RecordItemIndex(26));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Belgische' at 48;5.", repo.List1000.BelgischeInfo, new RecordItemIndex(29));
             repo.List1000.Belgische.Click("48;5");
             
             fillSignalism();
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgSignalitiek.GsmNr' at 40;13.", repo.TGNOS.TbpgSignalitiek.GsmNrInfo, new RecordItemIndex(28));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgSignalitiek.GsmNr' at 40;13.", repo.TGNOS.TbpgSignalitiek.GsmNrInfo, new RecordItemIndex(31));
             //repo.TGNOS.TbpgSignalitiek.GsmNr.Click("40;13");
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varMobile' with focus on 'TGNOS.TbpgSignalitiek.GsmNr'.", repo.TGNOS.TbpgSignalitiek.GsmNrInfo, new RecordItemIndex(29));
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varMobile' with focus on 'TGNOS.TbpgSignalitiek.GsmNr'.", repo.TGNOS.TbpgSignalitiek.GsmNrInfo, new RecordItemIndex(32));
             //repo.TGNOS.TbpgSignalitiek.GsmNr.PressKeys(varMobile);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgSignalitiek.TelefoonnrThuis' at 35;7.", repo.TGNOS.TbpgSignalitiek.TelefoonnrThuisInfo, new RecordItemIndex(30));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgSignalitiek.TelefoonnrThuis' at 35;7.", repo.TGNOS.TbpgSignalitiek.TelefoonnrThuisInfo, new RecordItemIndex(33));
             //repo.TGNOS.TbpgSignalitiek.TelefoonnrThuis.Click("35;7");
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varPhone' with focus on 'TGNOS.TbpgSignalitiek.TelefoonnrThuis'.", repo.TGNOS.TbpgSignalitiek.TelefoonnrThuisInfo, new RecordItemIndex(31));
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varPhone' with focus on 'TGNOS.TbpgSignalitiek.TelefoonnrThuis'.", repo.TGNOS.TbpgSignalitiek.TelefoonnrThuisInfo, new RecordItemIndex(34));
             //repo.TGNOS.TbpgSignalitiek.TelefoonnrThuis.PressKeys(varPhone);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgSignalitiek.Email' at 28;8.", repo.TGNOS.TbpgSignalitiek.EmailInfo, new RecordItemIndex(32));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgSignalitiek.Email' at 28;8.", repo.TGNOS.TbpgSignalitiek.EmailInfo, new RecordItemIndex(35));
             //repo.TGNOS.TbpgSignalitiek.Email.Click("28;8");
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varEmail' with focus on 'TGNOS.TbpgSignalitiek.Email'.", repo.TGNOS.TbpgSignalitiek.EmailInfo, new RecordItemIndex(33));
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varEmail' with focus on 'TGNOS.TbpgSignalitiek.Email'.", repo.TGNOS.TbpgSignalitiek.EmailInfo, new RecordItemIndex(36));
             //repo.TGNOS.TbpgSignalitiek.Email.PressKeys(varEmail);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgSignalitiek.Text1' at 132;7.", repo.TGNOS.TbpgSignalitiek.Text1Info, new RecordItemIndex(34));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgSignalitiek.Text1' at 132;7.", repo.TGNOS.TbpgSignalitiek.Text1Info, new RecordItemIndex(37));
             //repo.TGNOS.TbpgSignalitiek.Text1.Click("132;7");
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varStreet' with focus on 'TGNOS.TbpgSignalitiek.TxtStraat1'.", repo.TGNOS.TbpgSignalitiek.TxtStraat1Info, new RecordItemIndex(35));
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varStreet' with focus on 'TGNOS.TbpgSignalitiek.TxtStraat1'.", repo.TGNOS.TbpgSignalitiek.TxtStraat1Info, new RecordItemIndex(38));
             //repo.TGNOS.TbpgSignalitiek.TxtStraat1.PressKeys(varStreet);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgSignalitiek.Straat' at 52;6.", repo.TGNOS.TbpgSignalitiek.StraatInfo, new RecordItemIndex(36));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgSignalitiek.Straat' at 52;6.", repo.TGNOS.TbpgSignalitiek.StraatInfo, new RecordItemIndex(39));
             //repo.TGNOS.TbpgSignalitiek.Straat.Click("52;6");
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varStraatNo' with focus on 'TGNOS.TbpgSignalitiek.Straat'.", repo.TGNOS.TbpgSignalitiek.StraatInfo, new RecordItemIndex(37));
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varStraatNo' with focus on 'TGNOS.TbpgSignalitiek.Straat'.", repo.TGNOS.TbpgSignalitiek.StraatInfo, new RecordItemIndex(40));
             //repo.TGNOS.TbpgSignalitiek.Straat.PressKeys(varStraatNo);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgSignalitiek.Text2' at 38;6.", repo.TGNOS.TbpgSignalitiek.Text2Info, new RecordItemIndex(38));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgSignalitiek.Text2' at 38;6.", repo.TGNOS.TbpgSignalitiek.Text2Info, new RecordItemIndex(41));
             //repo.TGNOS.TbpgSignalitiek.Text2.Click("38;6");
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varZipCode' with focus on 'TGNOS.TbpgSignalitiek.Text2'.", repo.TGNOS.TbpgSignalitiek.Text2Info, new RecordItemIndex(39));
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varZipCode' with focus on 'TGNOS.TbpgSignalitiek.Text2'.", repo.TGNOS.TbpgSignalitiek.Text2Info, new RecordItemIndex(42));
             //repo.TGNOS.TbpgSignalitiek.Text2.PressKeys(varZipCode);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.CbxCheckBox' at 5;12.", repo.TGNOS.Individu1.CbxCheckBoxInfo, new RecordItemIndex(40));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.CbxCheckBox' at 5;12.", repo.TGNOS.Individu1.CbxCheckBoxInfo, new RecordItemIndex(43));
             repo.TGNOS.Individu1.CbxCheckBox.Click("5;12");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgSignalitiek.TextAsterisk1' at 27;8.", repo.TGNOS.TbpgSignalitiek.TextAsterisk1Info, new RecordItemIndex(41));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgSignalitiek.TextAsterisk1' at 27;8.", repo.TGNOS.TbpgSignalitiek.TextAsterisk1Info, new RecordItemIndex(44));
             repo.TGNOS.TbpgSignalitiek.TextAsterisk1.Click("27;8");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varDateValidFrom' with focus on 'TGNOS.TbpgSignalitiek.TextAsterisk1'.", repo.TGNOS.TbpgSignalitiek.TextAsterisk1Info, new RecordItemIndex(42));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varDateValidFrom' with focus on 'TGNOS.TbpgSignalitiek.TextAsterisk1'.", repo.TGNOS.TbpgSignalitiek.TextAsterisk1Info, new RecordItemIndex(45));
             repo.TGNOS.TbpgSignalitiek.TextAsterisk1.PressKeys(varDateValidFrom);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.BtnOpslaan' at 65;19.", repo.TGNOS.Individu1.BtnOpslaanInfo, new RecordItemIndex(43));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.BtnOpslaan' at 65;19.", repo.TGNOS.Individu1.BtnOpslaanInfo, new RecordItemIndex(46));
             repo.TGNOS.Individu1.BtnOpslaan.Click("65;19");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Het opslaan is voltooid.') on item 'TGNOS.Individu1.HetOpslaanIsVoltooid'.", repo.TGNOS.Individu1.HetOpslaanIsVoltooidInfo, new RecordItemIndex(44));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='Het opslaan is voltooid.') on item 'TGNOS.Individu1.HetOpslaanIsVoltooid'.", repo.TGNOS.Individu1.HetOpslaanIsVoltooidInfo, new RecordItemIndex(47));
             Validate.AttributeEqual(repo.TGNOS.Individu1.HetOpslaanIsVoltooidInfo, "Text", "Het opslaan is voltooid.");
             
             // Start Fiscaal en Verloning Tab
-            Report.Log(ReportLevel.Info, "Section", "Start Fiscaal en Verloning Tab", new RecordItemIndex(45));
+            Report.Log(ReportLevel.Info, "Section", "Start Fiscaal en Verloning Tab", new RecordItemIndex(48));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.FiscaalVerloning' at 63;17.", repo.TGNOS.Individu1.FiscaalVerloningInfo, new RecordItemIndex(46));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.FiscaalVerloning' at 63;17.", repo.TGNOS.Individu1.FiscaalVerloningInfo, new RecordItemIndex(49));
             repo.TGNOS.Individu1.FiscaalVerloning.Click("63;17");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgFiscaalVerloning.CboComboBox3' at 211;10.", repo.TGNOS.TbpgFiscaalVerloning.CboComboBox3Info, new RecordItemIndex(47));
-            repo.TGNOS.TbpgFiscaalVerloning.CboComboBox3.Click("211;10");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgFiskaal1.FiskSituatie' at 211;10.", repo.TGNOS.TbpgFiskaal1.FiskSituatieInfo, new RecordItemIndex(50));
+            repo.TGNOS.TbpgFiskaal1.FiskSituatie.Click("211;10");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Gehuwd' at 63;6.", repo.List1000.GehuwdInfo, new RecordItemIndex(48));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Gehuwd' at 63;6.", repo.List1000.GehuwdInfo, new RecordItemIndex(51));
             repo.List1000.Gehuwd.Click("63;6");
             
             fillTaxPayroll();
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgFiscaalVerloning.TextAsterisk1' at 3;5.", repo.TGNOS.TbpgFiscaalVerloning.TextAsterisk1Info, new RecordItemIndex(50));
-            //repo.TGNOS.TbpgFiscaalVerloning.TextAsterisk1.Click("3;5");
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgFiskaal1.FiskSituatieDate' at 3;5.", repo.TGNOS.TbpgFiskaal1.FiskSituatieDateInfo, new RecordItemIndex(53));
+            //repo.TGNOS.TbpgFiskaal1.FiskSituatieDate.Click("3;5");
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varTaxSituationDate' with focus on 'TGNOS.TbpgFiscaalVerloning.TextAsterisk1'.", repo.TGNOS.TbpgFiscaalVerloning.TextAsterisk1Info, new RecordItemIndex(51));
-            //repo.TGNOS.TbpgFiscaalVerloning.TextAsterisk1.PressKeys(varTaxSituationDate);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varTaxSituationDate' with focus on 'TGNOS.TbpgFiskaal1.FiskSituatieDate'.", repo.TGNOS.TbpgFiskaal1.FiskSituatieDateInfo, new RecordItemIndex(54));
+            //repo.TGNOS.TbpgFiskaal1.FiskSituatieDate.PressKeys(varTaxSituationDate);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgFiscaalVerloning.TextAsterisk2' at Center.", repo.TGNOS.TbpgFiscaalVerloning.TextAsterisk2Info, new RecordItemIndex(52));
-            //repo.TGNOS.TbpgFiscaalVerloning.TextAsterisk2.Click();
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgFiskaal1.MariageDate' at Center.", repo.TGNOS.TbpgFiskaal1.MariageDateInfo, new RecordItemIndex(55));
+            //repo.TGNOS.TbpgFiskaal1.MariageDate.Click();
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varMarriageDate' with focus on 'TGNOS.TbpgFiscaalVerloning.TextAsterisk2'.", repo.TGNOS.TbpgFiscaalVerloning.TextAsterisk2Info, new RecordItemIndex(53));
-            //repo.TGNOS.TbpgFiscaalVerloning.TextAsterisk2.PressKeys(varMarriageDate);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varMarriageDate' with focus on 'TGNOS.TbpgFiskaal1.MariageDate'.", repo.TGNOS.TbpgFiskaal1.MariageDateInfo, new RecordItemIndex(56));
+            //repo.TGNOS.TbpgFiskaal1.MariageDate.PressKeys(varMarriageDate);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgFiscaalVerloning.NaamEchtgenoOTE' at 62;10.", repo.TGNOS.TbpgFiscaalVerloning.NaamEchtgenoOTEInfo, new RecordItemIndex(54));
-            //repo.TGNOS.TbpgFiscaalVerloning.NaamEchtgenoOTE.Click("62;10");
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgFiskaal1.NaamEchtgenoot' at 62;10.", repo.TGNOS.TbpgFiskaal1.NaamEchtgenootInfo, new RecordItemIndex(57));
+            //repo.TGNOS.TbpgFiskaal1.NaamEchtgenoot.Click("62;10");
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varLastNameSpouse'.", new RecordItemIndex(55));
-            //Keyboard.Press(varLastNameSpouse);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varLastNameSpouse' with focus on 'TGNOS.TbpgFiskaal1.NaamEchtgenoot'.", repo.TGNOS.TbpgFiskaal1.NaamEchtgenootInfo, new RecordItemIndex(58));
+            //repo.TGNOS.TbpgFiskaal1.NaamEchtgenoot.PressKeys(varLastNameSpouse);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgFiscaalVerloning.VoornaamEchtgenoOTE' at 18;7.", repo.TGNOS.TbpgFiscaalVerloning.VoornaamEchtgenoOTEInfo, new RecordItemIndex(56));
-            //repo.TGNOS.TbpgFiscaalVerloning.VoornaamEchtgenoOTE.Click("18;7");
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgFiskaal1.VoornaamEchtgenoot' at 18;7.", repo.TGNOS.TbpgFiskaal1.VoornaamEchtgenootInfo, new RecordItemIndex(59));
+            //repo.TGNOS.TbpgFiskaal1.VoornaamEchtgenoot.Click("18;7");
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varFirstNameSpouse' with focus on 'TGNOS.TbpgFiscaalVerloning.VoornaamEchtgenoOTE'.", repo.TGNOS.TbpgFiscaalVerloning.VoornaamEchtgenoOTEInfo, new RecordItemIndex(57));
-            //repo.TGNOS.TbpgFiscaalVerloning.VoornaamEchtgenoOTE.PressKeys(varFirstNameSpouse);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varFirstNameSpouse' with focus on 'TGNOS.TbpgFiskaal1.VoornaamEchtgenoot'.", repo.TGNOS.TbpgFiskaal1.VoornaamEchtgenootInfo, new RecordItemIndex(60));
+            //repo.TGNOS.TbpgFiskaal1.VoornaamEchtgenoot.PressKeys(varFirstNameSpouse);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgFiscaalVerloning.TextAsterisk' at 69;7.", repo.TGNOS.TbpgFiscaalVerloning.TextAsteriskInfo, new RecordItemIndex(58));
-            //repo.TGNOS.TbpgFiscaalVerloning.TextAsterisk.Click("69;7");
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgFiskaal1.GeboorteDatumEchtgenoot' at 69;7.", repo.TGNOS.TbpgFiskaal1.GeboorteDatumEchtgenootInfo, new RecordItemIndex(61));
+            //repo.TGNOS.TbpgFiskaal1.GeboorteDatumEchtgenoot.Click("69;7");
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varBirthDateSpouse'.", new RecordItemIndex(59));
-            //Keyboard.Press(varBirthDateSpouse);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varBirthDateSpouse' with focus on 'TGNOS.TbpgFiskaal1.GeboorteDatumEchtgenoot'.", repo.TGNOS.TbpgFiskaal1.GeboorteDatumEchtgenootInfo, new RecordItemIndex(62));
+            //repo.TGNOS.TbpgFiskaal1.GeboorteDatumEchtgenoot.PressKeys(varBirthDateSpouse);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgFiscaalVerloning.CboComboBox4' at 83;9.", repo.TGNOS.TbpgFiscaalVerloning.CboComboBox4Info, new RecordItemIndex(60));
-            repo.TGNOS.TbpgFiscaalVerloning.CboComboBox4.Click("83;9");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgFiskaal1.EigenInkomenEchtgenoot' at 83;9.", repo.TGNOS.TbpgFiskaal1.EigenInkomenEchtgenootInfo, new RecordItemIndex(63));
+            repo.TGNOS.TbpgFiskaal1.EigenInkomenEchtgenoot.Click("83;9");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.EchtgenootMetBeroepsinkomen' at 85;4.", repo.List1000.EchtgenootMetBeroepsinkomenInfo, new RecordItemIndex(61));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.EchtgenootMetBeroepsinkomen' at 85;4.", repo.List1000.EchtgenootMetBeroepsinkomenInfo, new RecordItemIndex(64));
             repo.List1000.EchtgenootMetBeroepsinkomen.Click("85;4");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgFiscaalVerloning.CboComboBox5' at 93;14.", repo.TGNOS.TbpgFiscaalVerloning.CboComboBox5Info, new RecordItemIndex(62));
-            repo.TGNOS.TbpgFiscaalVerloning.CboComboBox5.Click("93;14");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgFiskaal1.BeroepEchtgenoot' at 93;14.", repo.TGNOS.TbpgFiskaal1.BeroepEchtgenootInfo, new RecordItemIndex(65));
+            repo.TGNOS.TbpgFiskaal1.BeroepEchtgenoot.Click("93;14");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Arbeider' at 54;4.", repo.List1000.ArbeiderInfo, new RecordItemIndex(63));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Arbeider' at 54;4.", repo.List1000.ArbeiderInfo, new RecordItemIndex(66));
             repo.List1000.Arbeider.Click("54;4");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgFiscaalVerloning.CboComboBox6' at 65;16.", repo.TGNOS.TbpgFiscaalVerloning.CboComboBox6Info, new RecordItemIndex(64));
-            repo.TGNOS.TbpgFiscaalVerloning.CboComboBox6.Click("65;16");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgFiskaal1.Betaalwijze' at 65;16.", repo.TGNOS.TbpgFiskaal1.BetaalwijzeInfo, new RecordItemIndex(67));
+            repo.TGNOS.TbpgFiskaal1.Betaalwijze.Click("65;16");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Bankrekening' at 60;5.", repo.List1000.BankrekeningInfo, new RecordItemIndex(65));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Bankrekening' at 60;5.", repo.List1000.BankrekeningInfo, new RecordItemIndex(68));
             repo.List1000.Bankrekening.Click("60;5");
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgFiscaalVerloning.IBAN' at 43;8.", repo.TGNOS.TbpgFiscaalVerloning.IBANInfo, new RecordItemIndex(66));
-            //repo.TGNOS.TbpgFiscaalVerloning.IBAN.Click("43;8");
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgFiskaal1.IBAN' at 43;8.", repo.TGNOS.TbpgFiskaal1.IBANInfo, new RecordItemIndex(69));
+            //repo.TGNOS.TbpgFiskaal1.IBAN.Click("43;8");
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varBankNumber' with focus on 'TGNOS.TbpgFiscaalVerloning.IBAN'.", repo.TGNOS.TbpgFiscaalVerloning.IBANInfo, new RecordItemIndex(67));
-            //repo.TGNOS.TbpgFiscaalVerloning.IBAN.PressKeys(varBankNumber);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varBankNumber' with focus on 'TGNOS.TbpgFiskaal1.IBAN'.", repo.TGNOS.TbpgFiskaal1.IBANInfo, new RecordItemIndex(70));
+            //repo.TGNOS.TbpgFiskaal1.IBAN.PressKeys(varBankNumber);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgFiscaalVerloning.CbxCheckBox1' at 8;12.", repo.TGNOS.TbpgFiscaalVerloning.CbxCheckBox1Info, new RecordItemIndex(68));
-            repo.TGNOS.TbpgFiscaalVerloning.CbxCheckBox1.Click("8;12");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgFiskaal1.IndividuAndersvalide' at 8;12.", repo.TGNOS.TbpgFiskaal1.IndividuAndersvalideInfo, new RecordItemIndex(71));
+            repo.TGNOS.TbpgFiskaal1.IndividuAndersvalide.Click("8;12");
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgFiscaalVerloning.TextPercentInvaliditeitIndividu' at 64;9.", repo.TGNOS.TbpgFiscaalVerloning.TextPercentInvaliditeitIndividuInfo, new RecordItemIndex(69));
-            //repo.TGNOS.TbpgFiscaalVerloning.TextPercentInvaliditeitIndividu.Click("64;9");
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgFiskaal1.InvaliditeitIndividuPercentage' at 64;9.", repo.TGNOS.TbpgFiskaal1.InvaliditeitIndividuPercentageInfo, new RecordItemIndex(72));
+            //repo.TGNOS.TbpgFiskaal1.InvaliditeitIndividuPercentage.Click("64;9");
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varIndividualDisability' with focus on 'TGNOS.TbpgFiscaalVerloning.TextPercentInvaliditeitIndividu'.", repo.TGNOS.TbpgFiscaalVerloning.TextPercentInvaliditeitIndividuInfo, new RecordItemIndex(70));
-            //repo.TGNOS.TbpgFiscaalVerloning.TextPercentInvaliditeitIndividu.PressKeys(varIndividualDisability);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varIndividualDisability' with focus on 'TGNOS.TbpgFiskaal1.InvaliditeitIndividuPercentage'.", repo.TGNOS.TbpgFiskaal1.InvaliditeitIndividuPercentageInfo, new RecordItemIndex(73));
+            //repo.TGNOS.TbpgFiskaal1.InvaliditeitIndividuPercentage.PressKeys(varIndividualDisability);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgFiscaalVerloning.CbxCheckBox2' at 10;12.", repo.TGNOS.TbpgFiscaalVerloning.CbxCheckBox2Info, new RecordItemIndex(71));
-            repo.TGNOS.TbpgFiscaalVerloning.CbxCheckBox2.Click("10;12");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgFiskaal1.EchtgenootAndersvalide' at 10;12.", repo.TGNOS.TbpgFiskaal1.EchtgenootAndersvalideInfo, new RecordItemIndex(74));
+            repo.TGNOS.TbpgFiskaal1.EchtgenootAndersvalide.Click("10;12");
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgFiscaalVerloning.AantPersTenLasteValide' at 81;6.", repo.TGNOS.TbpgFiscaalVerloning.AantPersTenLasteValideInfo, new RecordItemIndex(72));
-            //repo.TGNOS.TbpgFiscaalVerloning.AantPersTenLasteValide.Click("81;6");
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgFiskaal1.AantPersTenLasteValide' at 81;6.", repo.TGNOS.TbpgFiskaal1.AantPersTenLasteValideInfo, new RecordItemIndex(75));
+            //repo.TGNOS.TbpgFiskaal1.AantPersTenLasteValide.Click("81;6");
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varNoOfDependants' with focus on 'TGNOS.TbpgFiscaalVerloning.AantPersTenLasteValide'.", repo.TGNOS.TbpgFiscaalVerloning.AantPersTenLasteValideInfo, new RecordItemIndex(73));
-            //repo.TGNOS.TbpgFiscaalVerloning.AantPersTenLasteValide.PressKeys(varNoOfDependants);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varNoOfDependants' with focus on 'TGNOS.TbpgFiskaal1.AantPersTenLasteValide'.", repo.TGNOS.TbpgFiskaal1.AantPersTenLasteValideInfo, new RecordItemIndex(76));
+            //repo.TGNOS.TbpgFiskaal1.AantPersTenLasteValide.PressKeys(varNoOfDependants);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgFiscaalVerloning.AantPersTenLasteAndersvalide' at 38;5.", repo.TGNOS.TbpgFiscaalVerloning.AantPersTenLasteAndersvalideInfo, new RecordItemIndex(74));
-            //repo.TGNOS.TbpgFiscaalVerloning.AantPersTenLasteAndersvalide.Click("38;5");
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgFiskaal1.AantPersTenLasteAndersvalide' at 38;5.", repo.TGNOS.TbpgFiskaal1.AantPersTenLasteAndersvalideInfo, new RecordItemIndex(77));
+            //repo.TGNOS.TbpgFiskaal1.AantPersTenLasteAndersvalide.Click("38;5");
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varNoOfDependantsDisability' with focus on 'TGNOS.TbpgFiscaalVerloning.TxtTextBox'.", repo.TGNOS.TbpgFiscaalVerloning.TxtTextBoxInfo, new RecordItemIndex(75));
-            //repo.TGNOS.TbpgFiscaalVerloning.TxtTextBox.PressKeys(varNoOfDependantsDisability);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varNoOfDependantsDisability' with focus on 'TGNOS.TbpgFiskaal1.AantPersTenLasteAndersvalide'.", repo.TGNOS.TbpgFiskaal1.AantPersTenLasteAndersvalideInfo, new RecordItemIndex(78));
+            //repo.TGNOS.TbpgFiskaal1.AantPersTenLasteAndersvalide.PressKeys(varNoOfDependantsDisability);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgFiscaalVerloning.Aant65PlusPersTenLasteValide' at 78;7.", repo.TGNOS.TbpgFiscaalVerloning.Aant65PlusPersTenLasteValideInfo, new RecordItemIndex(76));
-            //repo.TGNOS.TbpgFiscaalVerloning.Aant65PlusPersTenLasteValide.Click("78;7");
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgFiskaal1.Aant65PlusPersTenLasteValide' at 78;7.", repo.TGNOS.TbpgFiskaal1.Aant65PlusPersTenLasteValideInfo, new RecordItemIndex(79));
+            //repo.TGNOS.TbpgFiskaal1.Aant65PlusPersTenLasteValide.Click("78;7");
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varNumberOf65plusDependants' with focus on 'TGNOS.TbpgFiscaalVerloning.Aant65PlusPersTenLasteValide'.", repo.TGNOS.TbpgFiscaalVerloning.Aant65PlusPersTenLasteValideInfo, new RecordItemIndex(77));
-            //repo.TGNOS.TbpgFiscaalVerloning.Aant65PlusPersTenLasteValide.PressKeys(varNumberOf65plusDependants);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varNumberOf65plusDependants' with focus on 'TGNOS.TbpgFiskaal1.Aant65PlusPersTenLasteValide'.", repo.TGNOS.TbpgFiskaal1.Aant65PlusPersTenLasteValideInfo, new RecordItemIndex(80));
+            //repo.TGNOS.TbpgFiskaal1.Aant65PlusPersTenLasteValide.PressKeys(varNumberOf65plusDependants);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgFiscaalVerloning.Aant65PlusTenLasteAndersvalide' at 77;10.", repo.TGNOS.TbpgFiscaalVerloning.Aant65PlusTenLasteAndersvalideInfo, new RecordItemIndex(78));
-            //repo.TGNOS.TbpgFiscaalVerloning.Aant65PlusTenLasteAndersvalide.Click("77;10");
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgFiskaal1.Aant65PlusTenLasteAndersvalide' at 77;10.", repo.TGNOS.TbpgFiskaal1.Aant65PlusTenLasteAndersvalideInfo, new RecordItemIndex(81));
+            //repo.TGNOS.TbpgFiskaal1.Aant65PlusTenLasteAndersvalide.Click("77;10");
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varNumberOf65plusDependantsDisability' with focus on 'TGNOS.TbpgFiscaalVerloning.Aant65PlusTenLasteAndersvalide'.", repo.TGNOS.TbpgFiscaalVerloning.Aant65PlusTenLasteAndersvalideInfo, new RecordItemIndex(79));
-            //repo.TGNOS.TbpgFiscaalVerloning.Aant65PlusTenLasteAndersvalide.PressKeys(varNumberOf65plusDependantsDisability);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varNumberOf65plusDependantsDisability' with focus on 'TGNOS.TbpgFiskaal1.Aant65PlusTenLasteAndersvalide'.", repo.TGNOS.TbpgFiskaal1.Aant65PlusTenLasteAndersvalideInfo, new RecordItemIndex(82));
+            //repo.TGNOS.TbpgFiskaal1.Aant65PlusTenLasteAndersvalide.PressKeys(varNumberOf65plusDependantsDisability);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgFiscaalVerloning.AantKindTenLasteValide' at 76;6.", repo.TGNOS.TbpgFiscaalVerloning.AantKindTenLasteValideInfo, new RecordItemIndex(80));
-            //repo.TGNOS.TbpgFiscaalVerloning.AantKindTenLasteValide.Click("76;6");
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgFiskaal1.AantKindTenLasteValide' at 76;6.", repo.TGNOS.TbpgFiskaal1.AantKindTenLasteValideInfo, new RecordItemIndex(83));
+            //repo.TGNOS.TbpgFiskaal1.AantKindTenLasteValide.Click("76;6");
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varNoOfDependantChildren' with focus on 'TGNOS.TbpgFiscaalVerloning.AantKindTenLasteValide'.", repo.TGNOS.TbpgFiscaalVerloning.AantKindTenLasteValideInfo, new RecordItemIndex(81));
-            //repo.TGNOS.TbpgFiscaalVerloning.AantKindTenLasteValide.PressKeys(varNoOfDependantChildren);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varNoOfDependantChildren' with focus on 'TGNOS.TbpgFiskaal1.AantKindTenLasteValide'.", repo.TGNOS.TbpgFiskaal1.AantKindTenLasteValideInfo, new RecordItemIndex(84));
+            //repo.TGNOS.TbpgFiskaal1.AantKindTenLasteValide.PressKeys(varNoOfDependantChildren);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgFiscaalVerloning.AantKindTenLasteAndersvalide' at 75;9.", repo.TGNOS.TbpgFiscaalVerloning.AantKindTenLasteAndersvalideInfo, new RecordItemIndex(82));
-            //repo.TGNOS.TbpgFiscaalVerloning.AantKindTenLasteAndersvalide.Click("75;9");
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgFiskaal1.AantKindTenLasteAndersvalide' at 75;9.", repo.TGNOS.TbpgFiskaal1.AantKindTenLasteAndersvalideInfo, new RecordItemIndex(85));
+            //repo.TGNOS.TbpgFiskaal1.AantKindTenLasteAndersvalide.Click("75;9");
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varNoOfDependantChildrenDisability' with focus on 'TGNOS.TbpgFiscaalVerloning.AantKindTenLasteAndersvalide'.", repo.TGNOS.TbpgFiscaalVerloning.AantKindTenLasteAndersvalideInfo, new RecordItemIndex(83));
-            //repo.TGNOS.TbpgFiscaalVerloning.AantKindTenLasteAndersvalide.PressKeys(varNoOfDependantChildrenDisability);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varNoOfDependantChildrenDisability' with focus on 'TGNOS.TbpgFiskaal1.AantKindTenLasteAndersvalide'.", repo.TGNOS.TbpgFiskaal1.AantKindTenLasteAndersvalideInfo, new RecordItemIndex(86));
+            //repo.TGNOS.TbpgFiskaal1.AantKindTenLasteAndersvalide.PressKeys(varNoOfDependantChildrenDisability);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgFiscaalVerloning.CboComboBox7' at 69;5.", repo.TGNOS.TbpgFiscaalVerloning.CboComboBox7Info, new RecordItemIndex(84));
-            repo.TGNOS.TbpgFiscaalVerloning.CboComboBox7.Click("69;5");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.TbpgFiskaal1.CboComboBox3' at 69;5.", repo.TGNOS.TbpgFiskaal1.CboComboBox3Info, new RecordItemIndex(87));
+            repo.TGNOS.TbpgFiskaal1.CboComboBox3.Click("69;5");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.ListItem5deEn6deMiddelbaarASO' at 72;3.", repo.List1000.ListItem5deEn6deMiddelbaarASOInfo, new RecordItemIndex(85));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.ListItem5deEn6deMiddelbaarASO' at 72;3.", repo.List1000.ListItem5deEn6deMiddelbaarASOInfo, new RecordItemIndex(88));
             repo.List1000.ListItem5deEn6deMiddelbaarASO.Click("72;3");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.BtnOpslaan' at 37;10.", repo.TGNOS.Individu1.BtnOpslaanInfo, new RecordItemIndex(86));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.BtnOpslaan' at 37;10.", repo.TGNOS.Individu1.BtnOpslaanInfo, new RecordItemIndex(89));
             repo.TGNOS.Individu1.BtnOpslaan.Click("37;10");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='\t\tHet opslaan is voltooid.') on item 'TGNOS.Individu1.TextHetOpslaanIsVoltooid'.", repo.TGNOS.Individu1.TextHetOpslaanIsVoltooidInfo, new RecordItemIndex(87));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='\t\tHet opslaan is voltooid.') on item 'TGNOS.Individu1.TextHetOpslaanIsVoltooid'.", repo.TGNOS.Individu1.TextHetOpslaanIsVoltooidInfo, new RecordItemIndex(90));
             Validate.AttributeEqual(repo.TGNOS.Individu1.TextHetOpslaanIsVoltooidInfo, "Text", "\t\tHet opslaan is voltooid.");
             
             // Start Aspiraties
-            Report.Log(ReportLevel.Info, "Section", "Start Aspiraties", new RecordItemIndex(88));
+            Report.Log(ReportLevel.Info, "Section", "Start Aspiraties", new RecordItemIndex(91));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.Aspiraties' at 69;16.", repo.TGNOS.Individu1.AspiratiesInfo, new RecordItemIndex(89));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.Aspiraties' at 69;16.", repo.TGNOS.Individu1.AspiratiesInfo, new RecordItemIndex(92));
             repo.TGNOS.Individu1.Aspiraties.Click("69;16");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.BtnNieuwBeroep' at 38;7.", repo.TGNOS.Individu1.BtnNieuwBeroepInfo, new RecordItemIndex(90));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.BtnNieuwBeroep' at 38;7.", repo.TGNOS.Individu1.BtnNieuwBeroepInfo, new RecordItemIndex(93));
             repo.TGNOS.Individu1.BtnNieuwBeroep.Click("38;7");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(91));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(94));
             Keyboard.Press("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(92));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(95));
             Keyboard.Press("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '*'.", new RecordItemIndex(93));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '*'.", new RecordItemIndex(96));
             Keyboard.Press("*");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varProfession'.", new RecordItemIndex(94));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varProfession'.", new RecordItemIndex(97));
             Keyboard.Press(varProfession);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '*'.", new RecordItemIndex(95));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '*'.", new RecordItemIndex(98));
             Keyboard.Press("*");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(96));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}'.", new RecordItemIndex(99));
             Keyboard.Press("{Tab}");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}'.", new RecordItemIndex(97));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Return}'.", new RecordItemIndex(100));
             Keyboard.Press("{Return}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TGNOS.TreeItem93399HuishoudelijkeHulp' at 67;6.", repo.TGNOS.TreeItem93399HuishoudelijkeHulpInfo, new RecordItemIndex(98));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left DoubleClick item 'TGNOS.TreeItem93399HuishoudelijkeHulp' at 67;6.", repo.TGNOS.TreeItem93399HuishoudelijkeHulpInfo, new RecordItemIndex(101));
             repo.TGNOS.TreeItem93399HuishoudelijkeHulp.DoubleClick("67;6");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}{Tab}{Tab}{Tab}{Tab}{Return}' with focus on 'TGNOS.TreeItem93399HuishoudelijkeHulp'.", repo.TGNOS.TreeItem93399HuishoudelijkeHulpInfo, new RecordItemIndex(99));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{Tab}{Tab}{Tab}{Tab}{Tab}{Return}' with focus on 'TGNOS.TreeItem93399HuishoudelijkeHulp'.", repo.TGNOS.TreeItem93399HuishoudelijkeHulpInfo, new RecordItemIndex(102));
             repo.TGNOS.TreeItem93399HuishoudelijkeHulp.PressKeys("{Tab}{Tab}{Tab}{Tab}{Tab}{Return}");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.MobiliteitStraalKm' at 121;7.", repo.TGNOS.Individu1.MobiliteitStraalKmInfo, new RecordItemIndex(100));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.MobiliteitStraalKm' at 121;7.", repo.TGNOS.Individu1.MobiliteitStraalKmInfo, new RecordItemIndex(103));
             repo.TGNOS.Individu1.MobiliteitStraalKm.Click("121;7");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varMobilityRadusKm' with focus on 'TGNOS.Individu1.MobiliteitStraalKm'.", repo.TGNOS.Individu1.MobiliteitStraalKmInfo, new RecordItemIndex(101));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varMobilityRadusKm' with focus on 'TGNOS.Individu1.MobiliteitStraalKm'.", repo.TGNOS.Individu1.MobiliteitStraalKmInfo, new RecordItemIndex(104));
             repo.TGNOS.Individu1.MobiliteitStraalKm.PressKeys(varMobilityRadusKm);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.CboComboBox8' at 146;10.", repo.TGNOS.Individu1.CboComboBox8Info, new RecordItemIndex(102));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.CboComboBox8' at 146;10.", repo.TGNOS.Individu1.CboComboBox8Info, new RecordItemIndex(105));
             repo.TGNOS.Individu1.CboComboBox8.Click("146;10");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Auto' at 86;6.", repo.List1000.AutoInfo, new RecordItemIndex(103));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Auto' at 86;6.", repo.List1000.AutoInfo, new RecordItemIndex(106));
             repo.List1000.Auto.Click("86;6");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.CbxCheckBox3' at 6;11.", repo.TGNOS.Individu1.CbxCheckBox3Info, new RecordItemIndex(104));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.CbxCheckBox3' at 6;11.", repo.TGNOS.Individu1.CbxCheckBox3Info, new RecordItemIndex(107));
             repo.TGNOS.Individu1.CbxCheckBox3.Click("6;11");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Down item 'TGNOS.Individu1.CbxCheckBox4' at 4;6.", repo.TGNOS.Individu1.CbxCheckBox4Info, new RecordItemIndex(105));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Down item 'TGNOS.Individu1.CbxCheckBox4' at 4;6.", repo.TGNOS.Individu1.CbxCheckBox4Info, new RecordItemIndex(108));
             repo.TGNOS.Individu1.CbxCheckBox4.MoveTo("4;6");
             Mouse.ButtonDown(System.Windows.Forms.MouseButtons.Left);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'TGNOS.Individu1.CbxCheckBox4' at 12;-2.", repo.TGNOS.Individu1.CbxCheckBox4Info, new RecordItemIndex(106));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'TGNOS.Individu1.CbxCheckBox4' at 12;-2.", repo.TGNOS.Individu1.CbxCheckBox4Info, new RecordItemIndex(109));
             repo.TGNOS.Individu1.CbxCheckBox4.MoveTo("12;-2");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Up item 'TGNOS.Individu1.GrpAspiraties' at 653;311.", repo.TGNOS.Individu1.GrpAspiratiesInfo, new RecordItemIndex(107));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Up item 'TGNOS.Individu1.GrpAspiraties' at 653;311.", repo.TGNOS.Individu1.GrpAspiratiesInfo, new RecordItemIndex(110));
             repo.TGNOS.Individu1.GrpAspiraties.MoveTo("653;311");
             Mouse.ButtonUp(System.Windows.Forms.MouseButtons.Left);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Up item 'TGNOS.TgnosDetailIndividu' at 427;5.", repo.TGNOS.TgnosDetailIndividuInfo, new RecordItemIndex(108));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Up item 'TGNOS.TgnosDetailIndividu' at 427;5.", repo.TGNOS.TgnosDetailIndividuInfo, new RecordItemIndex(111));
             repo.TGNOS.TgnosDetailIndividu.MoveTo("427;5");
             Mouse.ButtonUp(System.Windows.Forms.MouseButtons.Left);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.CbxCheckBox4' at 6;11.", repo.TGNOS.Individu1.CbxCheckBox4Info, new RecordItemIndex(109));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.CbxCheckBox4' at 6;11.", repo.TGNOS.Individu1.CbxCheckBox4Info, new RecordItemIndex(112));
             repo.TGNOS.Individu1.CbxCheckBox4.Click("6;11");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Down item 'TGNOS.Individu1.TxtGewensteUurloonBrutoAspiraties' at 210;23.", repo.TGNOS.Individu1.TxtGewensteUurloonBrutoAspiratiesInfo, new RecordItemIndex(110));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Down item 'TGNOS.Individu1.TxtGewensteUurloonBrutoAspiraties' at 210;23.", repo.TGNOS.Individu1.TxtGewensteUurloonBrutoAspiratiesInfo, new RecordItemIndex(113));
             repo.TGNOS.Individu1.TxtGewensteUurloonBrutoAspiraties.MoveTo("210;23");
             Mouse.ButtonDown(System.Windows.Forms.MouseButtons.Left);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'TGNOS.Individu1.TxtGewensteUurloonBrutoAspiraties' at 218;15.", repo.TGNOS.Individu1.TxtGewensteUurloonBrutoAspiratiesInfo, new RecordItemIndex(111));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Move item 'TGNOS.Individu1.TxtGewensteUurloonBrutoAspiraties' at 218;15.", repo.TGNOS.Individu1.TxtGewensteUurloonBrutoAspiratiesInfo, new RecordItemIndex(114));
             repo.TGNOS.Individu1.TxtGewensteUurloonBrutoAspiraties.MoveTo("218;15");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Up item 'TGNOS.Individu1.CbxCheckBox5' at 6;12.", repo.TGNOS.Individu1.CbxCheckBox5Info, new RecordItemIndex(112));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Up item 'TGNOS.Individu1.CbxCheckBox5' at 6;12.", repo.TGNOS.Individu1.CbxCheckBox5Info, new RecordItemIndex(115));
             repo.TGNOS.Individu1.CbxCheckBox5.MoveTo("6;12");
             Mouse.ButtonUp(System.Windows.Forms.MouseButtons.Left);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.BtnOpslaan' at 49;13.", repo.TGNOS.Individu1.BtnOpslaanInfo, new RecordItemIndex(113));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.BtnOpslaan' at 49;13.", repo.TGNOS.Individu1.BtnOpslaanInfo, new RecordItemIndex(116));
             repo.TGNOS.Individu1.BtnOpslaan.Click("49;13");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='\t\tEén of meerdere fouten hebben zich voorgedaan tijdens het opslaan van de gegevens.') on item 'TGNOS.Individu1.TextEenOfMeerdereFoutenHebbenZich'.", repo.TGNOS.Individu1.TextEenOfMeerdereFoutenHebbenZichInfo, new RecordItemIndex(114));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='\t\tEén of meerdere fouten hebben zich voorgedaan tijdens het opslaan van de gegevens.') on item 'TGNOS.Individu1.TextEenOfMeerdereFoutenHebbenZich'.", repo.TGNOS.Individu1.TextEenOfMeerdereFoutenHebbenZichInfo, new RecordItemIndex(117));
             Validate.AttributeEqual(repo.TGNOS.Individu1.TextEenOfMeerdereFoutenHebbenZichInfo, "Text", "\t\tEén of meerdere fouten hebben zich voorgedaan tijdens het opslaan van de gegevens.");
             
             // Start Dienstencheque
-            Report.Log(ReportLevel.Info, "Section", "Start Dienstencheque", new RecordItemIndex(115));
+            Report.Log(ReportLevel.Info, "Section", "Start Dienstencheque", new RecordItemIndex(118));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.Dienstencheque' at 59;20.", repo.TGNOS.Individu1.DienstenchequeInfo, new RecordItemIndex(116));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.Dienstencheque' at 59;20.", repo.TGNOS.Individu1.DienstenchequeInfo, new RecordItemIndex(119));
             repo.TGNOS.Individu1.Dienstencheque.Click("59;20");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.CboComboBox9' at 207;10.", repo.TGNOS.Individu1.CboComboBox9Info, new RecordItemIndex(117));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.CboComboBox9' at 207;10.", repo.TGNOS.Individu1.CboComboBox9Info, new RecordItemIndex(120));
             repo.TGNOS.Individu1.CboComboBox9.Click("207;10");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.OntvangtGeenUitkering' at 124;5.", repo.List1000.OntvangtGeenUitkeringInfo, new RecordItemIndex(118));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.OntvangtGeenUitkering' at 124;5.", repo.List1000.OntvangtGeenUitkeringInfo, new RecordItemIndex(121));
             repo.List1000.OntvangtGeenUitkering.Click("124;5");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.CboComboBox10' at 141;15.", repo.TGNOS.Individu1.CboComboBox10Info, new RecordItemIndex(119));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.CboComboBox10' at 141;15.", repo.TGNOS.Individu1.CboComboBox10Info, new RecordItemIndex(122));
             repo.TGNOS.Individu1.CboComboBox10.Click("141;15");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.GEENTewerkstellingBijEenAnderDCQBe' at 138;4.", repo.List1000.GEENTewerkstellingBijEenAnderDCQBeInfo, new RecordItemIndex(120));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.GEENTewerkstellingBijEenAnderDCQBe' at 138;4.", repo.List1000.GEENTewerkstellingBijEenAnderDCQBeInfo, new RecordItemIndex(123));
             repo.List1000.GEENTewerkstellingBijEenAnderDCQBe.Click("138;4");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.CboComboBox11' at 139;17.", repo.TGNOS.Individu1.CboComboBox11Info, new RecordItemIndex(121));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.CboComboBox11' at 139;17.", repo.TGNOS.Individu1.CboComboBox11Info, new RecordItemIndex(124));
             repo.TGNOS.Individu1.CboComboBox11.Click("139;17");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Structureel' at 72;4.", repo.List1000.StructureelInfo, new RecordItemIndex(122));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.Structureel' at 72;4.", repo.List1000.StructureelInfo, new RecordItemIndex(125));
             repo.List1000.Structureel.Click("72;4");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.CboComboBox12' at 108;15.", repo.TGNOS.Individu1.CboComboBox12Info, new RecordItemIndex(123));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.CboComboBox12' at 108;15.", repo.TGNOS.Individu1.CboComboBox12Info, new RecordItemIndex(126));
             repo.TGNOS.Individu1.CboComboBox12.Click("108;15");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.NietBelangrijk' at 60;2.", repo.List1000.NietBelangrijkInfo, new RecordItemIndex(124));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'List1000.NietBelangrijk' at 60;2.", repo.List1000.NietBelangrijkInfo, new RecordItemIndex(127));
             repo.List1000.NietBelangrijk.Click("60;2");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.PoetsenVanDeWoning' at 8;10.", repo.TGNOS.Individu1.PoetsenVanDeWoningInfo, new RecordItemIndex(125));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.PoetsenVanDeWoning' at 8;10.", repo.TGNOS.Individu1.PoetsenVanDeWoningInfo, new RecordItemIndex(128));
             repo.TGNOS.Individu1.PoetsenVanDeWoning.Click("8;10");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.UrenPerWeek' at 185;7.", repo.TGNOS.Individu1.UrenPerWeekInfo, new RecordItemIndex(126));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.UrenPerWeek' at 185;7.", repo.TGNOS.Individu1.UrenPerWeekInfo, new RecordItemIndex(129));
             repo.TGNOS.Individu1.UrenPerWeek.Click("185;7");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varHoursPerWeek' with focus on 'TGNOS.Individu1.UrenPerWeek'.", repo.TGNOS.Individu1.UrenPerWeekInfo, new RecordItemIndex(127));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varHoursPerWeek' with focus on 'TGNOS.Individu1.UrenPerWeek'.", repo.TGNOS.Individu1.UrenPerWeekInfo, new RecordItemIndex(130));
             repo.TGNOS.Individu1.UrenPerWeek.PressKeys(varHoursPerWeek);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.LblMaandagVmVoorkeur' at Center.", repo.TGNOS.Individu1.LblMaandagVmVoorkeurInfo, new RecordItemIndex(128));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.LblMaandagVmVoorkeur' at Center.", repo.TGNOS.Individu1.LblMaandagVmVoorkeurInfo, new RecordItemIndex(131));
             repo.TGNOS.Individu1.LblMaandagVmVoorkeur.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.LblMaandagNmVoorkeur' at Center.", repo.TGNOS.Individu1.LblMaandagNmVoorkeurInfo, new RecordItemIndex(129));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.LblMaandagNmVoorkeur' at Center.", repo.TGNOS.Individu1.LblMaandagNmVoorkeurInfo, new RecordItemIndex(132));
             repo.TGNOS.Individu1.LblMaandagNmVoorkeur.Click();
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.LblDinsdagVmVoorkeur' at 73;11.", repo.TGNOS.Individu1.LblDinsdagVmVoorkeurInfo, new RecordItemIndex(130));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.LblDinsdagVmVoorkeur' at 73;11.", repo.TGNOS.Individu1.LblDinsdagVmVoorkeurInfo, new RecordItemIndex(133));
             repo.TGNOS.Individu1.LblDinsdagVmVoorkeur.Click("73;11");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.LblWoensdagVmVoorkeur' at 42;10.", repo.TGNOS.Individu1.LblWoensdagVmVoorkeurInfo, new RecordItemIndex(131));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.LblWoensdagVmVoorkeur' at 42;10.", repo.TGNOS.Individu1.LblWoensdagVmVoorkeurInfo, new RecordItemIndex(134));
             repo.TGNOS.Individu1.LblWoensdagVmVoorkeur.Click("42;10");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.LblDinsdagNmVoorkeur' at 92;12.", repo.TGNOS.Individu1.LblDinsdagNmVoorkeurInfo, new RecordItemIndex(132));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.LblDinsdagNmVoorkeur' at 92;12.", repo.TGNOS.Individu1.LblDinsdagNmVoorkeurInfo, new RecordItemIndex(135));
             repo.TGNOS.Individu1.LblDinsdagNmVoorkeur.Click("92;12");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.LblWoensdagNmVoorkeur' at 41;12.", repo.TGNOS.Individu1.LblWoensdagNmVoorkeurInfo, new RecordItemIndex(133));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.LblWoensdagNmVoorkeur' at 41;12.", repo.TGNOS.Individu1.LblWoensdagNmVoorkeurInfo, new RecordItemIndex(136));
             repo.TGNOS.Individu1.LblWoensdagNmVoorkeur.Click("41;12");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.LblDonderdagVmVoorkeur' at 35;12.", repo.TGNOS.Individu1.LblDonderdagVmVoorkeurInfo, new RecordItemIndex(134));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.LblDonderdagVmVoorkeur' at 35;12.", repo.TGNOS.Individu1.LblDonderdagVmVoorkeurInfo, new RecordItemIndex(137));
             repo.TGNOS.Individu1.LblDonderdagVmVoorkeur.Click("35;12");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Up item 'TGNOS.Individu1.LblDonderdagNmVoorkeur' at 36;10.", repo.TGNOS.Individu1.LblDonderdagNmVoorkeurInfo, new RecordItemIndex(135));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Up item 'TGNOS.Individu1.LblDonderdagNmVoorkeur' at 36;10.", repo.TGNOS.Individu1.LblDonderdagNmVoorkeurInfo, new RecordItemIndex(138));
             repo.TGNOS.Individu1.LblDonderdagNmVoorkeur.MoveTo("36;10");
             Mouse.ButtonUp(System.Windows.Forms.MouseButtons.Left);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.LblVrijdagVmVoorkeur' at 18;16.", repo.TGNOS.Individu1.LblVrijdagVmVoorkeurInfo, new RecordItemIndex(136));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.LblVrijdagVmVoorkeur' at 18;16.", repo.TGNOS.Individu1.LblVrijdagVmVoorkeurInfo, new RecordItemIndex(139));
             repo.TGNOS.Individu1.LblVrijdagVmVoorkeur.Click("18;16");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.BtnOpslaan' at Center.", repo.TGNOS.Individu1.BtnOpslaanInfo, new RecordItemIndex(137));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.BtnOpslaan' at Center.", repo.TGNOS.Individu1.BtnOpslaanInfo, new RecordItemIndex(140));
             repo.TGNOS.Individu1.BtnOpslaan.Click();
             
             // Start Opmerkingen
-            Report.Log(ReportLevel.Info, "Section", "Start Opmerkingen", new RecordItemIndex(138));
+            Report.Log(ReportLevel.Info, "Section", "Start Opmerkingen", new RecordItemIndex(141));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.Opmerkingen' at 67;16.", repo.TGNOS.Individu1.OpmerkingenInfo, new RecordItemIndex(139));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.Opmerkingen' at 67;16.", repo.TGNOS.Individu1.OpmerkingenInfo, new RecordItemIndex(142));
             repo.TGNOS.Individu1.Opmerkingen.Click("67;16");
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.OpmerkingenBijFunctioneleRelevantie' at 579;98.", repo.TGNOS.Individu1.OpmerkingenBijFunctioneleRelevantieInfo, new RecordItemIndex(140));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.OpmerkingenBijFunctioneleRelevantie' at 579;98.", repo.TGNOS.Individu1.OpmerkingenBijFunctioneleRelevantieInfo, new RecordItemIndex(143));
             repo.TGNOS.Individu1.OpmerkingenBijFunctioneleRelevantie.Click("579;98");
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varComment' with focus on 'TGNOS.Individu1.OpmerkingenBijFunctioneleRelevantie'.", repo.TGNOS.Individu1.OpmerkingenBijFunctioneleRelevantieInfo, new RecordItemIndex(141));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varComment' with focus on 'TGNOS.Individu1.OpmerkingenBijFunctioneleRelevantie'.", repo.TGNOS.Individu1.OpmerkingenBijFunctioneleRelevantieInfo, new RecordItemIndex(144));
             repo.TGNOS.Individu1.OpmerkingenBijFunctioneleRelevantie.PressKeys(varComment);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.BtnOpslaan' at 51;18.", repo.TGNOS.Individu1.BtnOpslaanInfo, new RecordItemIndex(142));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'TGNOS.Individu1.BtnOpslaan' at 51;18.", repo.TGNOS.Individu1.BtnOpslaanInfo, new RecordItemIndex(145));
             repo.TGNOS.Individu1.BtnOpslaan.Click("51;18");
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='\t\tHet opslaan is voltooid.') on item 'TGNOS.Individu1.TextHetOpslaanIsVoltooid'.", repo.TGNOS.Individu1.TextHetOpslaanIsVoltooidInfo, new RecordItemIndex(143));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Text='\t\tHet opslaan is voltooid.') on item 'TGNOS.Individu1.TextHetOpslaanIsVoltooid'.", repo.TGNOS.Individu1.TextHetOpslaanIsVoltooidInfo, new RecordItemIndex(146));
             Validate.AttributeEqual(repo.TGNOS.Individu1.TextHetOpslaanIsVoltooidInfo, "Text", "\t\tHet opslaan is voltooid.");
             
             // Einde Nieuw Individu
-            Report.Log(ReportLevel.Info, "Section", "Einde Nieuw Individu", new RecordItemIndex(144));
+            Report.Log(ReportLevel.Info, "Section", "Einde Nieuw Individu", new RecordItemIndex(147));
             
         }
 

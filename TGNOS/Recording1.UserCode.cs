@@ -36,57 +36,57 @@ namespace TGNOS
            
         }
 
-        public void addRRNr(RepoItemInfo textInfo)
+        public void searchIndividu(RepoItemInfo textInfo)
         {
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$varRRNr' with focus on 'textInfo'.", textInfo);
-            this.myRepo.ApplicationUnderTest.OpzoekenIndividuStart.INSZNummer.TextValue =  varRRNr;
+            this.myRepo.TGNOS.OpzoekenIndividuStart.FamilienaamZoek.TextValue =  varLastName;
+            this.myRepo.TGNOS.OpzoekenIndividuStart.VoornaamZoek.TextValue = varFirstName;
            
         }
         
         public void fillBasicInfo(RepoItemInfo textInfo)
         {
             Report.Log(ReportLevel.Info, "Basic Info", "Lastname from variable '$varLastName' with focus on 'textInfo'.", textInfo);
-            this.myRepo.ApplicationUnderTest.TbpgBasisInformatie.Familienaam.TextValue =  varLastName;
+            this.myRepo.TGNOS.TbpgBasisInformatie.Familienaam.TextValue =  varLastName;
             Report.Log(ReportLevel.Info, "Basic Info", "Firstname from variable '$varFirstName' with focus on 'textInfo'.", textInfo);
-            this.myRepo.ApplicationUnderTest.TbpgBasisInformatie.Voornaam1.TextValue =  varFirstName;
+            this.myRepo.TGNOS.TbpgBasisInformatie.Voornaam.TextValue =  varFirstName;
             Report.Log(ReportLevel.Info, "Basic Info", "Firstname from variable '$varRRNr' with focus on 'textInfo'.", textInfo);
-            this.myRepo.ApplicationUnderTest.TbpgBasisInformatie.INSZNummer1.TextValue =  varRRNr;
-            this.myRepo.ApplicationUnderTest.TbpgBasisInformatie.Geboorteplaats.TextValue =  varBirthCity;
-            this.myRepo.ApplicationUnderTest.TbpgBasisInformatie.TextAsterisk.Focus();
-            this.myRepo.ApplicationUnderTest.TbpgBasisInformatie.TextAsterisk.TextValue =  varBirthDate;
+            this.myRepo.TGNOS.TbpgBasisInformatie.INSZNummer.TextValue =  varRRNr;
+            this.myRepo.TGNOS.TbpgBasisInformatie.Geboorteplaats.TextValue =  varBirthCity;
+            this.myRepo.TGNOS.TbpgBasisInformatie.TextAsterisk.Focus();
+            this.myRepo.TGNOS.TbpgBasisInformatie.TextAsterisk.TextValue =  varBirthDate;
        
            
         }
         
         public void fillSignalism()
         {
-        	this.myRepo.ApplicationUnderTest.TbpgSignalitiek.GsmNr.TextValue =  varMobile;
-        	this.myRepo.ApplicationUnderTest.TbpgSignalitiek.TelefoonnrThuis.TextValue =  varPhone;
-        	this.myRepo.ApplicationUnderTest.TbpgSignalitiek.Email.TextValue =  varEmail;
-        	this.myRepo.ApplicationUnderTest.TbpgSignalitiek.TxtStraat1.TextValue =  varStreet;	
-        	this.myRepo.ApplicationUnderTest.TbpgSignalitiek.Straat.TextValue =  varStraatNo;
-        	this.myRepo.ApplicationUnderTest.TbpgSignalitiek.Text2.TextValue =  varZipCode;
+        	this.myRepo.TGNOS.TbpgSignalitiek.GsmNr.TextValue =  varMobile;
+        	this.myRepo.TGNOS.TbpgSignalitiek.TelefoonnrThuis.TextValue =  varPhone;
+        	this.myRepo.TGNOS.TbpgSignalitiek.Email.TextValue =  varEmail;
+        	this.myRepo.TGNOS.TbpgSignalitiek.TxtStraat1.TextValue =  varStreet;	
+        	this.myRepo.TGNOS.TbpgSignalitiek.Straat.TextValue =  varStraatNo;
+        	this.myRepo.TGNOS.TbpgSignalitiek.Text2.TextValue =  varZipCode;
         }
         
         public void fillTaxPayroll()
         {
-        	this.myRepo.ApplicationUnderTest.TbpgFiscaalVerloning.TextAsterisk1.TextValue = varTaxSituationDate;
-        	this.myRepo.ApplicationUnderTest.TbpgFiscaalVerloning.TextAsterisk2.TextValue = varMarriageDate;
-        	
-        	this.myRepo.ApplicationUnderTest.TbpgFiscaalVerloning.NaamEchtgenoOTE.TextValue = varLastNameSpouse;
-        	this.myRepo.ApplicationUnderTest.TbpgFiscaalVerloning.VoornaamEchtgenoOTE.TextValue = varFirstNameSpouse;
-        	this.myRepo.ApplicationUnderTest.TbpgFiscaalVerloning.TextAsterisk.TextValue = varBirthDateSpouse;
-        	this.myRepo.ApplicationUnderTest.TbpgFiscaalVerloning.IBAN.TextValue = varBankNumber;
-        	
-        	this.myRepo.ApplicationUnderTest.TbpgFiscaalVerloning.TextPercentInvaliditeitIndividu.TextValue = varIndividualDisability;
-        	this.myRepo.ApplicationUnderTest.TbpgFiscaalVerloning.AantPersTenLasteValide.TextValue = varNoOfDependants;
-        	this.myRepo.ApplicationUnderTest.TbpgFiscaalVerloning.TxtTextBox.TextValue = varNoOfDependantsDisability;
-        	this.myRepo.ApplicationUnderTest.TbpgFiscaalVerloning.Aant65PlusPersTenLasteValide.TextValue = varNumberOf65plusDependants;
-        	this.myRepo.ApplicationUnderTest.TbpgFiscaalVerloning.Aant65PlusTenLasteAndersvalide.TextValue = varNumberOf65plusDependantsDisability;
-        		
-        	
-        	this.myRepo.ApplicationUnderTest.TbpgFiscaalVerloning.AantKindTenLasteValide.TextValue = varNoOfDependantChildren;
-        	this.myRepo.ApplicationUnderTest.TbpgFiscaalVerloning.AantKindTenLasteAndersvalide.TextValue = varNoOfDependantChildrenDisability;
+        	this.myRepo.TGNOS.TbpgFiskaal1.FiskSituatieDate.Focus(); 
+        	this.myRepo.TGNOS.TbpgFiskaal1.FiskSituatieDate.TextValue = varTaxSituationDate;
+        	this.myRepo.TGNOS.TbpgFiskaal1.MariageDate.Focus();
+        	this.myRepo.TGNOS.TbpgFiskaal1.MariageDate.TextValue = varMarriageDate;      	
+        	this.myRepo.TGNOS.TbpgFiskaal1.NaamEchtgenoot.TextValue = varLastNameSpouse;
+        	this.myRepo.TGNOS.TbpgFiskaal1.VoornaamEchtgenoot.TextValue = varFirstNameSpouse;
+        	this.myRepo.TGNOS.TbpgFiskaal1.GeboorteDatumEchtgenoot.Focus();
+        	this.myRepo.TGNOS.TbpgFiskaal1.GeboorteDatumEchtgenoot.TextValue = varBirthDateSpouse;
+        	this.myRepo.TGNOS.TbpgFiskaal1.IBAN.Focus();
+        	this.myRepo.TGNOS.TbpgFiskaal1.IBAN.TextValue = varBankNumber;        	
+        	this.myRepo.TGNOS.TbpgFiskaal1.InvaliditeitIndividuPercentage.TextValue = varIndividualDisability;
+        	this.myRepo.TGNOS.TbpgFiskaal1.AantPersTenLasteValide.TextValue = varNoOfDependants;
+        	this.myRepo.TGNOS.TbpgFiskaal1.AantPersTenLasteAndersvalide.TextValue = varNoOfDependantsDisability;
+        	this.myRepo.TGNOS.TbpgFiskaal1.Aant65PlusPersTenLasteValide.TextValue = varNumberOf65plusDependants;
+        	this.myRepo.TGNOS.TbpgFiskaal1.Aant65PlusTenLasteAndersvalide.TextValue = varNumberOf65plusDependantsDisability; 	
+        	this.myRepo.TGNOS.TbpgFiskaal1.AantKindTenLasteValide.TextValue = varNoOfDependantChildren;
+        	this.myRepo.TGNOS.TbpgFiskaal1.AantKindTenLasteAndersvalide.TextValue = varNoOfDependantChildrenDisability;
         }
         
         public void fillAspirations()

@@ -8,6 +8,13 @@ rxversion="9.0">
 			name="TGNOS"
 			reportlevel="Info;20">
 			</testcase>
+			<testmodule
+			enabled="False"
+			id="2c38f27c-040a-45b2-90a1-043331445876"
+			name="GraydonOrganisatie"
+			ref="e593e41a-c911-4083-af13-6a839bb973f9"
+			type="Recording">
+			</testmodule>
 			<testcase
 			id="3f19c219-4584-4286-9582-31f334f4561f"
 			name="Arbeidscontract">
@@ -105,6 +112,7 @@ rxversion="9.0">
 				</databinding>
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="51f8fcfe-97a9-4d60-9a13-1b63a623e221"
 			name="StartAUT"
 			ref="ba891367-730c-42fa-b1eb-30d0e36dac65"
@@ -201,6 +209,7 @@ rxversion="9.0">
 				</parameters>
 			</testcase>
 			<testmodule
+			enabled="False"
 			id="b2d2f2ae-2224-4620-bd23-f0f4b25cc001"
 			name="DeleteIndividu"
 			ref="d2bfb565-1997-4de5-ab34-0af5bb7cf1bb"
@@ -467,6 +476,10 @@ rxversion="9.0">
 					<testcase
 					id="e07f1e29-08a8-44d4-8c00-30630f6143b6"
 					name="Organisatie">
+						<testmodule
+						id="2c38f27c-040a-45b2-90a1-043331445876"
+						name="GraydonOrganisatie">
+						</testmodule>
 					</testcase>
 					<testcase
 					id="c0669d20-8e7a-4eac-8567-6d87a5aafe38"
